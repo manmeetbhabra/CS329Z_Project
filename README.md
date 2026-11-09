@@ -66,4 +66,3 @@ Answers that DSPy has already cached cost nothing.
 | `utils/` | OpenRouter usage and the budget guard |
 
 The source PDFs aren't in the repo. You don't need them to run the agent, because `corpus/` holds their extracted text.
-[Data/manifest.json](Data/manifest.json) and [Data/Thacker Pass/SOURCES.md](Data/Thacker%20Pass/SOURCES.md) describe them.
