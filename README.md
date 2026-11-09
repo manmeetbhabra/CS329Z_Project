@@ -62,7 +62,6 @@ Answers that DSPy has already cached cost nothing.
 | `bench/` | Test cases, the hidden answer key and the scorer. See [bench/README.md](bench/README.md) for how cases are built |
 | `knowledge/` | The 51-item checklist derived from 43 CFR 3809 |
 | `corpus/` | The Thacker Pass plan, extracted to page-tagged Markdown |
-| `Regulations/` | The 43 CFR 3809 sections used |
 | `prep/` | Scripts that turn the source PDFs into `corpus/` (you don't need these to run the agent) |
 | `utils/` | OpenRouter usage and the budget guard |
 
