@@ -1,0 +1,14 @@
+--- gold/appendix_H.md
++++ TP-007/appendix_H.md
+@@ -98,3 +98,3 @@
+ 
+-- Pursuant to NAC 445.445(1)(a), NDEP would be notified within 30 days of the temporary closure of the process facilities. The BLM would be notified concurrently with the NDEP. This notification would include a description of the procedures and controls that have been or would be initiated to maintain the process components during the temporary closure period.
++- Pursuant to NAC 445.445(1)(a), NDEP would be notified within 30 days of the temporary closure of the process facilities. This notification would include a description of the procedures and controls that have been or would be initiated to maintain the process components during the temporary closure period.
+ 
+--- gold/body.md
++++ TP-007/body.md
+@@ -2284,3 +2284,3 @@
+ 
+-Per CFR 3809.401(b)(5) and NAC 519A.320(2), LNC will notify BLM and NDEP, in writing, within 90 days after any Project suspension, that suspension is anticipated to last longer than 120 days. LNC <!-- page 124 | printed 106 --> will identify the nature and reason for the suspension, the duration of the suspension, and the events expected to result in either resumption of mining or the abandonment of the Project.
++<!-- page 124 | printed 106 -->
+ 

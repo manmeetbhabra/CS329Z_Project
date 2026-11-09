@@ -1,0 +1,69 @@
+--- gold/appendix_I.md
++++ TP-012/appendix_I.md
+@@ -276,3 +276,3 @@
+ 
+-Monitoring will consist of measuring water levels and collecting samples for field analysis (pH, specific conductance, temperature, and turbidity) and laboratory analysis (Table 2). The parameters to be measured and analyzed from the groundwater samples are from the NDEP Profile I and/or Profile II lists as shown in Table 2, or as otherwise prescribed by the WPCP. Also included in Table 2 are NDEP Reference Values that are used as water quality guideline values. Monitoring occurs and is reported on a quarterly basis using NDEP Form 1090 (NDEP Profile I Reporting Form) and/or NDEP Form 0090 (NDEP Profile II Reporting Form).
++Monitoring will consist of measuring water levels and collecting samples for analysis of appropriate water quality parameters. Parameters and monitoring frequency will be determined as necessary in consultation with NDEP.
+ 
+@@ -316,56 +316,3 @@
+ 
+-Table 2. Water Quality Parameters (NDEP Profile I & II)
+-
+-| Profile I Parameter | Profile I Reference Value | Profile II Parameter | Profile II Reference Value | Analytical Method |
+-|---|---|---|---|---|
+-| TDS (mg/L) | 1,000 | TDS (mg/L) | 1,000 | SM 2540C |
+-| pH (s.u.) | 6.5 – 8.5 | pH (s.u.) | 6.5 – 8.5 | SM 4500-H+B |
+-| Alkalinity, Bicarbonate (as CaCO3) (mg/L) | --­ | Alkalinity, Bicarbonate (as CaCO3) (mg/L) | --­ | SM 2320B |
+-| Alkalinity, Total (as CaCO3) (mg/L) | --­ | Alkalinity, Total (as CaCO3) (mg/L) | --­ | SM 2320B |
+-| Chloride (mg/L) | 400 | Chloride (mg/L) | 400 | EPA 300.0 |
+-| Fluoride (mg/L) | 4.0 | Fluoride (mg/L) | 4.0 | EPA 300.0 |
+-| Sulfate (mg/L) | 500 | Sulfate (mg/L) | 500 | EPA 300.0 |
+-| Calcium (mg/L) |  | Calcium (mg/L) | --­ | EPA 200.7 |
+-| Magnesium (mg/L) | 150 | Magnesium (mg/L) | 150 | EPA 200.7 |
+-| Potassium (mg/L) | --­ | Potassium (mg/L) | --­ | EPA 200.7 |
+-| Sodium (mg/L) | --­ | Sodium (mg/L) | --­ | EPA 200.7 |
+-| --­ | --­ | Phosphorus (mg/L) | --­ | EPA 200.7 |
+-| Nitrate+Nitrite (as N) (mg/L) | 10 | Nitrate+Nitrite (as N) (mg/L) | 10 | EPA 353.2 |
+-| Nitrogen, Total (as N) (mg/L) | 10 | Nitrogen, Total (as N) (mg/L) | 10 | Calculated |
+-| WAD Cyanide (mg/L) | 0.2 | WAD Cyanide (mg/L) | 0.2 | SM 4500CNI |
+-| Aluminum (mg/L) | 0.2 | Aluminum (mg/L) | 0.2 | EPA 200.7 |
+-| Antimony (mg/L) | 0.006 | Antimony (mg/L) | 0.006 | EPA 200.8 |
+-| Arsenic (mg/L) | 0.010 | Arsenic (mg/L) | 0.010 | EPA 200.8 |
+-| Barium (mg/L) | 2.0 | Barium (mg/L) | 2.0 | EPA 200.7 |
+-| Beryllium (mg/L) | 0.004 | Beryllium (mg/L) | 0.004 | EPA 200.7 |
+-| --­ | --­ | Bismuth (mg/L) | --­ | EPA 200.7 |
+-| --­ | --­ | Boron (mg/L) | --­ | EPA 200.7 |
+-| Cadmium (mg/L) | 0.005 | Cadmium (mg/L) | 0.005 | EPA 200.7 |
+-| Chromium (mg/L) | 0.1 | Chromium (mg/L) | 0.1 | EPA 200.7 |
+-| --­ | --­ | Cobalt (mg/L) | --­ | EPA 200.7 |
+-| Copper (mg/L) | 1.0 | Copper (mg/L) | 1.0 | EPA 200.7 |
+-| --­ | --­ | Gallium (mg/L) | --­ | EPA 200.7 |
+-| Iron (mg/L) | 0.6 | Iron (mg/L) | 0.6 | EPA 200.7 |
+-| Lead (mg/L) | 0.015 | Lead (mg/L) | 0.015 | EPA 200.8 |
+-| --­ | --­ | Lithium (mg/L) | --­ | EPA 200.7 |
+-| Manganese (mg/L) | 0.10 | Manganese (mg/L) | 0.10 | EPA 200.8 |
+-| Mercury (mg/L) | 0.002 | Mercury (mg/L) | 0.002 | EPA 200.7 |
+-| --­ | --­ | Molybdenum (mg/L) | --­ | EPA 200.7 |
+-
+ <!-- page 14 | printed 10 -->
+-
+-| Profile I Parameter | Profile I Reference Value | Profile II Parameter | Profile II Reference Value | Analytical Method |
+-|---|---|---|---|---|
+-| --­ | --­ | Nickel (mg/L) | --­ | EPA 200.7 |
+-| Selenium (mg/L) | 0.05 | Selenium (mg/L) | 0.05 | EPA 200.8 |
+-| --­ | --­ | Scandium (mg/L) | --­ | EPA 200.7 |
+-| Silver (mg/L) | 0.1 | Silver (mg/L) | 0.1 | EPA 200.7 |
+-| --­ | --­ | Strontium (mg/L) | --­ | EPA 200.7 |
+-| Thallium (mg/L) | 0.002 | Thallium (mg/L) | 0.002 | EPA 200.8 |
+-| --­ | --­ | Tin (mg/L) | --­ | EPA 200.7 |
+-| --­ | --­ | Titanium (mg/L) | --­ | EPA 200.7 |
+-| --­ | --­ | Vanadium (mg/L) | --­ | EPA 200.7 |
+-| Zinc (mg/L) | 5.0 | Zinc (mg/L) | 5.0 | EPA 200.7 |
+-
+-Notes: TDS = total dissolved solids; mg/L = milligrams per liter; s.u. = standard units of pH; --- = no parameter or no reference value. Profile I can become a site-specific Profile I-R that includes other constituents established by NDEP, such as radionuclides.
+ 
+@@ -450,3 +397,3 @@
+ 
+-Monitoring will consist of measuring flow rates and collecting samples for field analysis (pH, specific conductance, temperature, and turbidity) and laboratory analysis (Table 2). The parameters to be measured and analyzed from the surface water samples are from the NDEP Profile I and/or Profile II lists as shown in Table 2, with metals and common ions to be analyzed as total. Also included in Table 2 are NDEP Reference Values that are used as water quality guideline values. In addition, surface water quality standards are included in NAC 445A.1236 for the following categories: municipal or domestic supply; aquatic life; irrigation; and watering of livestock. Sampling will occur quarterly or semi-annually for one of the downstream Thacker Creek sites, which has continuous flow monitoring. Monitoring of selected springs near the Project area also will occur quarterly or semi­ annually.
++Monitoring will consist of measuring flow rates and collecting samples for analysis, as appropriate. Parameters and frequency will be determined at a later date.
+ 

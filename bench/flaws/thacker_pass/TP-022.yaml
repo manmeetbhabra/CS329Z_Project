@@ -1,0 +1,21 @@
+id: TP-022
+type: inconsistent
+difficulty: easy
+checklist_ids:
+- ops-schedule
+description: §6.3 puts the Closure phase in Years 44–45, while the same list says production ends in Year 41 and
+  post-closure runs Year 41–46.
+expected_finding: 'The reclamation schedule in §6.3 has a gap: closure (Years 44–45) starts three years after production
+  ends (Year 41), although Table 6-1 says reclamation is completed within two years of Project completion.'
+tells: Adjacent bullets in one list.
+edits:
+- file: body.md
+  find: '- Closure: years of major reclamation and closure activities, Year 41 and Year 42;'
+  replace: '- Closure: years of major reclamation and closure activities, Year 44 and Year 45;'
+related:
+- file: body.md
+  find: '- Production: years the mine and processing facilities are active, Year 1 through Year 41;'
+  note: production end
+- file: body.md
+  find: Year 41 through Year 46; and,
+  note: post-closure period

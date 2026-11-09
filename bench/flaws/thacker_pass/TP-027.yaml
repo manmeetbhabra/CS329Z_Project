@@ -1,0 +1,21 @@
+id: TP-027
+type: inconsistent
+difficulty: medium
+checklist_ids:
+- ops-description
+description: §3.4 gives total waste rock as 210.2 M CY, but its parts (144.3 M CY backfilled + 45.9 M CY to the
+  WRSFs) still sum to 190.2.
+expected_finding: 'Waste rock quantities do not add up: 210.2 M CY total in §3.4 vs 144.3 backfill + 45.9 WRSF =
+  190.2 M CY (§3.4.2, §3.5).'
+tells: Needs arithmetic across two sections.
+edits:
+- file: body.md
+  find: and 190.2 M CY of waste rock material
+  replace: and 210.2 M CY of waste rock material
+related:
+- file: body.md
+  find: Approximately 144.3 M CY of waste rock and 75.2 M CY of coarse gangue
+  note: backfill
+- file: body.md
+  find: Up to 45.9 M CY of waste rock material
+  note: WRSF

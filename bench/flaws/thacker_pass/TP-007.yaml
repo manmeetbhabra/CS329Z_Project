@@ -1,0 +1,26 @@
+id: TP-007
+type: missing
+difficulty: subtle
+checklist_ids:
+- imp-schedule-notify
+description: All provisions for notifying BLM of temporary closures are removed (Appendix H keeps only NDEP notification;
+  body §6.11 notification paragraph deleted).
+expected_finding: The interim management plan has no provision for notifying BLM of unplanned or extended temporary
+  closures, as 3809.401(b)(5)(vi) requires; only NDEP notification is described.
+tells: None; NDEP notification remains, which can look sufficient.
+edits:
+- file: appendix_H.md
+  find: ' The BLM would be notified concurrently with the NDEP.'
+  replace: ''
+- file: body.md
+  find: |2-
+
+
+    Per CFR 3809.401(b)(5) and NAC 519A.320(2), LNC will notify BLM and NDEP, in writing, within 90 days after any Project suspension, that suspension is anticipated to last longer than 120 days. LNC <!-- page 124 | printed 106 --> will identify the nature and reason for the suspension, the duration of the suspension, and the events expected to result in either resumption of mining or the abandonment of the Project.
+  replace: |2-
+
+
+    <!-- page 124 | printed 106 -->
+absent:
+- notified concurrently
+- anticipated to last longer than 120 days

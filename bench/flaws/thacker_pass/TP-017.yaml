@@ -1,0 +1,37 @@
+id: TP-017
+type: vague
+difficulty: medium
+checklist_ids:
+- mon-details
+description: 'Appendix I: the reporting schedule (annual and quarterly report due dates) and the statement that
+  groundwater monitoring is reported quarterly on NDEP Forms 1090/0090 are removed; reporting is ''as directed''.'
+expected_finding: The monitoring plan does not say how often or in what form results will be reported to the agencies
+  (Appendix I §6 and §3.1.1).
+tells: §6 Reporting now has no dates or frequency.
+edits:
+- file: appendix_I.md
+  find: |+
+    The information referenced above will be summarized and provided to the appropriate agencies as directed. Reporting will be completed in compliance with all applicable permits. The actual data forms and logs will be maintained on file with LNC. Annual and quarterly reports, if required, are typically due to the agencies by the following dates:
+
+    - February 28, Annual Report (from prior year);
+
+    - April 28, First Quarter Report;
+
+    - July 27, Second Quarter Report;
+
+    - October 28, Third Quarter Report; and,
+
+    - January 28, Fourth Quarter Report (from prior year).
+
+  replace: |+
+    The information referenced above will be summarized and provided to the appropriate agencies as directed. Reporting will be completed in compliance with all applicable permits. The actual data forms and logs will be maintained on file with LNC.
+
+- file: appendix_I.md
+  find: Monitoring occurs and is reported on a quarterly basis using NDEP Form 1090 (NDEP Profile I Reporting Form)
+    and/or NDEP Form 0090 (NDEP Profile II Reporting Form).
+  replace: Monitoring occurs on a quarterly basis, and results will be reported to NDEP as required.
+absent:
+- Form 1090
+- Form 0090
+- First Quarter Report
+- February 28, Annual Report

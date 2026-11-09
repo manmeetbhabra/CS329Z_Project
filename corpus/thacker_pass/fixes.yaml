@@ -1,0 +1,132 @@
+# Manual corrections applied to the normalized raw extraction to produce the gold set.
+# Each edit: file (gold output name), find (exact, must match once), replace, note.
+# Checked against rendered PDF pages. Footnote markers that the PDF prints as superscripts
+# are written as " [n]" so they cannot be misread as digits (e.g. "50.52" is 50.5 + note 2).
+
+# ---------------------------------------------------------------- body: cover and headings
+- file: body.md
+  note: Cover page has two address columns (BLM | NDEP) that the extraction interleaved, plus logo text (PDF p5)
+  find: |-
+    Submitted to:
+
+    Bureau of Land Management Nevada Division of Environmental Protection
+
+    Winnemucca District Bureau of Mining Regulation and Reclamation
+
+    Humboldt River Field Office 901 S Stewart Street, Suite 4001
+
+    5100 East Winnemucca Boulevard Carson City, Nevada 89701
+
+    Winnemucca, Nevada 89445
+
+    Submitted by:
+
+    Lithium Nevada
+
+    Lithium Nevada Corp.
+  replace: |-
+    Submitted to:
+
+    Bureau of Land Management, Winnemucca District, Humboldt River Field Office, 5100 East Winnemucca Boulevard, Winnemucca, Nevada 89445
+
+    Nevada Division of Environmental Protection, Bureau of Mining Regulation and Reclamation, 901 S Stewart Street, Suite 4001, Carson City, Nevada 89701
+
+    Submitted by:
+
+    Lithium Nevada Corp.
+
+- file: body.md
+  note: TOC entry for 3.3.3 picked up the last line of 3.3.2 (PDF p9)
+  find: "3.3.3 Mine and process operations will operate 365 days per year, 24 hours per day. Operation Time Frame ......"
+  replace: "3.3.3 Operation Time Frame ......"
+
+- file: body.md
+  note: Section number 3.3.3 attached to the last line of 3.3.2 instead of its heading (PDF p44-45)
+  find: |-
+    #### 3.3.3 Mine and process operations will operate 365 days per year, 24 hours per day. Operation Time Frame
+  replace: |-
+    Mine and process operations will operate 365 days per year, 24 hours per day.
+
+    #### 3.3.3 Operation Time Frame
+
+# ---------------------------------------------------------------- body: tables
+# (multi-line headers, blank cells and Total rows are handled by prep.extract_pdf)
+
+- file: body.md
+  note: Table 3-1 superscript footnote markers merged into headers and values (PDF p46)
+  find: "| Existing Disturbance to Date (acres)1 |"
+  replace: "| Existing Disturbance to Date (acres) [1] |"
+- file: body.md
+  find: "| Kings Valley Lithium Exploration Project | 75 | 50.52 | (50.5)2 |"
+  replace: "| Kings Valley Lithium Exploration Project | 75 | 50.5 [2] | (50.5) [2] |"
+- file: body.md
+  find: "| Inter-Facility Disturbance3 | 0 | 0 | 1,641.4 |"
+  replace: "| Inter-Facility Disturbance [3] | 0 | 0 | 1,641.4 |"
+- file: body.md
+  find: "\n\n2 The 2019 geotechnical disturbance"
+  replace: "\n\n[2] The 2019 geotechnical disturbance"
+- file: body.md
+  find: "\n\n3 Includes haul and secondary roads"
+  replace: "\n\n[3] Includes haul and secondary roads"
+
+- file: body.md
+  note: Table 3-2 superscript footnote markers (PDF p47)
+  find: "| Mine Operations1 | 44 | 105 |"
+  replace: "| Mine Operations [1] | 44 | 105 |"
+- file: body.md
+  find: "| Plant Operations1 | 22 | 38 |"
+  replace: "| Plant Operations [1] | 22 | 38 |"
+
+- file: body.md
+  note: Table 3-4 merged cells made explicit (sample group filled down; waste/ore share one proportion value) (PDF p56)
+  find: |-
+    |  | Material Type | Proportion of Mined Material (%) | Proportion of Pit Wall (%) | Multi- Element | ABA | Total MWMP | Rad Chem | HCT |
+    |---|---|---|---|---|---|---|---|---|
+    | Core Samples | Alluvium | 10.8 | 6.1 | 10 | 13 | 7 | - | 1 |
+    |  | Basalt | 1.6 | 2.4 | 10 | 13 | 6 | - | 1 |
+    |  | Ash Waste | 2.7 | 5 | 25 | 26 | 9 | - | 2 |
+    |  | Ore |  |  | 5 | 6 | 2 | - | 1 |
+    |  | Claystone/ Ash Waste | 20.9 | 34.1 | 17 | 20 | 6 | - | 2 |
+    |  | Ore |  |  | 9 | 11 | 5 | - | 1 |
+    |  | Claystone Waste | 62.7 | 35.1 | 33 | 34 | 8 | - | - |
+    |  | Ore |  |  | 66 | 69 | 12 | - | 5 |
+    |  | HPZ | 0.5 | 12.8 | 11 | 13 | 6 | - | 1 |
+    |  | Tv | 0.7 | 4.5 | 12 | 14 | 7 | - | - |
+    | Process Samples | Feed Ore | - | - | 7 | 7 | 5 | 2 | -- |
+    |  | Gangue | - | - | 9 | 9 | 7 | 3 | 2 |
+    |  | Clay Tailings | - | - | 6 | 6 | 3 | 1 | 1 |
+    |  | Neutralization Solids | - | - | 4 | 4 | 2 | 1 | 1 |
+    |  | Sulfate Salts | - | - | 1 | 1 | 1 | 1 | - |
+    |  | Total | 100 | 100 | 225 | 246 | 86 | 8 | 18 |
+  replace: |-
+    | Sample Group | Material Type | Proportion of Mined Material (%) | Proportion of Pit Wall (%) | Multi-Element (total) | ABA (total) | MWMP (total) | Rad Chem (total) | HCT (total) |
+    |---|---|---|---|---|---|---|---|---|
+    | Core Samples | Alluvium | 10.8 | 6.1 | 10 | 13 | 7 | - | 1 |
+    | Core Samples | Basalt | 1.6 | 2.4 | 10 | 13 | 6 | - | 1 |
+    | Core Samples | Ash – Waste | 2.7 (Ash, waste + ore) | 5 (Ash, waste + ore) | 25 | 26 | 9 | - | 2 |
+    | Core Samples | Ash – Ore |  |  | 5 | 6 | 2 | - | 1 |
+    | Core Samples | Claystone/Ash – Waste | 20.9 (Claystone/Ash, waste + ore) | 34.1 (Claystone/Ash, waste + ore) | 17 | 20 | 6 | - | 2 |
+    | Core Samples | Claystone/Ash – Ore |  |  | 9 | 11 | 5 | - | 1 |
+    | Core Samples | Claystone – Waste | 62.7 (Claystone, waste + ore) | 35.1 (Claystone, waste + ore) | 33 | 34 | 8 | - | - |
+    | Core Samples | Claystone – Ore |  |  | 66 | 69 | 12 | - | 5 |
+    | Core Samples | HPZ | 0.5 | 12.8 | 11 | 13 | 6 | - | 1 |
+    | Core Samples | Tv | 0.7 | 4.5 | 12 | 14 | 7 | - | - |
+    | Process Samples | Feed Ore | - | - | 7 | 7 | 5 | 2 | - |
+    | Process Samples | Gangue | - | - | 9 | 9 | 7 | 3 | 2 |
+    | Process Samples | Clay Tailings | - | - | 6 | 6 | 3 | 1 | 1 |
+    | Process Samples | Neutralization Solids | - | - | 4 | 4 | 2 | 1 | 1 |
+    | Process Samples | Sulfate Salts | - | - | 1 | 1 | 1 | 1 | - |
+    | Total |  | 100 | 100 | 225 | 246 | 86 | 8 | 18 |
+
+- file: body.md
+  note: Table 6-1 shaded quarter cells written as X; superscript marker (PDF p106)
+  find: |-
+    | Regrading1 |  |  |  |  | Within two years of Project completion |
+    | Seeding |  |  |  |  | Within two years of Project completion |
+    | Monitoring |  |  |  |  | Three years beyond regrading and reseeding |
+  replace: |-
+    | Regrading [1] |  | X | X | X | Within two years of Project completion |
+    | Seeding |  |  |  | X | Within two years of Project completion |
+    | Monitoring |  | X | X |  | Three years beyond regrading and reseeding |
+
+    (X = quarter shaded in the original table.)

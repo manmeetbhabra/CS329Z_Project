@@ -1,0 +1,14 @@
+id: TP-009
+type: missing
+difficulty: easy
+checklist_ids:
+- ops-quality-assurance
+description: Appendix G (Quality Assurance Plan) is left out of the submission.
+expected_finding: The plan relies on a Quality Assurance Plan (Appendix G) that is not included, so construction
+  QA/QC for liners and engineered facilities is not described.
+tells: Body §5.5 still cites Appendix G.
+edits:
+- file: appendix_G.md
+  delete_file: true
+absent:
+- Appendix G – Quality Assurance Plan

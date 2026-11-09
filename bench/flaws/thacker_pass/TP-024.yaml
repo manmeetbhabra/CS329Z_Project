@@ -1,0 +1,22 @@
+id: TP-024
+type: inconsistent
+difficulty: easy
+checklist_ids:
+- rec-post-closure
+- mon-water
+description: §6.10.1 says post-closure water monitoring continues for at least three years; the same paragraph still
+  says the cost estimate covers at least five years, as do §6.10 and §6.5.12.
+expected_finding: 'Post-closure water monitoring duration conflicts: three years in §6.10.1 vs five years in the
+  same paragraph, §6.10 and §6.5.12.'
+tells: Same paragraph.
+edits:
+- file: body.md
+  find: Consequently, groundwater and surface water monitoring will continue for at least five years
+  replace: Consequently, groundwater and surface water monitoring will continue for at least three years
+related:
+- file: body.md
+  find: costs for at least five years of water resource monitoring
+  note: same paragraph
+- file: body.md
+  find: approved water pollution control permit for at least five years
+  note: §6.10 bullet

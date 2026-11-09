@@ -1,0 +1,740 @@
+{
+ "plan": "thacker_pass",
+ "cases": [
+  {
+   "case_id": "TP-000",
+   "dir": "bench/cases/thacker_pass/TP-000",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-001",
+   "dir": "bench/cases/thacker_pass/TP-001",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-002",
+   "dir": "bench/cases/thacker_pass/TP-002",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-003",
+   "dir": "bench/cases/thacker_pass/TP-003",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-004",
+   "dir": "bench/cases/thacker_pass/TP-004",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md"
+   ]
+  },
+  {
+   "case_id": "TP-005",
+   "dir": "bench/cases/thacker_pass/TP-005",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-006",
+   "dir": "bench/cases/thacker_pass/TP-006",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-007",
+   "dir": "bench/cases/thacker_pass/TP-007",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-008",
+   "dir": "bench/cases/thacker_pass/TP-008",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-009",
+   "dir": "bench/cases/thacker_pass/TP-009",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-010",
+   "dir": "bench/cases/thacker_pass/TP-010",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-011",
+   "dir": "bench/cases/thacker_pass/TP-011",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-012",
+   "dir": "bench/cases/thacker_pass/TP-012",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-013",
+   "dir": "bench/cases/thacker_pass/TP-013",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-014",
+   "dir": "bench/cases/thacker_pass/TP-014",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-015",
+   "dir": "bench/cases/thacker_pass/TP-015",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-016",
+   "dir": "bench/cases/thacker_pass/TP-016",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-017",
+   "dir": "bench/cases/thacker_pass/TP-017",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-018",
+   "dir": "bench/cases/thacker_pass/TP-018",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-019",
+   "dir": "bench/cases/thacker_pass/TP-019",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-020",
+   "dir": "bench/cases/thacker_pass/TP-020",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-021",
+   "dir": "bench/cases/thacker_pass/TP-021",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-022",
+   "dir": "bench/cases/thacker_pass/TP-022",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-023",
+   "dir": "bench/cases/thacker_pass/TP-023",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-024",
+   "dir": "bench/cases/thacker_pass/TP-024",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-025",
+   "dir": "bench/cases/thacker_pass/TP-025",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-026",
+   "dir": "bench/cases/thacker_pass/TP-026",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-027",
+   "dir": "bench/cases/thacker_pass/TP-027",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-028",
+   "dir": "bench/cases/thacker_pass/TP-028",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-029",
+   "dir": "bench/cases/thacker_pass/TP-029",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-030",
+   "dir": "bench/cases/thacker_pass/TP-030",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-031",
+   "dir": "bench/cases/thacker_pass/TP-031",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-032",
+   "dir": "bench/cases/thacker_pass/TP-032",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-033",
+   "dir": "bench/cases/thacker_pass/TP-033",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-034",
+   "dir": "bench/cases/thacker_pass/TP-034",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-035",
+   "dir": "bench/cases/thacker_pass/TP-035",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-036",
+   "dir": "bench/cases/thacker_pass/TP-036",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-037",
+   "dir": "bench/cases/thacker_pass/TP-037",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-038",
+   "dir": "bench/cases/thacker_pass/TP-038",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-039",
+   "dir": "bench/cases/thacker_pass/TP-039",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  },
+  {
+   "case_id": "TP-040",
+   "dir": "bench/cases/thacker_pass/TP-040",
+   "files": [
+    "appendix_A.md",
+    "appendix_B_summary.md",
+    "appendix_C.md",
+    "appendix_D.md",
+    "appendix_E.md",
+    "appendix_F.md",
+    "appendix_G.md",
+    "appendix_H.md",
+    "appendix_I.md",
+    "appendix_J.md",
+    "body.md",
+    "figures.md"
+   ]
+  }
+ ]
+}

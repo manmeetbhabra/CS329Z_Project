@@ -1,0 +1,20 @@
+id: TP-034
+type: implausible
+difficulty: easy
+checklist_ids:
+- ops-designs
+- pf-impoundment-design
+description: The CTFS design factor of safety is 'exceeding 0.8, above the applicable minimum static factor of safety
+  of 0.7' (was 1.4 and 1.3) (§3.17).
+expected_finding: A factor of safety below 1.0 means the design predicts slope failure; the 0.7 'minimum' is not
+  a real standard (§3.17).
+tells: Any engineer knows FoS < 1 is failure.
+rationale: Static factor of safety must exceed 1.0 for stability; tailings and waste facilities are normally designed
+  to a static minimum of 1.3–1.5.
+edits:
+- file: body.md
+  find: designed safety factor exceeding 1.4, above the applicable minimum static factor of safety of 1.3
+  replace: designed safety factor exceeding 0.8, above the applicable minimum static factor of safety of 0.7
+absent:
+- safety factor exceeding 1.4
+- factor of safety of 1.3

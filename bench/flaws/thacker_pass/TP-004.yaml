@@ -1,0 +1,15 @@
+id: TP-004
+type: missing
+difficulty: easy
+checklist_ids:
+- ops-maps
+description: The figure set (figures.md, describing the 19 map and drawing sheets) is left out of the submission.
+expected_finding: The Plan refers to 19 figures (site layout, facilities, pit, WRSF, CTFS, stormwater, monitoring
+  sites, post-reclamation topography) that are not included, so the body has no maps of the project area or facilities
+  (3809.401(b)(2)(i)). Only appendix-level maps (e.g. Appendix C site layout, Appendix I monitoring sites) remain.
+tells: Dozens of '(Figure N)' references remain throughout the body.
+edits:
+- file: figures.md
+  delete_file: true
+absent:
+- separate scanned drawing sheets

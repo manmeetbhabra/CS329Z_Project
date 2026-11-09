@@ -1,0 +1,18 @@
+id: TP-026
+type: inconsistent
+difficulty: medium
+checklist_ids:
+- rec-regrading
+description: §6.5.7 says the coarse gangue stockpile's final slopes will 'remain' at 2.5H:1V; §3.9 designs it at
+  4H:1V and §6.10.3 says all reclaimed slopes will be 3H:1V or less.
+expected_finding: 'Coarse gangue stockpile closure slope conflicts: 2.5H:1V in §6.5.7 vs the 4H:1V design slope
+  in §3.9.'
+tells: '''Remain'' implies the operational slope, which §3.9 gives as 4H:1V.'
+edits:
+- file: body.md
+  find: will remain at a 4H:1V slope.
+  replace: will remain at a 2.5H:1V slope.
+related:
+- file: body.md
+  find: approximately 200 feet tall with 4H:1V slopes (Figure 12)
+  note: §3.9 design slope

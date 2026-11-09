@@ -1,0 +1,8 @@
+[
+  {
+    "checklist_id": "ops-designs",
+    "type": "inconsistent",
+    "quote": "| West WRSF | 37.2 | 5,252 |",
+    "explanation": "Table 3-3 gives the West WRSF capacity as 37.2 M CY, but the paragraph above it says approximately 32.7 M CY."
+  }
+]

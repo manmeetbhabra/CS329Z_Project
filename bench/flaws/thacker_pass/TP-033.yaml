@@ -1,0 +1,29 @@
+id: TP-033
+type: implausible
+difficulty: easy
+checklist_ids:
+- pf-storm-capacity
+description: The CTFS reclaim ponds are designed for the 1-year, 1-hour storm instead of the 100-year, 24-hour storm
+  (§3.17; Appendix C).
+expected_finding: The design basis for the CTFS reclaim ponds (1-year, 1-hour storm) is far below the 100-year,
+  24-hour storm that impoundments holding process water must contain (§3.17, Appendix C).
+tells: The CTFS drainage channels, plant-area channels and secondary containment are still designed for the 100-year,
+  24-hour storm; the stated ~80 million gallons of storage is unchanged and matches a much larger storm.
+rationale: 43 CFR 3809.420(b)(12)(iii) requires impoundments to contain the local 100-year, 24-hour storm, and the
+  plan uses that storm for its other process-water facilities. A 1-year, 1-hour event is a routine storm.
+edits:
+- file: body.md
+  find: The reclaim ponds will be designed to sustain the 100-year, 24-hour storm event.
+  replace: The reclaim ponds will be designed to sustain the 1-year, 1-hour storm event.
+- file: appendix_C.md
+  find: 'The reclaim ponds will be designed to hold runoff from the 100-year, 24­ hour design storm. '
+  replace: 'The reclaim ponds will be designed to hold runoff from the 1-year, 1-hour design storm. '
+- file: appendix_C.md
+  find: The CTFS reclaim pond and drainage channels will be designed to manage runoff from the 100-year 24­ hour
+    design storm.
+  replace: The CTFS drainage channels will be designed to manage runoff from the 100-year 24­ hour design storm,
+    and the CTFS reclaim pond to manage runoff from the 1-year, 1-hour design storm.
+absent:
+- reclaim ponds will be designed to sustain the 100-year
+- reclaim ponds will be designed to hold runoff from the 100
+- reclaim pond and drainage channels

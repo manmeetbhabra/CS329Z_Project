@@ -1,0 +1,19 @@
+id: TP-005
+type: missing
+difficulty: medium
+checklist_ids:
+- op-tin
+description: Section 1.5 Taxpayer Identification Number is deleted.
+expected_finding: The operator's taxpayer identification number is not provided (nor is it stated that it will be
+  provided separately).
+tells: Section numbering jumps from 1.4 to 1.6.
+edits:
+- file: body.md
+  find: |+
+    ### 1.5 Taxpayer Identification Number
+
+    LNC will provide the Federal Tax Identification Number in a separate document.
+
+  replace: ''
+absent:
+- Tax Identification Number

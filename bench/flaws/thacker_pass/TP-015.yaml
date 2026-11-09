@@ -1,0 +1,61 @@
+id: TP-015
+type: vague
+difficulty: medium
+checklist_ids:
+- pf-impoundment-design
+description: Liner details for the CTFS (HDPE geomembrane on 6-in. bedding, underdrain/seepage collection) and the
+  reclaim ponds (double HDPE with geonet) are replaced with general statements in the body, Appendix C and Appendix
+  I.
+expected_finding: The CTFS and its reclaim ponds hold leachable tailings drainage, but no liner type, liner system,
+  seepage collection or leak detection is described for them (§3.17, §5.8, §6.5.9; Appendix C §3.5, §4.5; Appendix
+  I §2.5). Only the plant emergency pond's liner is still described.
+tells: The text still calls the CTFS a 'lined' facility, but nowhere says with what.
+edits:
+- file: body.md
+  find: The CTFS will be fully lined with an HDPE geomembrane, underlain with a six-inch liner bedding material.
+    The facility will include an underdrain collection system above the geomembrane to collect drainage from the
+    stack. Drainage from the stack will report to the geomembrane lined reclaim ponds.
+  replace: The base of the CTFS will be prepared to contain drainage from the stack, which will report to the reclaim
+    ponds.
+- file: body.md
+  find: The reclaim ponds will be double lined with an HDPE geomembrane separated by a layer of geonet. Water collected
+    in the pond will not be discharged as part of the stormwater management. Water in the reclaim ponds will be
+    pumped to the processing plant to be used as make-up water for processing operations or will evaporate. The
+    reclaim ponds will be designed to sustain
+  replace: The reclaim ponds will be constructed to contain collected stormwater and drainage. Water collected in
+    the pond will not be discharged as part of the stormwater management. Water in the reclaim ponds will be pumped
+    to the processing plant to be used as make-up water for processing operations or will evaporate. The reclaim
+    ponds will be designed to sustain
+- file: body.md
+  find: managed in the geomembrane-lined CTFS reclaim ponds
+  replace: managed in the CTFS reclaim ponds
+- file: appendix_C.md
+  find: The CTFS will be fully lined with a high-density polyethylene (HDPE) geomembrane, underlain with a six-inch
+    liner bedding material. The facility will include a seepage collection system between the geomembrane and the
+    clay tailings which will allow water to drain to the reclaim ponds.
+  replace: The base of the CTFS will be prepared to contain drainage from the stack, which will be directed to the
+    reclaim ponds.
+- file: appendix_C.md
+  find: 'The reclaim ponds will be double lined with an HDPE geomembrane separated by a layer of geonet. '
+  replace: 'The reclaim ponds will be constructed to contain collected stormwater and drainage. '
+- file: appendix_I.md
+  find: The CTFS will be fully lined with a high-density polyethylene geomembrane, underlain with a six-inch liner
+    bedding material. The <!-- page 10 | printed 6 --> facility will include a seepage collection system between
+    the geomembrane and the clay tailings which will allow water to drain to the reclaim ponds.
+  replace: Drainage from the CTFS will be directed to the reclaim ponds. <!-- page 10 | printed 6 -->
+- file: body.md
+  find: The CTFS facility will include a seepage collection system between the geomembrane and the clay tailings
+    which will allow water to drain to the reclaim ponds
+  replace: Drainage from the CTFS facility will report to the reclaim ponds
+- file: appendix_I.md
+  find: The leak detection system for the CTFS will be checked periodically and sampled if fluids are present.
+  replace: Drainage from the CTFS will be checked periodically and sampled if fluids are present.
+absent:
+- geonet
+- double lined
+- underdrain
+- liner bedding
+- seepage collection
+- leak detection system for the CTFS
+- geomembrane-lined CTFS
+- geomembrane lined reclaim

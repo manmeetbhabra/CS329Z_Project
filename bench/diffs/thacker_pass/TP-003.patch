@@ -1,0 +1,39 @@
+--- gold/body.md
++++ TP-003/body.md
+@@ -1375,3 +1375,3 @@
+ 
+-LNC currently has 15.5 AF of water rights (mining and milling use) associated with the PH-1 well located within the footprint of the mine pit (Figure 17). LNC will continue to pump water from production well PH-1 for use in dust suppression activities. Once mining operations encroach on PH­ 1, LNC will plug and abandon the well according to the requirements stated in NAC 534.425 through 534.428.
++LNC currently has 15.5 AF of water rights (mining and milling use) associated with the PH-1 well located within the footprint of the mine pit (Figure 17). LNC will continue to pump water from production well PH-1 for use in dust suppression activities. Once mining operations encroach on PH­ 1, LNC will plug and abandon the well.
+ 
+@@ -1562,3 +1562,3 @@
+ 
+-Drill holes may be repurposed for monitoring purposes. A Geokon piezometer groundwater monitoring device may be installed at depth in some exploration drill holes prior to plugging the hole. A piezometer device would continuously monitor and record groundwater levels in the area, allowing LNC and the BLM to assess groundwater resources. Exploration holes may also be converted to groundwater monitoring wells. Under this scenario, LNC would first obtain written permission through an Occupancy Permit from the BLM. LNC would also apply for the necessary permits from the Nevada Division of Water Resources (Waiver for Observation or Monitoring Well & Affidavit of Intent to Plug a Well). If drill holes are not repurposed, they will be abandoned per NAC 534.425 through 534.428 prior to the drill rig moving to the next site.
++Drill holes may be repurposed for monitoring purposes. A Geokon piezometer groundwater monitoring device may be installed at depth in some exploration drill holes prior to plugging the hole. A piezometer device would continuously monitor and record groundwater levels in the area, allowing LNC and the BLM to assess groundwater resources. Exploration holes may also be converted to groundwater monitoring wells. Under this scenario, LNC would first obtain written permission through an Occupancy Permit from the BLM. LNC would also apply for the necessary permits from the Nevada Division of Water Resources (Waiver for Observation or Monitoring Well & Affidavit of Intent to Plug a Well). Drill holes that are not repurposed will be abandoned.
+ 
+@@ -1942,4 +1942,2 @@
+ 
+-- Properly abandon mineral exploration and development drill holes, monitoring and observation wells, and production wells pursuant to NAC 534 to prevent potential contamination of water resources;
+-
+ - Construct roads to the minimum width necessary for safety;
+@@ -2164,3 +2162,3 @@
+ 
+-Wells will be plugged according to NAC 534.425 through 534.428 abandonment statues and procedures.
++Wells will be plugged and abandoned.
+ 
+@@ -2210,16 +2208,4 @@
+ 
+-### 6.8 Drill Hole Plugging and Water Well Abandonment
+-
+-In accordance with applicable rules and regulations (NAC 534.425 through 534.428), reclamation of mineral drill holes (i.e., exploration and development) and wells (i.e., monitoring and production)
+-
+ <!-- page 121 | printed 103 -->
+ 
+-subject to NDWR standards will require proper abandonment methodology. Abandonment of each exploration drill hole will occur upon completion of drilling operations and prior to the removal of the drill rig from the drill site.
+-
+-Abandonment techniques will include mixing a bentonite and freshwater slurry or cement grout, specifically formulated for well or drill hole abandonment. The mixture will be circulated through the drill pipe and distributed from the bottom of the drill hole in a manner that will assure against the vertical movement of groundwater. The mixture will also be placed in the annular space surrounding any casing left down the hole.
+-
+-If circulation from the bottom is not possible, drill hole abandonment will entail mixing the slurry or grout at the surface, circulating the mixture through the drill pipe from the bottom of the drill hole under pressure and placed in stages as the drill pipe is retrieved from the drill hole. A cement surface plug, comprised of Portland cement mixed with clean water and aggregates or bagged cement mixed with clean water, will be placed within the top 20 feet of each drill hole. The top of the surface plug will be placed below the ground surface to eliminate physical hazards, to prevent ponding of water directly over the drill hole, allow for placement of growth media, and allow for passage of earthmoving equipment required for reclamation operations. Remaining surface casing will also be removed below the ground surface and the annulus of any casing left down hole is sealed in a manner that assures against the movement of surface water down the drill hole.
+-
+-Maintenance of monitoring wells around process facilities will continue until LNC is released of this requirement by NDEP. These wells will then be plugged and abandoned according to the requirements stated in NAC 534.425 through 534.428.
+-
+ ### 6.9 Surface Facilities or Roads Not Subject to Reclamation

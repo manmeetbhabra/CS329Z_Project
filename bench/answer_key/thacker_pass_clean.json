@@ -1,0 +1,1611 @@
+{
+ "plan": "thacker_pass_clean",
+ "checklist_version": 1,
+ "known_gaps": [],
+ "cases": [
+  {
+   "case_id": "TP-000",
+   "type": "none",
+   "difficulty": "none",
+   "checklist_ids": [],
+   "description": "Clean control: the gold plan with no changes. Any flag that is not a known gap is a false alarm.",
+   "expected_finding": "",
+   "tells": "",
+   "rationale": "",
+   "locations": []
+  },
+  {
+   "case_id": "TP-001",
+   "type": "missing",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "ops-spill-contingency"
+   ],
+   "description": "Appendix E (Spill Contingency Plan) is left out of the submission.",
+   "expected_finding": "The Spill Contingency Plan that §4.12 and §5.3 rely on (Appendix E) is not included. The Emergency Response Plan (Appendix F) covers spill prevention and reporting only in part, so the plan has no complete spill response, containment and cleanup procedure.",
+   "tells": "Body §4.12 and §5.3 still cite Appendix E.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "appendix_E.md",
+     "page": null,
+     "printed_page": null,
+     "heading": null,
+     "section": null,
+     "role": "file",
+     "original": "<entire file appendix_E.md>",
+     "replacement": "<file removed>"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-002",
+   "type": "missing",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "rec-structures-removal"
+   ],
+   "description": "Section 6.5.16 Disposition of Buildings is deleted.",
+   "expected_finding": "§6.5.6, §6.5.8 and §6.5.13 refer to a Section 6.5.16 (Disposition of Buildings) that does not exist; nothing says building footprints will be inspected for soil contamination or how building parts will be disposed of (§6.5.8 covers contamination only for hard surfaces at the process plant).",
+   "tells": "Three 'as described in Section 6.5.16' cross-references remain, and numbering jumps from 6.5.15 to 6.5.17.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 119,
+     "printed_page": "101",
+     "heading": "6.5.16 Disposition of Buildings",
+     "section": "6.5.16",
+     "role": "content",
+     "original": "#### 6.5.16 Disposition of Buildings\n\nLNC will demolish buildings associated with the Project and properly dispose of parts offsite. Foundations will be broken and hauled to the Class III debris disposal area located in the West WRSF (Figure 10). LNC will regrade, rip, and seed the building footprint areas with the proposed seed mix (Table 6-2).\n\nGround surfaces will be inspected for evidence of possible soil contamination prior to removal of the buildings and concrete. Any affected soils as determined by visual inspection, lab analysis, or other method will be excavated and properly treated and disposed of in the appropriate onsite or offsite location.\n\n",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "case_id": "TP-003",
+   "type": "missing",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "rec-drill-holes"
+   ],
+   "description": "Section 6.8 Drill Hole Plugging and Water Well Abandonment and the §6.4 bullet on abandoning drill holes are deleted, and the three other mentions (§3.21 PH-1, §3.27 exploration, §6.5.13 wells) lose their NAC 534 standard and timing.",
+   "expected_finding": "No drill-hole and well plugging plan: no method, plug design, governing standard (NAC 534) or timing, although the project has extensive exploration drilling and wells (§6.8 absent; §3.21, §3.27, §6.5.13 only say holes and wells 'will be abandoned').",
+   "tells": "Section numbering jumps from 6.7 to 6.9. Three sections still say holes or wells will be plugged, with no detail.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 106,
+     "printed_page": "88",
+     "heading": "6.4 Measures to Prevent Unnecessary or Undue Degradation",
+     "section": "6.4",
+     "role": "content",
+     "original": "- Properly abandon mineral exploration and development drill holes, monitoring and observation wells, and production wells pursuant to NAC 534 to prevent potential contamination of water resources;\n\n",
+     "replacement": ""
+    },
+    {
+     "file": "body.md",
+     "page": 120,
+     "printed_page": "102",
+     "heading": "6.8 Drill Hole Plugging and Water Well Abandonment",
+     "section": "6.8",
+     "role": "content",
+     "original": "### 6.8 Drill Hole Plugging and Water Well Abandonment\n\nIn accordance with applicable rules and regulations (NAC 534.425 through 534.428), reclamation of mineral drill holes (i.e., exploration and development) and wells (i.e., monitoring and production)\n\n<!-- page 121 | printed 103 -->\n\nsubject to NDWR standards will require proper abandonment methodology. Abandonment of each exploration drill hole will occur upon completion of drilling operations and prior to the removal of the drill rig from the drill site.\n\nAbandonment techniques will include mixing a bentonite and freshwater slurry or cement grout, specifically formulated for well or drill hole abandonment. The mixture will be circulated through the drill pipe and distributed from the bottom of the drill hole in a manner that will assure against the vertical movement of groundwater. The mixture will also be placed in the annular space surrounding any casing left down the hole.\n\nIf circulation from the bottom is not possible, drill hole abandonment will entail mixing the slurry or grout at the surface, circulating the mixture through the drill pipe from the bottom of the drill hole under pressure and placed in stages as the drill pipe is retrieved from the drill hole. A cement surface plug, comprised of Portland cement mixed with clean water and aggregates or bagged cement mixed with clean water, will be placed within the top 20 feet of each drill hole. The top of the surface plug will be placed below the ground surface to eliminate physical hazards, to prevent ponding of water directly over the drill hole, allow for placement of growth media, and allow for passage of earthmoving equipment required for reclamation operations. Remaining surface casing will also be removed below the ground surface and the annulus of any casing left down hole is sealed in a manner that assures against the movement of surface water down the drill hole.\n\nMaintenance of monitoring wells around process facilities will continue until LNC is released of this requirement by NDEP. These wells will then be plugged and abandoned according to the requirements stated in NAC 534.425 through 534.428.\n\n",
+     "replacement": "<!-- page 121 | printed 103 -->\n\n"
+    },
+    {
+     "file": "body.md",
+     "page": 78,
+     "printed_page": "60",
+     "heading": "3.21 Water Use, Supply, and Storage",
+     "section": "3.21",
+     "role": "content",
+     "original": "LNC will plug and abandon the well according to the requirements stated in NAC 534.425 through 534.428.",
+     "replacement": "LNC will plug and abandon the well."
+    },
+    {
+     "file": "body.md",
+     "page": 87,
+     "printed_page": "69",
+     "heading": "3.27 Exploration Operations",
+     "section": "3.27",
+     "role": "content",
+     "original": "If drill holes are not repurposed, they will be abandoned per NAC 534.425 through 534.428 prior to the drill rig moving to the next site.",
+     "replacement": "Drill holes that are not repurposed will be abandoned."
+    },
+    {
+     "file": "body.md",
+     "page": 118,
+     "printed_page": "100",
+     "heading": "6.5.13 Water Supply Facilities and Pipelines",
+     "section": "6.5.13",
+     "role": "content",
+     "original": "Wells will be plugged according to NAC 534.425 through 534.428 abandonment statues and procedures.",
+     "replacement": "Wells will be plugged and abandoned."
+    }
+   ]
+  },
+  {
+   "case_id": "TP-004",
+   "type": "missing",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "ops-maps"
+   ],
+   "description": "The figure set (figures.md, describing the 19 map and drawing sheets) is left out of the submission.",
+   "expected_finding": "The Plan refers to 19 figures (site layout, facilities, pit, WRSF, CTFS, stormwater, monitoring sites, post-reclamation topography) that are not included, so the body has no maps of the project area or facilities (3809.401(b)(2)(i)). Only appendix-level maps (e.g. Appendix C site layout, Appendix I monitoring sites) remain.",
+   "tells": "Dozens of '(Figure N)' references remain throughout the body.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "figures.md",
+     "page": null,
+     "printed_page": null,
+     "heading": null,
+     "section": null,
+     "role": "file",
+     "original": "<entire file figures.md>",
+     "replacement": "<file removed>"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-005",
+   "type": "missing",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "op-tin"
+   ],
+   "description": "Section 1.5 Taxpayer Identification Number is deleted.",
+   "expected_finding": "The operator's taxpayer identification number is not provided (nor is it stated that it will be provided separately).",
+   "tells": "Section numbering jumps from 1.4 to 1.6.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 20,
+     "printed_page": "2",
+     "heading": "1.5 Taxpayer Identification Number",
+     "section": "1.5",
+     "role": "content",
+     "original": "### 1.5 Taxpayer Identification Number\n\nLNC will provide the Federal Tax Identification Number in a separate document.\n\n",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "case_id": "TP-006",
+   "type": "missing",
+   "difficulty": "subtle",
+   "checklist_ids": [
+    "mon-adverse-response"
+   ],
+   "description": "The Monitoring Plan's procedures for responding to adverse results (exceedance of leak detection limits; reporting and follow-up of adverse results) are removed.",
+   "expected_finding": "The Monitoring Plan gives no procedure to respond to adverse monitoring results (no notification, confirmation sampling or mitigation steps).",
+   "tells": "None; the rest of Appendix I is intact. Its purpose statement still promises information to direct corrective actions.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "appendix_I.md",
+     "page": 9,
+     "printed_page": "5",
+     "heading": "2.4 Processing Plant Facilities",
+     "section": "2.4",
+     "role": "content",
+     "original": " In the event that permit limitations are exceeded, a site-specific evaluation will be conducted by LNC to assess the need for additional process component or site monitoring. Depending on site-specific conditions, LNC may be required to institute mitigation procedures to bring the process component into compliance.",
+     "replacement": ""
+    },
+    {
+     "file": "appendix_I.md",
+     "page": 20,
+     "printed_page": "16",
+     "heading": "6 Reporting",
+     "section": "6",
+     "role": "content",
+     "original": " LNC shall report any adverse monitoring results or non-compliance orally to the appropriate agencies on the next regular work day. Follow-up monitoring will occur to confirm the results, followed by mitigation measures, if needed.",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "case_id": "TP-007",
+   "type": "missing",
+   "difficulty": "subtle",
+   "checklist_ids": [
+    "imp-schedule-notify"
+   ],
+   "description": "All provisions for notifying BLM of temporary closures are removed (Appendix H keeps only NDEP notification; body §6.11 notification paragraph deleted).",
+   "expected_finding": "The interim management plan has no provision for notifying BLM of unplanned or extended temporary closures, as 3809.401(b)(5)(vi) requires; only NDEP notification is described.",
+   "tells": "None; NDEP notification remains, which can look sufficient.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "appendix_H.md",
+     "page": 4,
+     "printed_page": "2",
+     "heading": "2.1 Schedule of Anticipated Periods of Temporary Closure",
+     "section": "2.1",
+     "role": "content",
+     "original": " The BLM would be notified concurrently with the NDEP.",
+     "replacement": ""
+    },
+    {
+     "file": "body.md",
+     "page": 123,
+     "printed_page": "105",
+     "heading": "6.11 Measures to be Taken During Extended Periods of Non-Operation",
+     "section": "6.11",
+     "role": "content",
+     "original": "\n\nPer CFR 3809.401(b)(5) and NAC 519A.320(2), LNC will notify BLM and NDEP, in writing, within 90 days after any Project suspension, that suspension is anticipated to last longer than 120 days. LNC <!-- page 124 | printed 106 --> will identify the nature and reason for the suspension, the duration of the suspension, and the events expected to result in either resumption of mining or the abandonment of the Project.",
+     "replacement": "\n\n<!-- page 124 | printed 106 -->"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-008",
+   "type": "missing",
+   "difficulty": "subtle",
+   "checklist_ids": [
+    "pf-exclusion"
+   ],
+   "description": "Every statement that the reclaim ponds and the emergency pond are fenced to exclude wildlife is removed (five sentences across §3.10, §3.17, §3.24.6 and §4.6, one in Appendix C §4.5), and Appendix I §3.3 no longer monitors 'wildlife exclusion features'.",
+   "expected_finding": "The CTFS reclaim ponds and emergency pond hold process solutions, but no measure excludes wildlife, livestock or the public from them (3809.420(b)(12)(v)).",
+   "tells": "General fencing remains (§3.24.6 perimeter fence for cattle, wildlife and the public; Appendix I §3.3 fences for larger wildlife and livestock; §6.5.18 removal of fences around the CTFS and process facilities), but none is tied to the ponds or to keeping wildlife out of them. Appendix I still mentions an NDOW Industrial Artificial Pond Permit.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 64,
+     "printed_page": "46",
+     "heading": "3.10 Process Plant Site",
+     "section": "3.10",
+     "role": "content",
+     "original": " The emergency pond area will be fenced to restrict wildlife access.",
+     "replacement": ""
+    },
+    {
+     "file": "body.md",
+     "page": 72,
+     "printed_page": "54",
+     "heading": "3.17 Clay Tailings Filter Stack",
+     "section": "3.17",
+     "role": "content",
+     "original": " LNC will fence (chain-link, 6-8 feet in height) the area surrounding the reclaim ponds to restrict wildlife access.",
+     "replacement": ""
+    },
+    {
+     "file": "body.md",
+     "page": 83,
+     "printed_page": "65",
+     "heading": "3.24.6 Fencing and Site Security",
+     "section": "3.24.6",
+     "role": "content",
+     "original": " LNC will fence (chain-link, six to eight feet in height) the area surrounding the reclaim ponds to restrict wildlife access.",
+     "replacement": ""
+    },
+    {
+     "file": "body.md",
+     "page": 92,
+     "printed_page": "74",
+     "heading": "4.6 Large Wildlife and Livestock Protection",
+     "section": "4.6",
+     "role": "content",
+     "original": " Larger security fences (six to eight foot chain link or similar) will be constructed around ponds and hazardous equipment to further deter wildlife from hazards.",
+     "replacement": ""
+    },
+    {
+     "file": "body.md",
+     "page": 93,
+     "printed_page": "75",
+     "heading": "4.6 Large Wildlife and Livestock Protection",
+     "section": "4.6",
+     "role": "content",
+     "original": " Areas surrounding the plant emergency pond and the CTFS reclaim will be fenced to prohibit wildlife access.",
+     "replacement": ""
+    },
+    {
+     "file": "appendix_C.md",
+     "page": 21,
+     "printed_page": "16",
+     "heading": "4.5 Clay Tailings Filter Stack",
+     "section": "4.5",
+     "role": "content",
+     "original": " LNC will fence the area surrounding the reclaim ponds to restrict wildlife access.",
+     "replacement": ""
+    },
+    {
+     "file": "appendix_I.md",
+     "page": 17,
+     "printed_page": "13",
+     "heading": "3.3 Wildlife",
+     "section": "3.3",
+     "role": "content",
+     "original": "The reclaim ponds will be monitored for the condition of wildlife exclusion features and the presence of mortalities",
+     "replacement": "The reclaim ponds will be monitored for the presence of mortalities"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-009",
+   "type": "missing",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "ops-quality-assurance"
+   ],
+   "description": "Appendix G (Quality Assurance Plan) is left out of the submission.",
+   "expected_finding": "The plan relies on a Quality Assurance Plan (Appendix G) that is not included, so construction QA/QC for liners and engineered facilities is not described.",
+   "tells": "Body §5.5 still cites Appendix G.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "appendix_G.md",
+     "page": null,
+     "printed_page": null,
+     "heading": null,
+     "section": null,
+     "role": "file",
+     "original": "<entire file appendix_G.md>",
+     "replacement": "<file removed>"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-010",
+   "type": "missing",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "rec-wildlife-habitat"
+   ],
+   "description": "Section 6.4.8 Wildlife Habitat Restoration is deleted.",
+   "expected_finding": "The reclamation plan has no wildlife habitat rehabilitation measures, although the project disturbs sage-grouse and other wildlife habitat.",
+   "tells": "Section 6.4.8 is missing from the §6.4 numbering. §6.1 still lists wildlife habitat as a post-mining land use.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 111,
+     "printed_page": "93",
+     "heading": "6.4.8 Wildlife Habitat Restoration",
+     "section": "6.4.8",
+     "role": "content",
+     "original": "#### 6.4.8 Wildlife Habitat Restoration\n\nProject reclamation is designed to restore wildlife habitat in the area. Areas will be regraded and seeded with a specialized reclamation seed mix to promote a diverse plant community that is beneficial to wildlife.\n\n",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "case_id": "TP-011",
+   "type": "vague",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "rec-revegetation"
+   ],
+   "description": "The seed mix (Table 6-2 / Appendix D Table 4-1) and the 12.10 lb PLS/acre seeding rate are replaced with a statement that the mix and rates will be developed later.",
+   "expected_finding": "The revegetation plan gives no seed mix, species or seeding rate; it says these will be determined later (§6.4.4 and Appendix D).",
+   "tells": "Several sections still say to seed 'using the seed mix presented in Table 6-2', which no longer exists.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 108,
+     "printed_page": "90",
+     "heading": "6.4.4 Revegetation",
+     "section": "6.4.4",
+     "role": "content",
+     "original": "The proposed reclamation seed mix for the Project (Table 6-2) was developed for the Project location through coordination with the University of Nevada, Reno. The seed mix is especially adapted for the Project site’s clay soils. The mix is based on known soil and climatic conditions and was selected to <!-- page 109 | printed 91 --> establish a plant community that will support the post-mining land use. The mix is designed to provide species that can exist in the environment of northwestern Nevada, are proven to be robust species for revegetation, or are native species found in the plant communities prior to disturbance. Broadcast seeding will be at a rate of approximately 12.10 pounds of pure live seed per acre. If approved by the BLM, LNC will use this proposed seed mix in conjunction with coated seed technology being developed by Brigham Young University and the Great Basin Sagebrush Restoration Fund at University of Nevada Reno. The coated seed technology improves seed germination and plant establishment efficacy. LNC will coordinate any changes or adjustments to the reclamation seed list or application rate in consultation with, and approval by, BLM and NDEP.",
+     "replacement": "A reclamation seed mix for the Project will be developed at a later date and will consist of species appropriate for the Project site. Seeding rates will be determined as appropriate. LNC will coordinate the seed list and application rate in consultation with, and approval by, BLM and NDEP. <!-- page 109 | printed 91 -->"
+    },
+    {
+     "file": "body.md",
+     "page": 109,
+     "printed_page": "91",
+     "heading": "6.4.4 Revegetation",
+     "section": "6.4.4",
+     "role": "content",
+     "original": "Table 6-2 Proposed Reclamation Seed Mix\n\n| Variety | Species | Pure Live Seed (pounds/acre) |\n|---|---|---|\n| Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 1.00 |\n| Fourwing Saltbush | Atriplex canescens | 0.50 |\n| Squirreltail | Elymus elymoides | 2.75 |\n| Sandberg's Bluegrass | Poa secunda | 1.00 |\n| Crested Wheatgrass | Agropyron cristatum | 6.00 |\n| Blue Flax | Linum lewisii | 0.50 |\n| Scarlet globemallow | Sphaeralcea coccinea | 0.25 |\n| Western Yarrow | Achillia millifolium | 0.10 |\n|  | Total | 12.10 |\n\nNote: [1] Seed mixtures may change from time to time during concurrent and final reclamation. The changes will be based on targeting specific soil/disturbance types and experience gained during concurrent reclamation during the life of the Project, on test plot results, and changes in agency recommendations.\n\n",
+     "replacement": ""
+    },
+    {
+     "file": "appendix_D.md",
+     "page": 13,
+     "printed_page": null,
+     "heading": "Phases",
+     "section": null,
+     "role": "content",
+     "original": "The proposed reclamation seed mix for the Project (Table 4-1) was developed for the Project location through coordination with the University of Nevada, Reno. The seed mix is especially adapted for the Project site’s clay soils. The mix is based on known soil and climatic conditions and was selected to establish a plant community that will support the post-mining land use. The mix is designed to provide species that can exist in the environment of northwestern Nevada, are proven to be robust species for revegetation, or are native species found in the plant communities prior to disturbance. Broadcast seeding will be at a rate of approximately 12.10 pounds of pure live seed per acre. If approved by the BLM, LNC will use this proposed seed mix in conjunction with coated seed technology being developed by Brigham Young University and the Great Basin Sagebrush Restoration Fund at University of Nevada Reno. The coated seed technology improves seed germination and plant establishment efficacy. LNC will coordinate any changes or adjustments to the reclamation seed list or application rate in consultation with, and approval by, BLM and NDEP.",
+     "replacement": "A reclamation seed mix for the Project will be developed at a later date and will consist of species appropriate for the Project site. Seeding rates will be determined as appropriate, in consultation with BLM and NDEP."
+    },
+    {
+     "file": "appendix_D.md",
+     "page": 13,
+     "printed_page": null,
+     "heading": "Phases",
+     "section": null,
+     "role": "content",
+     "original": "Table 4-1 Proposed Reclamation Seed Mix\n\n| Variety | Species | Pure Live Seed (pounds/acre) |\n|---|---|---|\n| Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 1.00 |\n| Fourwing Saltbush | Atriplex canescens | 0.50 |\n| Squirreltail | Elymus elymoides | 2.75 |\n| Sandberg's Bluegrass | Poa secunda | 1.00 |\n| Crested Wheatgrass | Agropyron cristatum | 6.00 |\n| Blue Flax | Linum lewisii | 0.50 |\n| Scarlet globemallow | Sphaeralcea coccinea | 0.25 |\n| Western Yarrow | Achillia millifolium | 0.10 |\n|  | Total | 12.10 |\n\nNote: [1] Seed mixtures may change from time to time during concurrent and final reclamation. The changes will be based on targeting specific soil/disturbance types and experience gained during concurrent reclamation during the life of the Project, on test plot results, and changes in agency recommendations.\n\n",
+     "replacement": ""
+    }
+   ]
+  },
+  {
+   "case_id": "TP-012",
+   "type": "vague",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "mon-water",
+    "mon-details"
+   ],
+   "description": "Appendix I: groundwater and surface-water monitoring parameters (field/lab analytes, Table 2 NDEP Profile I/II) and the quarterly frequency are replaced with 'appropriate parameters' to be determined later; Table 2 is removed.",
+   "expected_finding": "Water monitoring lists sites but not what will be analyzed or how often; parameters and frequency are deferred (Appendix I §3.1.1 and §3.1.2).",
+   "tells": "Hedges ('appropriate', 'to be determined') where the parameters and frequency used to be.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "appendix_I.md",
+     "page": 12,
+     "printed_page": "8",
+     "heading": "3.1.1 Groundwater",
+     "section": "3.1.1",
+     "role": "content",
+     "original": "Monitoring will consist of measuring water levels and collecting samples for field analysis (pH, specific conductance, temperature, and turbidity) and laboratory analysis (Table 2). The parameters to be measured and analyzed from the groundwater samples are from the NDEP Profile I and/or Profile II lists as shown in Table 2, or as otherwise prescribed by the WPCP. Also included in Table 2 are NDEP Reference Values that are used as water quality guideline values. Monitoring occurs and is reported on a quarterly basis using NDEP Form 1090 (NDEP Profile I Reporting Form) and/or NDEP Form 0090 (NDEP Profile II Reporting Form).",
+     "replacement": "Monitoring will consist of measuring water levels and collecting samples for analysis of appropriate water quality parameters. Parameters and monitoring frequency will be determined as necessary in consultation with NDEP."
+    },
+    {
+     "file": "appendix_I.md",
+     "page": 13,
+     "printed_page": "9",
+     "heading": "3.1.1 Groundwater",
+     "section": "3.1.1",
+     "role": "content",
+     "original": "Table 2. Water Quality Parameters (NDEP Profile I & II)\n\n| Profile I Parameter | Profile I Reference Value | Profile II Parameter | Profile II Reference Value | Analytical Method |\n|---|---|---|---|---|\n| TDS (mg/L) | 1,000 | TDS (mg/L) | 1,000 | SM 2540C |\n| pH (s.u.) | 6.5 – 8.5 | pH (s.u.) | 6.5 – 8.5 | SM 4500-H+B |\n| Alkalinity, Bicarbonate (as CaCO3) (mg/L) | --­ | Alkalinity, Bicarbonate (as CaCO3) (mg/L) | --­ | SM 2320B |\n| Alkalinity, Total (as CaCO3) (mg/L) | --­ | Alkalinity, Total (as CaCO3) (mg/L) | --­ | SM 2320B |\n| Chloride (mg/L) | 400 | Chloride (mg/L) | 400 | EPA 300.0 |\n| Fluoride (mg/L) | 4.0 | Fluoride (mg/L) | 4.0 | EPA 300.0 |\n| Sulfate (mg/L) | 500 | Sulfate (mg/L) | 500 | EPA 300.0 |\n| Calcium (mg/L) |  | Calcium (mg/L) | --­ | EPA 200.7 |\n| Magnesium (mg/L) | 150 | Magnesium (mg/L) | 150 | EPA 200.7 |\n| Potassium (mg/L) | --­ | Potassium (mg/L) | --­ | EPA 200.7 |\n| Sodium (mg/L) | --­ | Sodium (mg/L) | --­ | EPA 200.7 |\n| --­ | --­ | Phosphorus (mg/L) | --­ | EPA 200.7 |\n| Nitrate+Nitrite (as N) (mg/L) | 10 | Nitrate+Nitrite (as N) (mg/L) | 10 | EPA 353.2 |\n| Nitrogen, Total (as N) (mg/L) | 10 | Nitrogen, Total (as N) (mg/L) | 10 | Calculated |\n| WAD Cyanide (mg/L) | 0.2 | WAD Cyanide (mg/L) | 0.2 | SM 4500CNI |\n| Aluminum (mg/L) | 0.2 | Aluminum (mg/L) | 0.2 | EPA 200.7 |\n| Antimony (mg/L) | 0.006 | Antimony (mg/L) | 0.006 | EPA 200.8 |\n| Arsenic (mg/L) | 0.010 | Arsenic (mg/L) | 0.010 | EPA 200.8 |\n| Barium (mg/L) | 2.0 | Barium (mg/L) | 2.0 | EPA 200.7 |\n| Beryllium (mg/L) | 0.004 | Beryllium (mg/L) | 0.004 | EPA 200.7 |\n| --­ | --­ | Bismuth (mg/L) | --­ | EPA 200.7 |\n| --­ | --­ | Boron (mg/L) | --­ | EPA 200.7 |\n| Cadmium (mg/L) | 0.005 | Cadmium (mg/L) | 0.005 | EPA 200.7 |\n| Chromium (mg/L) | 0.1 | Chromium (mg/L) | 0.1 | EPA 200.7 |\n| --­ | --­ | Cobalt (mg/L) | --­ | EPA 200.7 |\n| Copper (mg/L) | 1.0 | Copper (mg/L) | 1.0 | EPA 200.7 |\n| --­ | --­ | Gallium (mg/L) | --­ | EPA 200.7 |\n| Iron (mg/L) | 0.6 | Iron (mg/L) | 0.6 | EPA 200.7 |\n| Lead (mg/L) | 0.015 | Lead (mg/L) | 0.015 | EPA 200.8 |\n| --­ | --­ | Lithium (mg/L) | --­ | EPA 200.7 |\n| Manganese (mg/L) | 0.10 | Manganese (mg/L) | 0.10 | EPA 200.8 |\n| Mercury (mg/L) | 0.002 | Mercury (mg/L) | 0.002 | EPA 200.7 |\n| --­ | --­ | Molybdenum (mg/L) | --­ | EPA 200.7 |\n\n<!-- page 14 | printed 10 -->\n\n| Profile I Parameter | Profile I Reference Value | Profile II Parameter | Profile II Reference Value | Analytical Method |\n|---|---|---|---|---|\n| --­ | --­ | Nickel (mg/L) | --­ | EPA 200.7 |\n| Selenium (mg/L) | 0.05 | Selenium (mg/L) | 0.05 | EPA 200.8 |\n| --­ | --­ | Scandium (mg/L) | --­ | EPA 200.7 |\n| Silver (mg/L) | 0.1 | Silver (mg/L) | 0.1 | EPA 200.7 |\n| --­ | --­ | Strontium (mg/L) | --­ | EPA 200.7 |\n| Thallium (mg/L) | 0.002 | Thallium (mg/L) | 0.002 | EPA 200.8 |\n| --­ | --­ | Tin (mg/L) | --­ | EPA 200.7 |\n| --­ | --­ | Titanium (mg/L) | --­ | EPA 200.7 |\n| --­ | --­ | Vanadium (mg/L) | --­ | EPA 200.7 |\n| Zinc (mg/L) | 5.0 | Zinc (mg/L) | 5.0 | EPA 200.7 |\n\nNotes: TDS = total dissolved solids; mg/L = milligrams per liter; s.u. = standard units of pH; --- = no parameter or no reference value. Profile I can become a site-specific Profile I-R that includes other constituents established by NDEP, such as radionuclides.\n\n",
+     "replacement": "<!-- page 14 | printed 10 -->\n\n"
+    },
+    {
+     "file": "appendix_I.md",
+     "page": 15,
+     "printed_page": "11",
+     "heading": "3.1.2 Surface Water",
+     "section": "3.1.2",
+     "role": "content",
+     "original": "Monitoring will consist of measuring flow rates and collecting samples for field analysis (pH, specific conductance, temperature, and turbidity) and laboratory analysis (Table 2). The parameters to be measured and analyzed from the surface water samples are from the NDEP Profile I and/or Profile II lists as shown in Table 2, with metals and common ions to be analyzed as total. Also included in Table 2 are NDEP Reference Values that are used as water quality guideline values. In addition, surface water quality standards are included in NAC 445A.1236 for the following categories: municipal or domestic supply; aquatic life; irrigation; and watering of livestock. Sampling will occur quarterly or semi-annually for one of the downstream Thacker Creek sites, which has continuous flow monitoring. Monitoring of selected springs near the Project area also will occur quarterly or semi­ annually.",
+     "replacement": "Monitoring will consist of measuring flow rates and collecting samples for analysis, as appropriate. Parameters and frequency will be determined at a later date."
+    }
+   ]
+  },
+  {
+   "case_id": "TP-013",
+   "type": "vague",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "pf-air-quality"
+   ],
+   "description": "§4.1 Air Emissions (dust control measures, crusher/conveyor controls, BACT for the acid plant, scrubbers) is reduced to one hedged sentence about permits and controls 'as appropriate'.",
+   "expected_finding": "Air quality protection is not described in §4.1: no emission controls are given for the crusher, the sulfuric acid plant or the process plant, and dust control is deferred to 'reasonable industry practices' (§4.1). (Appendix C still lists road dust suppressants.)",
+   "tells": "A one-sentence section in a plan that otherwise has a sulfuric acid plant and large haul fleet.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 90,
+     "printed_page": "72",
+     "heading": "4.1 Air Emissions",
+     "section": "4.1",
+     "role": "content",
+     "original": "### 4.1 Air Emissions\n\nLNC will obtain and adhere to air quality permits for the Project from NDEP Bureau of Air Pollution Control (BAPC). As per BAPC regulations, the Project air quality operating permit must be authorized by the BAPC prior to Project commissioning.\n\nAir quality practices will include dust control for mine unit operations that will be described in the Fugitive Dust Control Plan that LNC will develop for the Project. In general, the Fugitive Dust Control Plan will provide for water application on haul roads and other disturbed areas, chemical dust suppressant application (such as magnesium chloride) where appropriate, and other dust control measures as per accepted and reasonable industry practices. LNC will seed disturbed areas to minimize fugitive dust emissions from surfaces, where appropriate.\n\nLNC will control fugitive emissions at the crusher and conveyor drop points using water sprays or baghouses, as necessary, and will install and operate appropriate emission control equipment in accordance with the construction and operating air permits. Where required, pollution control devices installed by equipment manufacturers will control combustion emissions. LNC will install, operate, and maintain in good working order pollution control equipment such as baghouse dust collectors to minimize emissions.\n\nLNC will develop and implement other control measures, if necessary, including:\n\n- Applying surface treatments (chemical stabilization), additional watering and traffic control regulations (such as reduction in speed and traffic volume restrictions on unpaved roads);\n\n- Stabilizing the surface of areas adjoining roads which are fugitive dust sources by vegetating or mulching;\n\n- Restricting travel of unauthorized vehicles on unestablished roads;\n\n- Minimizing the area of disturbed land during ongoing surface mining activities as much as possible and practical;\n\n- Compacting unpaved roads to stabilize the road surface and prompt removal of ore, rock, soil, and other debris from road;\n\n- Minimizing loss of material to wind and spill by watering or treating loaded haul trucks;\n\n- Ensuring prompt revegetation of disturbed lands; and,\n\n- Restricting activities causing fugitive dust during periods of air stagnation whenever possible.\n\n<!-- page 91 | printed 73 -->\n\nLNC will voluntarily use the Best Available Control Technology (BACT) standard (NAC 445B.028) for the operation of the sulfuric acid plant and the battery production facility. These measures will provide a degree of reduction in the emission of criteria and hazardous air pollutants, minimizing impacts to the ambient air quality. Criteria air pollutants that will be released as tail gas from the sulfuric acid plant will be scrubbed with a soda ash or similar solution, reducing SO 2 and acid mist emissions. Excess sodium from the scrubbing medium will be purged to the lithium process plant.\n\nOne hundred percent of chlorine created from lithium metal production will be used to create sodium hypochlorite, resulting in zero chlorine emissions during lithium metal production. While the sodium hypochlorite production facility has no chlorine emissions, the storage tank for sodium hypochlorite solution will vent the vapor phase while the tank is being filled. A caustic soda or similar scrubber may be used to reduce any chlorine emissions released during chemical transfer. Emissions from the battery production facility will be reduced with a catalytic oxidizer and a carbon scrubber, effectively reducing total volatile organic compound emissions.\n\n",
+     "replacement": "### 4.1 Air Emissions\n\nLNC will obtain air quality permits for the Project as required. Dust and other emissions from Project activities will be controlled as appropriate, using reasonable industry practices where necessary.\n\n<!-- page 91 | printed 73 -->\n\n"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-014",
+   "type": "vague",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "rec-drill-holes"
+   ],
+   "description": "§6.8 Drill Hole Plugging and Water Well Abandonment (slurry/grout method, 20-ft cement surface plug, NAC 534.425–.428, timing) is reduced to one sentence.",
+   "expected_finding": "Drill-hole and well abandonment in §6.8 gives no plugging method or plug design (no slurry/grout, no surface plug); other sections still cite NAC 534.425–.428.",
+   "tells": "A section heading followed by one generic sentence.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 120,
+     "printed_page": "102",
+     "heading": "6.8 Drill Hole Plugging and Water Well Abandonment",
+     "section": "6.8",
+     "role": "content",
+     "original": "### 6.8 Drill Hole Plugging and Water Well Abandonment\n\nIn accordance with applicable rules and regulations (NAC 534.425 through 534.428), reclamation of mineral drill holes (i.e., exploration and development) and wells (i.e., monitoring and production)\n\n<!-- page 121 | printed 103 -->\n\nsubject to NDWR standards will require proper abandonment methodology. Abandonment of each exploration drill hole will occur upon completion of drilling operations and prior to the removal of the drill rig from the drill site.\n\nAbandonment techniques will include mixing a bentonite and freshwater slurry or cement grout, specifically formulated for well or drill hole abandonment. The mixture will be circulated through the drill pipe and distributed from the bottom of the drill hole in a manner that will assure against the vertical movement of groundwater. The mixture will also be placed in the annular space surrounding any casing left down the hole.\n\nIf circulation from the bottom is not possible, drill hole abandonment will entail mixing the slurry or grout at the surface, circulating the mixture through the drill pipe from the bottom of the drill hole under pressure and placed in stages as the drill pipe is retrieved from the drill hole. A cement surface plug, comprised of Portland cement mixed with clean water and aggregates or bagged cement mixed with clean water, will be placed within the top 20 feet of each drill hole. The top of the surface plug will be placed below the ground surface to eliminate physical hazards, to prevent ponding of water directly over the drill hole, allow for placement of growth media, and allow for passage of earthmoving equipment required for reclamation operations. Remaining surface casing will also be removed below the ground surface and the annulus of any casing left down hole is sealed in a manner that assures against the movement of surface water down the drill hole.\n\nMaintenance of monitoring wells around process facilities will continue until LNC is released of this requirement by NDEP. These wells will then be plugged and abandoned according to the requirements stated in NAC 534.425 through 534.428.\n\n",
+     "replacement": "### 6.8 Drill Hole Plugging and Water Well Abandonment\n\nDrill holes and wells that are no longer needed will be abandoned in accordance with applicable regulations, as appropriate.\n\n<!-- page 121 | printed 103 -->\n\n"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-015",
+   "type": "vague",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "pf-impoundment-design"
+   ],
+   "description": "Liner details for the CTFS (HDPE geomembrane on 6-in. bedding, underdrain/seepage collection) and the reclaim ponds (double HDPE with geonet) are replaced with general statements in the body, Appendix C and Appendix I.",
+   "expected_finding": "The CTFS and its reclaim ponds hold leachable tailings drainage, but no liner type, liner system, seepage collection or leak detection is described for them (§3.17, §5.8, §6.5.9; Appendix C §3.5, §4.5; Appendix I §2.5). Only the plant emergency pond's liner is still described.",
+   "tells": "The text still calls the CTFS a 'lined' facility, but nowhere says with what.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 71,
+     "printed_page": "53",
+     "heading": "3.17 Clay Tailings Filter Stack",
+     "section": "3.17",
+     "role": "content",
+     "original": "The CTFS will be fully lined with an HDPE geomembrane, underlain with a six-inch liner bedding material. The facility will include an underdrain collection system above the geomembrane to collect drainage from the stack. Drainage from the stack will report to the geomembrane lined reclaim ponds.",
+     "replacement": "The base of the CTFS will be prepared to contain drainage from the stack, which will report to the reclaim ponds."
+    },
+    {
+     "file": "body.md",
+     "page": 72,
+     "printed_page": "54",
+     "heading": "3.17 Clay Tailings Filter Stack",
+     "section": "3.17",
+     "role": "content",
+     "original": "The reclaim ponds will be double lined with an HDPE geomembrane separated by a layer of geonet. Water collected in the pond will not be discharged as part of the stormwater management. Water in the reclaim ponds will be pumped to the processing plant to be used as make-up water for processing operations or will evaporate. The reclaim ponds will be designed to sustain",
+     "replacement": "The reclaim ponds will be constructed to contain collected stormwater and drainage. Water collected in the pond will not be discharged as part of the stormwater management. Water in the reclaim ponds will be pumped to the processing plant to be used as make-up water for processing operations or will evaporate. The reclaim ponds will be designed to sustain"
+    },
+    {
+     "file": "body.md",
+     "page": 115,
+     "printed_page": "97",
+     "heading": "6.5.9 Clay Tailings Filter Stack (CTFS)",
+     "section": "6.5.9",
+     "role": "content",
+     "original": "managed in the geomembrane-lined CTFS reclaim ponds",
+     "replacement": "managed in the CTFS reclaim ponds"
+    },
+    {
+     "file": "appendix_C.md",
+     "page": 15,
+     "printed_page": "10",
+     "heading": "3.5 Clay Tailings Filter Stack",
+     "section": "3.5",
+     "role": "content",
+     "original": "The CTFS will be fully lined with a high-density polyethylene (HDPE) geomembrane, underlain with a six-inch liner bedding material. The facility will include a seepage collection system between the geomembrane and the clay tailings which will allow water to drain to the reclaim ponds.",
+     "replacement": "The base of the CTFS will be prepared to contain drainage from the stack, which will be directed to the reclaim ponds."
+    },
+    {
+     "file": "appendix_C.md",
+     "page": 21,
+     "printed_page": "16",
+     "heading": "4.5 Clay Tailings Filter Stack",
+     "section": "4.5",
+     "role": "content",
+     "original": "The reclaim ponds will be double lined with an HDPE geomembrane separated by a layer of geonet. ",
+     "replacement": "The reclaim ponds will be constructed to contain collected stormwater and drainage. "
+    },
+    {
+     "file": "appendix_I.md",
+     "page": 9,
+     "printed_page": "5",
+     "heading": "2.5 Clay Tailings Filter Stack",
+     "section": "2.5",
+     "role": "content",
+     "original": "The CTFS will be fully lined with a high-density polyethylene geomembrane, underlain with a six-inch liner bedding material. The <!-- page 10 | printed 6 --> facility will include a seepage collection system between the geomembrane and the clay tailings which will allow water to drain to the reclaim ponds.",
+     "replacement": "Drainage from the CTFS will be directed to the reclaim ponds. <!-- page 10 | printed 6 -->"
+    },
+    {
+     "file": "body.md",
+     "page": 103,
+     "printed_page": "85",
+     "heading": "Process Water Management",
+     "section": null,
+     "role": "content",
+     "original": "The CTFS facility will include a seepage collection system between the geomembrane and the clay tailings which will allow water to drain to the reclaim ponds",
+     "replacement": "Drainage from the CTFS facility will report to the reclaim ponds"
+    },
+    {
+     "file": "appendix_I.md",
+     "page": 10,
+     "printed_page": "6",
+     "heading": "2.5 Clay Tailings Filter Stack",
+     "section": "2.5",
+     "role": "content",
+     "original": "The leak detection system for the CTFS will be checked periodically and sampled if fluids are present.",
+     "replacement": "Drainage from the CTFS will be checked periodically and sampled if fluids are present."
+    }
+   ]
+  },
+  {
+   "case_id": "TP-016",
+   "type": "vague",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "mon-other-programs"
+   ],
+   "description": "Slope stability monitoring of reclaimed facilities loses its frequency and method in §6.10.3 and Appendix I §4.3: 'annual' inspections, the visual inspection of the WRSF, coarse gangue stockpile and CTFS slopes, the list of failure signs to look for, and the final-stabilization criterion are replaced by 'as appropriate'.",
+   "expected_finding": "Slope stability monitoring is named but has no frequency, method or success criterion (§6.10.3, Appendix I §4.3).",
+   "tells": "The duration (at least three years) remains; only how and how often are gone. Appendix I §2.2 still lists pit-wall monitoring devices, but for the operating pit, not the reclaimed facilities.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 123,
+     "printed_page": "105",
+     "heading": "6.10.3 Slope Stability",
+     "section": "6.10.3",
+     "role": "content",
+     "original": "Annual monitoring and maintenance of these reclaimed features will continue for at least three years following closure or until vegetation has established. Slope stability monitoring will include visual inspections of the WRSF, coarse gangue stockpile, and CTFS reclaimed slopes. Final stabilization consists of achieving slopes with the absence of substantial and progressive rilling or other signs of erosion and the establishment of a plant community with the absence of noxious weeds. Specifically, LNC will inspect the facilities for any crest deformations, signs of slope failure movement (such as slope bulging), evidence of seepage, and formation of surface cracks. LNC will identify and document erosional features (i.e., vegetation loss, rills, gullies, etc.).",
+     "replacement": "Monitoring and maintenance of these reclaimed features will continue for at least three years following closure or until vegetation has established. Slope stability will be monitored as appropriate, and any issues identified will be addressed as necessary."
+    },
+    {
+     "file": "appendix_I.md",
+     "page": 19,
+     "printed_page": "15",
+     "heading": "4.3 Slope Stability",
+     "section": "4.3",
+     "role": "content",
+     "original": "Annual monitoring and maintenance of these reclaimed features will continue following mine closure until vegetation has established. Slope stability monitoring will include visual inspections of the WRSF, coarse gangue stockpile, and CTFS reclaimed slopes. Final stabilization consists of achieving slopes with the absence of substantial and progressive development of rills or other signs of erosion, and establishment of a plant community with the absence of noxious weeds. Specifically, LNC will inspect the facilities for any crest deformations and signs of slope failure movement (such as slope bulging), evidence of seepage, formation of surface cracks, and identification and documentation of erosional features (e.g., vegetation loss, rills, gullies, etc.).",
+     "replacement": "Monitoring and maintenance of these reclaimed features will continue following mine closure until vegetation has established. Slope stability will be monitored as appropriate, and any issues identified will be addressed as necessary."
+    }
+   ]
+  },
+  {
+   "case_id": "TP-017",
+   "type": "vague",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "mon-details"
+   ],
+   "description": "Appendix I: the reporting schedule (annual and quarterly report due dates) and the statement that groundwater monitoring is reported quarterly on NDEP Forms 1090/0090 are removed; reporting is 'as directed'.",
+   "expected_finding": "The monitoring plan does not say how often or in what form results will be reported to the agencies (Appendix I §6 and §3.1.1).",
+   "tells": "§6 Reporting now has no dates or frequency.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "appendix_I.md",
+     "page": 20,
+     "printed_page": "16",
+     "heading": "6 Reporting",
+     "section": "6",
+     "role": "content",
+     "original": "The information referenced above will be summarized and provided to the appropriate agencies as directed. Reporting will be completed in compliance with all applicable permits. The actual data forms and logs will be maintained on file with LNC. Annual and quarterly reports, if required, are typically due to the agencies by the following dates:\n\n- February 28, Annual Report (from prior year);\n\n- April 28, First Quarter Report;\n\n- July 27, Second Quarter Report;\n\n- October 28, Third Quarter Report; and,\n\n- January 28, Fourth Quarter Report (from prior year).\n\n",
+     "replacement": "The information referenced above will be summarized and provided to the appropriate agencies as directed. Reporting will be completed in compliance with all applicable permits. The actual data forms and logs will be maintained on file with LNC.\n\n"
+    },
+    {
+     "file": "appendix_I.md",
+     "page": 12,
+     "printed_page": "8",
+     "heading": "3.1.1 Groundwater",
+     "section": "3.1.1",
+     "role": "content",
+     "original": "Monitoring occurs and is reported on a quarterly basis using NDEP Form 1090 (NDEP Profile I Reporting Form) and/or NDEP Form 0090 (NDEP Profile II Reporting Form).",
+     "replacement": "Monitoring occurs on a quarterly basis, and results will be reported to NDEP as required."
+    }
+   ]
+  },
+  {
+   "case_id": "TP-018",
+   "type": "vague",
+   "difficulty": "subtle",
+   "checklist_ids": [
+    "imp-monitoring"
+   ],
+   "description": "Appendix H §3.2: the only monitoring frequency for a closure period ('any ponds will be monitored on a weekly basis and following precipitation events') becomes 'periodically, as conditions warrant'.",
+   "expected_finding": "The interim and seasonal closure plan gives no frequency for inspecting or monitoring the site during closure; ponds are monitored only 'periodically, as conditions warrant' (Appendix H §2.5, §3.2).",
+   "tells": "One phrase changed; Appendix H §2.5 already says only that monitoring 'would continue'.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "appendix_H.md",
+     "page": 7,
+     "printed_page": "5",
+     "heading": "3.2 Seasonal Closure Actions",
+     "section": "3.2",
+     "role": "content",
+     "original": "any ponds will be monitored on a weekly basis and following precipitation events.",
+     "replacement": "any ponds will be monitored periodically, as conditions warrant."
+    }
+   ]
+  },
+  {
+   "case_id": "TP-019",
+   "type": "vague",
+   "difficulty": "subtle",
+   "checklist_ids": [
+    "pf-wildlife-tes"
+   ],
+   "description": "§4.7: two commitments become optional: the pre-disturbance nest survey ('will have' → 'may have') and the anti-perch devices on power poles in sage-grouse habitat ('will install' → 'may install ..., where practicable').",
+   "expected_finding": "Protective measures for sage-grouse and nesting birds are optional rather than committed: the nest survey and raptor anti-perch devices are 'may' (§4.7).",
+   "tells": "Two words changed in one section. Note: siting, raven controls and other measures remain, so this does not meet the item's formal vague_if; it is kept as a weakened-commitment case.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 93,
+     "printed_page": "75",
+     "heading": "4.7 Wildlife, Avian, and Migratory Birds Protection",
+     "section": "4.7",
+     "role": "content",
+     "original": "LNC will have a qualified biologist survey area proposed for disturbance",
+     "replacement": "LNC may have a qualified biologist survey area proposed for disturbance"
+    },
+    {
+     "file": "body.md",
+     "page": 93,
+     "printed_page": "75",
+     "heading": "4.7 Wildlife, Avian, and Migratory Birds Protection",
+     "section": "4.7",
+     "role": "content",
+     "original": "LNC will install raptor anti-perch devices on the proposed 25-kV power poles",
+     "replacement": "LNC may install raptor anti-perch devices, where practicable, on the proposed 25-kV power poles"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-020",
+   "type": "vague",
+   "difficulty": "subtle",
+   "checklist_ids": [
+    "rec-topsoil"
+   ],
+   "description": "The growth-media replacement thickness (six to 12 inches) is removed from §6.4.1, §6.4.4 and Appendix C; facilities are covered with growth media 'as available'.",
+   "expected_finding": "The plan does not say how much growth media will be replaced on reclaimed facilities (only the pit's six inches remains) (§6.4.1, §6.4.4).",
+   "tells": "Salvage depths and stockpile volumes are still given, so the gap is only the replacement thickness.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 107,
+     "printed_page": "89",
+     "heading": "6.4.1 Growth Media Salvage and Management",
+     "section": "6.4.1",
+     "role": "content",
+     "original": "The footprint of other mining facilities will be covered with approximately six to 12 inches of growth media.",
+     "replacement": "The footprint of other mining facilities will be covered with growth media as available."
+    },
+    {
+     "file": "body.md",
+     "page": 108,
+     "printed_page": "90",
+     "heading": "6.4.4 Revegetation",
+     "section": "6.4.4",
+     "role": "content",
+     "original": "placement and grading of growth media (approximately six to 12 inches) and seeding",
+     "replacement": "placement and grading of growth media and seeding"
+    },
+    {
+     "file": "appendix_C.md",
+     "page": 20,
+     "printed_page": "15",
+     "heading": "4.2 Waste Rock Storage Facility",
+     "section": "4.2",
+     "role": "content",
+     "original": "covered with six to 12 inches of growth media",
+     "replacement": "covered with growth media"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-021",
+   "type": "inconsistent",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "ops-designs"
+   ],
+   "description": "Table 3-3 gives the West WRSF capacity as 37.2 M CY; the paragraph just above still says 32.7 M CY.",
+   "expected_finding": "West WRSF capacity conflicts within §3.5: 32.7 M CY in the text vs 37.2 M CY in Table 3-3 (and 37.2 + 13.2 no longer equals the 45.9 M CY total).",
+   "tells": "Same page; digits transposed.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 51,
+     "printed_page": "33",
+     "heading": "3.5 Waste Rock Storage Facilities",
+     "section": "3.5",
+     "role": "content",
+     "original": "| West WRSF | 32.7 | 5,252 |",
+     "replacement": "| West WRSF | 37.2 | 5,252 |"
+    },
+    {
+     "file": "body.md",
+     "page": 51,
+     "printed_page": "33",
+     "heading": "3.5 Waste Rock Storage Facilities",
+     "section": "3.5",
+     "role": "related",
+     "original": "The West WRSF is designed with a storage capacity of approximately 32.7 M CY",
+     "replacement": null,
+     "note": "text value"
+    },
+    {
+     "file": "body.md",
+     "page": 51,
+     "printed_page": "33",
+     "heading": "3.5 Waste Rock Storage Facilities",
+     "section": "3.5",
+     "role": "related",
+     "original": "Up to 45.9 M CY of waste rock material",
+     "replacement": null,
+     "note": "WRSF total"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-022",
+   "type": "inconsistent",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "ops-schedule"
+   ],
+   "description": "§6.3 puts the Closure phase in Years 44–45, while the same list says production ends in Year 41 and post-closure runs Year 41–46.",
+   "expected_finding": "The reclamation schedule in §6.3 has a gap: closure (Years 44–45) starts three years after production ends (Year 41), although Table 6-1 says reclamation is completed within two years of Project completion.",
+   "tells": "Adjacent bullets in one list.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 105,
+     "printed_page": "87",
+     "heading": "6.3 Reclamation Schedule",
+     "section": "6.3",
+     "role": "content",
+     "original": "- Closure: years of major reclamation and closure activities, Year 41 and Year 42;",
+     "replacement": "- Closure: years of major reclamation and closure activities, Year 44 and Year 45;"
+    },
+    {
+     "file": "body.md",
+     "page": 105,
+     "printed_page": "87",
+     "heading": "6.3 Reclamation Schedule",
+     "section": "6.3",
+     "role": "related",
+     "original": "- Production: years the mine and processing facilities are active, Year 1 through Year 41;",
+     "replacement": null,
+     "note": "production end"
+    },
+    {
+     "file": "body.md",
+     "page": 105,
+     "printed_page": "87",
+     "heading": "6.3 Reclamation Schedule",
+     "section": "6.3",
+     "role": "related",
+     "original": "Year 41 through Year 46; and,",
+     "replacement": null,
+     "note": "post-closure period"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-023",
+   "type": "inconsistent",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "rec-revegetation"
+   ],
+   "description": "§6.4.4 text gives the seeding rate as 21.10 lb PLS/acre; Table 6-2 (same page) and Appendix D total 12.10.",
+   "expected_finding": "Seeding rate conflicts: 21.10 lb PLS/acre in §6.4.4 text vs 12.10 in Table 6-2 and Appendix D.",
+   "tells": "Text and table on the same page; digits swapped.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 109,
+     "printed_page": "91",
+     "heading": "6.4.4 Revegetation",
+     "section": "6.4.4",
+     "role": "content",
+     "original": "Broadcast seeding will be at a rate of approximately 12.10 pounds",
+     "replacement": "Broadcast seeding will be at a rate of approximately 21.10 pounds"
+    },
+    {
+     "file": "body.md",
+     "page": 109,
+     "printed_page": "91",
+     "heading": "6.4.4 Revegetation",
+     "section": "6.4.4",
+     "role": "related",
+     "original": "|  | Total | 12.10 |",
+     "replacement": null,
+     "note": "Table 6-2 total"
+    },
+    {
+     "file": "appendix_D.md",
+     "page": 13,
+     "printed_page": null,
+     "heading": "Phases",
+     "section": null,
+     "role": "related",
+     "original": "Broadcast seeding will be at a rate of approximately 12.10 pounds",
+     "replacement": null,
+     "note": "Appendix D"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-024",
+   "type": "inconsistent",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "rec-post-closure",
+    "mon-water"
+   ],
+   "description": "§6.10.1 says post-closure water monitoring continues for at least three years; the same paragraph still says the cost estimate covers at least five years, as do §6.10 and §6.5.12.",
+   "expected_finding": "Post-closure water monitoring duration conflicts: three years in §6.10.1 vs five years in the same paragraph, §6.10 and §6.5.12.",
+   "tells": "Same paragraph.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 122,
+     "printed_page": "104",
+     "heading": "6.10.1 Water Resources",
+     "section": "6.10.1",
+     "role": "content",
+     "original": "Consequently, groundwater and surface water monitoring will continue for at least five years",
+     "replacement": "Consequently, groundwater and surface water monitoring will continue for at least three years"
+    },
+    {
+     "file": "body.md",
+     "page": 122,
+     "printed_page": "104",
+     "heading": "6.10.1 Water Resources",
+     "section": "6.10.1",
+     "role": "related",
+     "original": "costs for at least five years of water resource monitoring",
+     "replacement": null,
+     "note": "same paragraph"
+    },
+    {
+     "file": "body.md",
+     "page": 122,
+     "printed_page": "104",
+     "heading": "6.10 Post-Reclamation Monitoring and Maintenance",
+     "section": "6.10",
+     "role": "related",
+     "original": "approved water pollution control permit for at least five years",
+     "replacement": null,
+     "note": "§6.10 bullet"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-025",
+   "type": "inconsistent",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "ops-schedule"
+   ],
+   "description": "§3.4 describes a 45-year mine life; the Summary, §3.3, §3.17, §6.3 and §6.5.2 all say 41 years.",
+   "expected_finding": "Mine life conflicts: 45 years in §3.4 vs 41 years elsewhere in the Plan (e.g. §6.5.2, §6.3 Year 1–41).",
+   "tells": "One number in one sentence.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 47,
+     "printed_page": "29",
+     "heading": "3.4 Open Pit Mining",
+     "section": "3.4",
+     "role": "content",
+     "original": "throughout the 41-year mine life. LNC proposes",
+     "replacement": "throughout the 45-year mine life. LNC proposes"
+    },
+    {
+     "file": "body.md",
+     "page": 112,
+     "printed_page": "94",
+     "heading": "6.5.2 Pit Area",
+     "section": "6.5.2",
+     "role": "related",
+     "original": "Ore production is slated to last 41 years",
+     "replacement": null,
+     "note": "§6.5.2"
+    },
+    {
+     "file": "body.md",
+     "page": 105,
+     "printed_page": "87",
+     "heading": "6.3 Reclamation Schedule",
+     "section": "6.3",
+     "role": "related",
+     "original": "Year 1 through Year 41;",
+     "replacement": null,
+     "note": "§6.3"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-026",
+   "type": "inconsistent",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "rec-regrading"
+   ],
+   "description": "§6.5.7 says the coarse gangue stockpile's final slopes will 'remain' at 2.5H:1V; §3.9 designs it at 4H:1V and §6.10.3 says all reclaimed slopes will be 3H:1V or less.",
+   "expected_finding": "Coarse gangue stockpile closure slope conflicts: 2.5H:1V in §6.5.7 vs the 4H:1V design slope in §3.9.",
+   "tells": "'Remain' implies the operational slope, which §3.9 gives as 4H:1V.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 114,
+     "printed_page": "96",
+     "heading": "6.5.7 Coarse Gangue Stockpile",
+     "section": "6.5.7",
+     "role": "content",
+     "original": "will remain at a 4H:1V slope.",
+     "replacement": "will remain at a 2.5H:1V slope."
+    },
+    {
+     "file": "body.md",
+     "page": 62,
+     "printed_page": "44",
+     "heading": "3.9 Coarse Gangue Stockpile",
+     "section": "3.9",
+     "role": "related",
+     "original": "approximately 200 feet tall with 4H:1V slopes (Figure 12)",
+     "replacement": null,
+     "note": "§3.9 design slope"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-027",
+   "type": "inconsistent",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "ops-description"
+   ],
+   "description": "§3.4 gives total waste rock as 210.2 M CY, but its parts (144.3 M CY backfilled + 45.9 M CY to the WRSFs) still sum to 190.2.",
+   "expected_finding": "Waste rock quantities do not add up: 210.2 M CY total in §3.4 vs 144.3 backfill + 45.9 WRSF = 190.2 M CY (§3.4.2, §3.5).",
+   "tells": "Needs arithmetic across two sections.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 48,
+     "printed_page": "30",
+     "heading": "3.4 Open Pit Mining",
+     "section": "3.4",
+     "role": "content",
+     "original": "and 190.2 M CY of waste rock material",
+     "replacement": "and 210.2 M CY of waste rock material"
+    },
+    {
+     "file": "body.md",
+     "page": 49,
+     "printed_page": "31",
+     "heading": "3.4.2 Pit Backfilling",
+     "section": "3.4.2",
+     "role": "related",
+     "original": "Approximately 144.3 M CY of waste rock and 75.2 M CY of coarse gangue",
+     "replacement": null,
+     "note": "backfill"
+    },
+    {
+     "file": "body.md",
+     "page": 51,
+     "printed_page": "33",
+     "heading": "3.5 Waste Rock Storage Facilities",
+     "section": "3.5",
+     "role": "related",
+     "original": "Up to 45.9 M CY of waste rock material",
+     "replacement": null,
+     "note": "WRSF"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-028",
+   "type": "inconsistent",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "rec-concurrent"
+   ],
+   "description": "§6.4.5 says concurrent reclamation starts in Year 12; §3.19 says stockpiled growth media will be returned during concurrent reclamation starting in Year 5.",
+   "expected_finding": "Start of concurrent reclamation conflicts: Year 12 in §6.4.5 vs Year 5 in §3.19 (and backfill by Year 5–10 in §6.5.2).",
+   "tells": "Two sections far apart.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 110,
+     "printed_page": "92",
+     "heading": "6.4.5 Concurrent Reclamation Activities",
+     "section": "6.4.5",
+     "role": "content",
+     "original": "on a concurrent basis starting in Year 5.",
+     "replacement": "on a concurrent basis starting in Year 12."
+    },
+    {
+     "file": "body.md",
+     "page": 74,
+     "printed_page": "56",
+     "heading": "3.19 Growth Media Stockpiles",
+     "section": "3.19",
+     "role": "related",
+     "original": "concurrent reclamation starting in Year 5 through Year 41 of mining.",
+     "replacement": null,
+     "note": "§3.19"
+    },
+    {
+     "file": "body.md",
+     "page": 112,
+     "printed_page": "94",
+     "heading": "6.5.2 Pit Area",
+     "section": "6.5.2",
+     "role": "related",
+     "original": "concurrent backfill activities by Year 5 to Year 10",
+     "replacement": null,
+     "note": "§6.5.2"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-029",
+   "type": "inconsistent",
+   "difficulty": "subtle",
+   "checklist_ids": [
+    "ops-description"
+   ],
+   "description": "Table 3-1: the CTFS row is 1,616.1 acres (was 1,166.1), but the table total is still 5,545.0, so the rows now sum to about 5,995 acres. Appendix C's copy of the table still has 1,166.1.",
+   "expected_finding": "Table 3-1 does not add up: the CTFS row (1,616.1 ac) makes the rows sum to ~5,995 ac against the stated 5,545.0 total; Appendix C Table 1-3 gives the CTFS as 1,166.1 ac.",
+   "tells": "Only visible by summing the table or comparing it with Appendix C.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 46,
+     "printed_page": "28",
+     "heading": "3.3.4 Proposed Disturbance",
+     "section": "3.3.4",
+     "role": "content",
+     "original": "| Clay Tailings Filter Stack | 0 | 0 | 1,166.1 |",
+     "replacement": "| Clay Tailings Filter Stack | 0 | 0 | 1,616.1 |"
+    },
+    {
+     "file": "body.md",
+     "page": 46,
+     "printed_page": "28",
+     "heading": "3.3.4 Proposed Disturbance",
+     "section": "3.3.4",
+     "role": "related",
+     "original": "| Total | 194 | 56.8 | 5,545.0 |",
+     "replacement": null,
+     "note": "table total"
+    },
+    {
+     "file": "appendix_C.md",
+     "page": 10,
+     "printed_page": "5",
+     "heading": "1.5 Site Conditions",
+     "section": "1.5",
+     "role": "related",
+     "original": "| Clay Tailings Filter Stack | 0 | 0 | 1,166.1 |",
+     "replacement": null,
+     "note": "Appendix C copy"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-030",
+   "type": "inconsistent",
+   "difficulty": "subtle",
+   "checklist_ids": [
+    "op-claims"
+   ],
+   "description": "§1.6 says LNC owns 429 unpatented lode claims; Appendix A lists 492.",
+   "expected_finding": "Claim count conflicts: 429 claims in §1.6 vs 492 claims listed in Appendix A.",
+   "tells": "Requires counting the Appendix A claim table.",
+   "rationale": "",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 20,
+     "printed_page": "2",
+     "heading": "1.6 Claim Information and Land Status",
+     "section": "1.6",
+     "role": "content",
+     "original": "LNC owns 492 unpatented lode mining claims",
+     "replacement": "LNC owns 429 unpatented lode mining claims"
+    },
+    {
+     "file": "appendix_A.md",
+     "page": null,
+     "printed_page": null,
+     "heading": null,
+     "section": null,
+     "role": "related",
+     "original": "# Appendix A – Mining Claim Information",
+     "replacement": null,
+     "note": "claim list"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-031",
+   "type": "implausible",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "pf-exclusion"
+   ],
+   "description": "Fences around the reclaim ponds and other ponds are 18–24 inches (two feet) tall instead of six to eight feet, everywhere they are described (§3.17, §3.24.6, §4.6).",
+   "expected_finding": "A two-foot pond fence cannot exclude deer, pronghorn, livestock or the public, so the ponds are effectively not protected (§3.17, §3.24.6, §4.6).",
+   "tells": "'Larger security fences (two-foot ...)' reads oddly next to a livestock perimeter fence.",
+   "rationale": "The published plan specifies 6–8 ft chain link. A fence 18–24 inches tall is stepped over by deer, pronghorn, cattle and people, so it excludes nothing.",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 72,
+     "printed_page": "54",
+     "heading": "3.17 Clay Tailings Filter Stack",
+     "section": "3.17",
+     "role": "content",
+     "original": "LNC will fence (chain-link, 6-8 feet in height) the area surrounding the reclaim ponds",
+     "replacement": "LNC will fence (chain-link, 18 to 24 inches in height) the area surrounding the reclaim ponds"
+    },
+    {
+     "file": "body.md",
+     "page": 83,
+     "printed_page": "65",
+     "heading": "3.24.6 Fencing and Site Security",
+     "section": "3.24.6",
+     "role": "content",
+     "original": "LNC will fence (chain-link, six to eight feet in height) the area surrounding the reclaim ponds",
+     "replacement": "LNC will fence (chain-link, 18 to 24 inches in height) the area surrounding the reclaim ponds"
+    },
+    {
+     "file": "body.md",
+     "page": 92,
+     "printed_page": "74",
+     "heading": "4.6 Large Wildlife and Livestock Protection",
+     "section": "4.6",
+     "role": "content",
+     "original": "Larger security fences (six to eight foot chain link or similar)",
+     "replacement": "Larger security fences (two-foot chain link or similar)"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-032",
+   "type": "implausible",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "rec-revegetation"
+   ],
+   "description": "The seeding rate is 0.12 lb PLS/acre (one hundredth of the original 12.10), in the §6.4.4 text, Table 6-2 and Appendix D Table 4-1; every species rate is scaled to match.",
+   "expected_finding": "A seeding rate of 0.12 lb PLS/acre is far too low to establish vegetation; the seed mix cannot meet the revegetation goals (§6.4.4, Table 6-2, Appendix D).",
+   "tells": "Species rates of 0.001–0.06 lb/acre.",
+   "rationale": "Broadcast seeding of Great Basin reclamation mixes is typically 8–20 lb PLS/acre (drill seeding about half that); 0.12 lb/acre is roughly one seed per square foot or less.",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 109,
+     "printed_page": "91",
+     "heading": "6.4.4 Revegetation",
+     "section": "6.4.4",
+     "role": "content",
+     "original": "Broadcast seeding will be at a rate of approximately 12.10 pounds",
+     "replacement": "Broadcast seeding will be at a rate of approximately 0.12 pounds"
+    },
+    {
+     "file": "body.md",
+     "page": 109,
+     "printed_page": "91",
+     "heading": "6.4.4 Revegetation",
+     "section": "6.4.4",
+     "role": "content",
+     "original": "| Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 1.00 |\n| Fourwing Saltbush | Atriplex canescens | 0.50 |\n| Squirreltail | Elymus elymoides | 2.75 |\n| Sandberg's Bluegrass | Poa secunda | 1.00 |\n| Crested Wheatgrass | Agropyron cristatum | 6.00 |\n| Blue Flax | Linum lewisii | 0.50 |\n| Scarlet globemallow | Sphaeralcea coccinea | 0.25 |\n| Western Yarrow | Achillia millifolium | 0.10 |\n|  | Total | 12.10 |",
+     "replacement": "| Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 0.010 |\n| Fourwing Saltbush | Atriplex canescens | 0.005 |\n| Squirreltail | Elymus elymoides | 0.028 |\n| Sandberg's Bluegrass | Poa secunda | 0.010 |\n| Crested Wheatgrass | Agropyron cristatum | 0.060 |\n| Blue Flax | Linum lewisii | 0.005 |\n| Scarlet globemallow | Sphaeralcea coccinea | 0.003 |\n| Western Yarrow | Achillia millifolium | 0.001 |\n|  | Total | 0.12 |"
+    },
+    {
+     "file": "appendix_D.md",
+     "page": 13,
+     "printed_page": null,
+     "heading": "Phases",
+     "section": null,
+     "role": "content",
+     "original": "Broadcast seeding will be at a rate of approximately 12.10 pounds",
+     "replacement": "Broadcast seeding will be at a rate of approximately 0.12 pounds"
+    },
+    {
+     "file": "appendix_D.md",
+     "page": 13,
+     "printed_page": null,
+     "heading": "Phases",
+     "section": null,
+     "role": "content",
+     "original": "| Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 1.00 |\n| Fourwing Saltbush | Atriplex canescens | 0.50 |\n| Squirreltail | Elymus elymoides | 2.75 |\n| Sandberg's Bluegrass | Poa secunda | 1.00 |\n| Crested Wheatgrass | Agropyron cristatum | 6.00 |\n| Blue Flax | Linum lewisii | 0.50 |\n| Scarlet globemallow | Sphaeralcea coccinea | 0.25 |\n| Western Yarrow | Achillia millifolium | 0.10 |\n|  | Total | 12.10 |",
+     "replacement": "| Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 0.010 |\n| Fourwing Saltbush | Atriplex canescens | 0.005 |\n| Squirreltail | Elymus elymoides | 0.028 |\n| Sandberg's Bluegrass | Poa secunda | 0.010 |\n| Crested Wheatgrass | Agropyron cristatum | 0.060 |\n| Blue Flax | Linum lewisii | 0.005 |\n| Scarlet globemallow | Sphaeralcea coccinea | 0.003 |\n| Western Yarrow | Achillia millifolium | 0.001 |\n|  | Total | 0.12 |"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-033",
+   "type": "implausible",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "pf-storm-capacity"
+   ],
+   "description": "The CTFS reclaim ponds are designed for the 1-year, 1-hour storm instead of the 100-year, 24-hour storm (§3.17; Appendix C).",
+   "expected_finding": "The design basis for the CTFS reclaim ponds (1-year, 1-hour storm) is far below the 100-year, 24-hour storm that impoundments holding process water must contain (§3.17, Appendix C).",
+   "tells": "The CTFS drainage channels, plant-area channels and secondary containment are still designed for the 100-year, 24-hour storm; the stated ~80 million gallons of storage is unchanged and matches a much larger storm.",
+   "rationale": "43 CFR 3809.420(b)(12)(iii) requires impoundments to contain the local 100-year, 24-hour storm, and the plan uses that storm for its other process-water facilities. A 1-year, 1-hour event is a routine storm.",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 72,
+     "printed_page": "54",
+     "heading": "3.17 Clay Tailings Filter Stack",
+     "section": "3.17",
+     "role": "content",
+     "original": "The reclaim ponds will be designed to sustain the 100-year, 24-hour storm event.",
+     "replacement": "The reclaim ponds will be designed to sustain the 1-year, 1-hour storm event."
+    },
+    {
+     "file": "appendix_C.md",
+     "page": 21,
+     "printed_page": "16",
+     "heading": "4.5 Clay Tailings Filter Stack",
+     "section": "4.5",
+     "role": "content",
+     "original": "The reclaim ponds will be designed to hold runoff from the 100-year, 24­ hour design storm. ",
+     "replacement": "The reclaim ponds will be designed to hold runoff from the 1-year, 1-hour design storm. "
+    },
+    {
+     "file": "appendix_C.md",
+     "page": 19,
+     "printed_page": "14",
+     "heading": "Structural Control BMPs",
+     "section": null,
+     "role": "content",
+     "original": "The CTFS reclaim pond and drainage channels will be designed to manage runoff from the 100-year 24­ hour design storm.",
+     "replacement": "The CTFS drainage channels will be designed to manage runoff from the 100-year 24­ hour design storm, and the CTFS reclaim pond to manage runoff from the 1-year, 1-hour design storm."
+    }
+   ]
+  },
+  {
+   "case_id": "TP-034",
+   "type": "implausible",
+   "difficulty": "easy",
+   "checklist_ids": [
+    "ops-designs",
+    "pf-impoundment-design"
+   ],
+   "description": "The CTFS design factor of safety is 'exceeding 0.8, above the applicable minimum static factor of safety of 0.7' (was 1.4 and 1.3) (§3.17).",
+   "expected_finding": "A factor of safety below 1.0 means the design predicts slope failure; the 0.7 'minimum' is not a real standard (§3.17).",
+   "tells": "Any engineer knows FoS < 1 is failure.",
+   "rationale": "Static factor of safety must exceed 1.0 for stability; tailings and waste facilities are normally designed to a static minimum of 1.3–1.5.",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 71,
+     "printed_page": "53",
+     "heading": "3.17 Clay Tailings Filter Stack",
+     "section": "3.17",
+     "role": "content",
+     "original": "designed safety factor exceeding 1.4, above the applicable minimum static factor of safety of 1.3",
+     "replacement": "designed safety factor exceeding 0.8, above the applicable minimum static factor of safety of 0.7"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-035",
+   "type": "implausible",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "rec-erosion-runoff"
+   ],
+   "description": "Permanent closure diversions are sized for the 2-year, 24-hour storm instead of the 500-year, everywhere (§3.20, §6.4.3, §6.5.12; Appendix C).",
+   "expected_finding": "Permanent post-closure diversions sized for only a 2-year storm will fail in the first large event, and are smaller than the 25-year design used during operations (§6.4.3, §6.5.12).",
+   "tells": "The closure design storm is now smaller than the operational one.",
+   "rationale": "Diversions left in place after closure must carry long-term extreme events; Nevada practice is the 100- to 500-year, 24-hour storm (the plan cites NAC 445A for its own closure design). A 2-year storm is smaller than the 25-year storm used for temporary channels.",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 75,
+     "printed_page": "57",
+     "heading": "3.20 Stormwater Management",
+     "section": "3.20",
+     "role": "content",
+     "original": "will be sized to handle the 500-year, 24-hour design storm event at closure",
+     "replacement": "will be sized to handle the 2-year, 24-hour design storm event at closure"
+    },
+    {
+     "file": "body.md",
+     "page": 108,
+     "printed_page": "90",
+     "heading": "6.4.3 Stormwater Control",
+     "section": "6.4.3",
+     "role": "content",
+     "original": "will be designed to handle the 500-year, 24-hour design storm event at closure",
+     "replacement": "will be designed to handle the 2-year, 24-hour design storm event at closure"
+    },
+    {
+     "file": "body.md",
+     "page": 117,
+     "printed_page": "99",
+     "heading": "6.5.12 Stormwater Infrastructure",
+     "section": "6.5.12",
+     "role": "content",
+     "original": "designed and constructed to manage the 500-year, 24-hour design storm event at closure",
+     "replacement": "designed and constructed to manage the 2-year, 24-hour design storm event at closure"
+    },
+    {
+     "file": "appendix_C.md",
+     "page": 19,
+     "printed_page": "14",
+     "heading": "Structural Control BMPs",
+     "section": null,
+     "role": "content",
+     "original": "will be sized to convey the 500-year, 24-hour design storm.",
+     "replacement": "will be sized to convey the 2-year, 24-hour design storm."
+    }
+   ]
+  },
+  {
+   "case_id": "TP-036",
+   "type": "implausible",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "rec-topsoil",
+    "rec-revegetation"
+   ],
+   "description": "Growth media cover on reclaimed facilities is one-half to one inch (was six to 12 inches); on the pit, one-half inch (was six) (§6.4.1, §6.4.4, §6.5.2; Appendix C §4.2).",
+   "expected_finding": "A growth media cover of 0.5–1 inch is too thin to support revegetation or resist erosion, even though the plan says salvageable soil is 12–18 inches deep (§6.4.1, §6.4.4, §6.5.2).",
+   "tells": "§6.4.1 still says salvageable growth media is mostly 12 to 18 inches deep and that volumes are sufficient.",
+   "rationale": "Reclamation covers in the Great Basin are typically 6–18 inches of growth media; less than about 4 inches does not provide a root zone or water-holding capacity and erodes quickly.",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 107,
+     "printed_page": "89",
+     "heading": "6.4.1 Growth Media Salvage and Management",
+     "section": "6.4.1",
+     "role": "content",
+     "original": "covered with approximately six to 12 inches of growth media",
+     "replacement": "covered with approximately one-half to one inch of growth media"
+    },
+    {
+     "file": "body.md",
+     "page": 108,
+     "printed_page": "90",
+     "heading": "6.4.4 Revegetation",
+     "section": "6.4.4",
+     "role": "content",
+     "original": "growth media (approximately six to 12 inches) and seeding",
+     "replacement": "growth media (approximately one-half to one inch) and seeding"
+    },
+    {
+     "file": "body.md",
+     "page": 112,
+     "printed_page": "94",
+     "heading": "6.5.2 Pit Area",
+     "section": "6.5.2",
+     "role": "content",
+     "original": "to approximately six inches thickness",
+     "replacement": "to a thickness of approximately one-half inch"
+    },
+    {
+     "file": "appendix_C.md",
+     "page": 20,
+     "printed_page": "15",
+     "heading": "4.2 Waste Rock Storage Facility",
+     "section": "4.2",
+     "role": "content",
+     "original": "covered with six to 12 inches of growth media",
+     "replacement": "covered with one-half to one inch of growth media"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-037",
+   "type": "implausible",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "rec-drill-holes"
+   ],
+   "description": "The cement surface plug for abandoned drill holes is 'within the top six inches' instead of the top 20 feet (§6.8).",
+   "expected_finding": "A six-inch surface plug cannot seal a drill hole against surface water entering the aquifer or provide a stable cap (§6.8).",
+   "tells": "The same paragraph says the plug top sits below the ground surface to allow growth media placement.",
+   "rationale": "The published plan specifies a cement surface plug in the top 20 feet. A six-inch cap cannot seal the hole against surface water and is easily disturbed; surface seals are measured in feet, not inches.",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 121,
+     "printed_page": "103",
+     "heading": "6.8 Drill Hole Plugging and Water Well Abandonment",
+     "section": "6.8",
+     "role": "content",
+     "original": "will be placed within the top 20 feet of each drill hole",
+     "replacement": "will be placed within the top six inches of each drill hole"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-038",
+   "type": "implausible",
+   "difficulty": "medium",
+   "checklist_ids": [
+    "pf-wildlife-tes"
+   ],
+   "description": "The avian breeding season used to time clearing is November 1 to January 15 (was May 1 to July 15) (§4.7).",
+   "expected_finding": "The nesting-season restriction covers winter, when birds in northern Nevada are not nesting, so clearing in the real breeding season (spring–summer) is unrestricted (§4.7).",
+   "tells": "'In accordance with BLM policies' next to a winter breeding season.",
+   "rationale": "Migratory birds and sage-grouse in northern Nevada nest in spring and early summer; BLM Nevada uses roughly March/April through July for nesting-season restrictions.",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 93,
+     "printed_page": "75",
+     "heading": "4.7 Wildlife, Avian, and Migratory Birds Protection",
+     "section": "4.7",
+     "role": "content",
+     "original": "(May 1 to July 15, annually in accordance with BLM policies)",
+     "replacement": "(November 1 to January 15, annually in accordance with BLM policies)"
+    }
+   ]
+  },
+  {
+   "case_id": "TP-039",
+   "type": "implausible",
+   "difficulty": "subtle",
+   "checklist_ids": [
+    "pf-storm-capacity",
+    "pf-impoundment-design"
+   ],
+   "description": "The CTFS reclaim ponds' required storage is 80,000 gallons instead of 80 million (§3.17; Appendix C §4.5).",
+   "expected_finding": "80,000 gallons cannot hold the 100-year, 24-hour storm runoff from the ~1,166-acre CTFS (tens of millions of gallons); the ponds are grossly undersized (§3.17, Appendix C).",
+   "tells": "The plant's emergency pond (one million gallons) is now larger than the CTFS reclaim ponds.",
+   "rationale": "The 100-year, 24-hour storm in northern Nevada is roughly 2–2.5 inches; on ~1,166 acres that is about 65–80 million gallons of runoff, about 1,000 times the stated capacity.",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 72,
+     "printed_page": "54",
+     "heading": "3.17 Clay Tailings Filter Stack",
+     "section": "3.17",
+     "role": "content",
+     "original": "Approximately 80 million gallons of storage capacity will be required for the CTFS reclaim ponds.",
+     "replacement": "Approximately 80,000 gallons of storage capacity will be required for the CTFS reclaim ponds."
+    },
+    {
+     "file": "appendix_C.md",
+     "page": 21,
+     "printed_page": "16",
+     "heading": "4.5 Clay Tailings Filter Stack",
+     "section": "4.5",
+     "role": "content",
+     "original": "Approximately 80 million gallons of storage capacity will be required for the CTFS reclaim ponds.",
+     "replacement": "Approximately 80,000 gallons of storage capacity will be required for the CTFS reclaim ponds."
+    }
+   ]
+  },
+  {
+   "case_id": "TP-040",
+   "type": "implausible",
+   "difficulty": "subtle",
+   "checklist_ids": [
+    "ops-designs"
+   ],
+   "description": "Overall bedrock pit-wall slopes are 72° (<295 ft deep) and 64° (295–394 ft) instead of 47° and 39° (§3.4).",
+   "expected_finding": "Overall pit slopes of 64–72° are not credible in the weak, clay-rich lacustrine and volcaniclastic rock of a claystone deposit; the pit design is unstable (§3.4).",
+   "tells": "Only the two angles changed; the 25° soil slope is unchanged.",
+   "rationale": "The published plan designs 47° and 39° for this rock. Overall slopes of 64–72° need strong, massive rock; this deposit is soft claystone and volcanic ash mined largely without blasting (only occasional basalt needs it, §3.4), and the deeper wall is still shown flatter than the shallow one.",
+   "locations": [
+    {
+     "file": "body.md",
+     "page": 48,
+     "printed_page": "30",
+     "heading": "3.4 Open Pit Mining",
+     "section": "3.4",
+     "role": "content",
+     "original": "overall slopes of approximately 47 degrees for portions less than 295 feet deep and approximately 39 degrees",
+     "replacement": "overall slopes of approximately 72 degrees for portions less than 295 feet deep and approximately 64 degrees"
+    }
+   ]
+  }
+ ]
+}

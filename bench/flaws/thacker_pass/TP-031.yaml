@@ -1,0 +1,26 @@
+id: TP-031
+type: implausible
+difficulty: easy
+checklist_ids:
+- pf-exclusion
+description: Fences around the reclaim ponds and other ponds are 18–24 inches (two feet) tall instead of six to
+  eight feet, everywhere they are described (§3.17, §3.24.6, §4.6).
+expected_finding: A two-foot pond fence cannot exclude deer, pronghorn, livestock or the public, so the ponds are
+  effectively not protected (§3.17, §3.24.6, §4.6).
+tells: '''Larger security fences (two-foot ...)'' reads oddly next to a livestock perimeter fence.'
+rationale: The published plan specifies 6–8 ft chain link. A fence 18–24 inches tall is stepped over by deer, pronghorn,
+  cattle and people, so it excludes nothing.
+edits:
+- file: body.md
+  find: LNC will fence (chain-link, 6-8 feet in height) the area surrounding the reclaim ponds
+  replace: LNC will fence (chain-link, 18 to 24 inches in height) the area surrounding the reclaim ponds
+- file: body.md
+  find: LNC will fence (chain-link, six to eight feet in height) the area surrounding the reclaim ponds
+  replace: LNC will fence (chain-link, 18 to 24 inches in height) the area surrounding the reclaim ponds
+- file: body.md
+  find: Larger security fences (six to eight foot chain link or similar)
+  replace: Larger security fences (two-foot chain link or similar)
+absent:
+- 6-8 feet
+- six to eight feet
+- six to eight foot

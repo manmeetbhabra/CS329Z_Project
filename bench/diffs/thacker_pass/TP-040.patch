@@ -1,0 +1,7 @@
+--- gold/body.md
++++ TP-040/body.md
+@@ -870,3 +870,3 @@
+ 
+-A delineation between soil and bedrock occurs approximately 98 feet deep. The inter-ramp angle for the soil portion is approximately 25 degrees for most areas of the pit. The bedrock pit wall will have overall slopes of approximately 47 degrees for portions less than 295 feet deep and approximately 39 degrees for the deeper portion of the highwall (295 feet to 394 feet deep) depending on material and current safety factors.
++A delineation between soil and bedrock occurs approximately 98 feet deep. The inter-ramp angle for the soil portion is approximately 25 degrees for most areas of the pit. The bedrock pit wall will have overall slopes of approximately 72 degrees for portions less than 295 feet deep and approximately 64 degrees for the deeper portion of the highwall (295 feet to 394 feet deep) depending on material and current safety factors.
+ 

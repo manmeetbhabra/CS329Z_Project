@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "bench/schema/report.schema.json",
+  "title": "Deficiency report for one plan (one test case)",
+  "description": "What any system under test (agent, chatbot baseline, ablation) must write for each case, as <runs_dir>/<case_id>.json. The scorer reads only these fields.",
+  "type": "object",
+  "required": ["case_id", "flags"],
+  "properties": {
+    "case_id": {"type": "string", "description": "Case folder name, e.g. TP-014."},
+    "system": {"type": "string", "description": "Name of the system that produced the report, e.g. full-agent, chatbot-baseline."},
+    "flags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["checklist_id", "type", "explanation"],
+        "properties": {
+          "checklist_id": {"type": "string", "description": "Checklist item id from knowledge/checklist.yaml, or \"other\" if none fits."},
+          "type": {"enum": ["missing", "vague", "inconsistent", "implausible", "missed_trigger"]},
+          "file": {"type": ["string", "null"], "description": "Document the flag points to, e.g. body.md. Give a section or pages too: a flag needs a place to get credit. For missing content, give the section where it belongs. Null only if a whole document is missing."},
+          "section": {"type": ["string", "null"], "description": "Section number, e.g. \"3.5\" or \"6.5.9\"."},
+          "pages": {"type": "array", "items": {"type": "integer"}, "description": "PDF page numbers from the page markers."},
+          "quote": {"type": ["string", "null"], "description": "Exact text from the plan supporting the flag, if any."},
+          "explanation": {"type": "string", "description": "What is wrong and why it matters."},
+          "severity": {"enum": ["high", "medium", "low"]},
+          "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

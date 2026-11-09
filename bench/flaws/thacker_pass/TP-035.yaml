@@ -1,0 +1,28 @@
+id: TP-035
+type: implausible
+difficulty: medium
+checklist_ids:
+- rec-erosion-runoff
+description: Permanent closure diversions are sized for the 2-year, 24-hour storm instead of the 500-year, everywhere
+  (§3.20, §6.4.3, §6.5.12; Appendix C).
+expected_finding: Permanent post-closure diversions sized for only a 2-year storm will fail in the first large event,
+  and are smaller than the 25-year design used during operations (§6.4.3, §6.5.12).
+tells: The closure design storm is now smaller than the operational one.
+rationale: Diversions left in place after closure must carry long-term extreme events; Nevada practice is the 100-
+  to 500-year, 24-hour storm (the plan cites NAC 445A for its own closure design). A 2-year storm is smaller than
+  the 25-year storm used for temporary channels.
+edits:
+- file: body.md
+  find: will be sized to handle the 500-year, 24-hour design storm event at closure
+  replace: will be sized to handle the 2-year, 24-hour design storm event at closure
+- file: body.md
+  find: will be designed to handle the 500-year, 24-hour design storm event at closure
+  replace: will be designed to handle the 2-year, 24-hour design storm event at closure
+- file: body.md
+  find: designed and constructed to manage the 500-year, 24-hour design storm event at closure
+  replace: designed and constructed to manage the 2-year, 24-hour design storm event at closure
+- file: appendix_C.md
+  find: will be sized to convey the 500-year, 24-hour design storm.
+  replace: will be sized to convey the 2-year, 24-hour design storm.
+absent:
+- 500-year

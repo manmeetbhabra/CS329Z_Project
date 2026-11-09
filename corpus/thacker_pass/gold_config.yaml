@@ -1,0 +1,62 @@
+# Gold set for the Thacker Pass Plan of Operations (Oct 2019 revision).
+# Built by:  uv run python -m prep.build_gold corpus/thacker_pass
+plan: thacker_pass
+files:
+  - out: body.md
+    title: Thacker Pass Project – Plan of Operations and Reclamation Plan (main body)
+    raw: [body.md]
+    source: "Data/Thacker Pass/dceaf7db-b705-4ad8-8e53-285cf5aa1d6e.pdf, PDF pages 5-131"
+    note: "PDF pages 1-4 and 132 are Final EIS cover and blank pages and are omitted. Page markers give the PDF page and the printed page."
+  - out: appendix_A.md
+    title: Appendix A – Mining Claim Information
+    raw: [Appendix_A_Mining_Claims_within_PoO_Boundary.md]
+    source: "Data/Thacker Pass/Appendices/Appendix_A_Mining_Claims_within_PoO_Boundary.pdf (page markers refer to this PDF)"
+    prepend: >-
+      [Map: Appendix A – Mining Claims Map. Scanned one-page map
+      (Data/Thacker Pass/Appendices/Appendix_A_Mining_Claims_Map.pdf) showing the unpatented lode
+      mining claims by claim number. Scanned drawing; full map on file. Its text is not reproduced here.]
+  - out: appendix_B_summary.md
+    handwritten: appendix_B_summary.md
+  - out: appendix_C.md
+    title: Appendix C – Stormwater Pollution Prevention Plan
+    raw: [Appendix_C_Stormwater_Pollution_Prevention_Plan.md]
+    source: "Data/Thacker Pass/Appendices/Appendix_C_Stormwater_Pollution_Prevention_Plan.pdf"
+    replace_pages:
+      32: "[Figure: Figure 1 – General Location. Location map of the Project area in Humboldt County, Nevada. Scanned drawing; full figure on file. Its text is not reproduced here.]"
+      33: "[Figure: Figure 2 – Proposed Thacker Pass Project Layout. Site plan of proposed facilities with closure contours, stormwater diversion channels, sediment ponds and culverts. Scanned drawing; full figure on file. Its text is not reproduced here.]"
+      34: "[Figure: Figure 3 – Surface Water Bodies. Map of existing drainages, ephemeral and perennial streams, springs and the hydrographic basin boundary relative to the proposed facilities and POO boundary. Scanned drawing; full figure on file. Its text is not reproduced here.]"
+  - out: appendix_D.md
+    title: Appendix D – Noxious and Invasive Weed Management Plan
+    raw: [Appendix_D_Noxious_and_Invasive_Weed_Management_Plan.md]
+    source: "Data/Thacker Pass/Appendices/Appendix_D_Noxious_and_Invasive_Weed_Management_Plan.pdf"
+    replace_pages:
+      28: "[Figure: Figure 1 – 2017 Weed Inventory. Map of invasive weed locations (crossflower, hairy whitetop) recorded in the May 2017 survey, with existing disturbance and the POO boundary. Scanned drawing; full figure on file. Its text is not reproduced here.]"
+  - out: appendix_E.md
+    title: Appendix E – Spill Contingency Plan
+    raw: [Appendix_E_Spill_Contingency_Plan.md]
+    source: "Data/Thacker Pass/Appendices/Appendix_E_Spill_Contingency_Plan.pdf"
+  - out: appendix_F.md
+    title: Appendix F – Emergency Response Plan
+    raw: [Appendix_F_Emergency_Response_Plan.md]
+    source: "Data/Thacker Pass/Appendices/Appendix_F_Emergency_Response_Plan.pdf"
+  - out: appendix_G.md
+    title: Appendix G – Quality Assurance Plan
+    raw: [Appendix_G_Quality_Assurance_Plan.md]
+    source: "Data/Thacker Pass/Appendices/Appendix_G_Quality_Assurance_Plan.pdf"
+  - out: appendix_H.md
+    title: Appendix H – Interim and Seasonal Closure Plan
+    raw: [Appendix_H_Interim_and_Seasonal_Closure_Plan.md]
+    source: "Data/Thacker Pass/Appendices/Appendix_H_Interim_and_Seasonal_Closure_Plan.pdf"
+  - out: appendix_I.md
+    title: Appendix I – Monitoring Plan
+    raw: [Appendix_I_Monitoring_Plan.md]
+    source: "Data/Thacker Pass/Appendices/Appendix_I_Monitoring_Plan.pdf"
+    replace_pages:
+      23: "[Figure: Figure 1 – Location Map. Location map of the Project area in Humboldt County, Nevada. Scanned drawing; full figure on file. Its text is not reproduced here.]"
+      24: "[Figure: Figure 2 – Groundwater and Surface Water Monitoring Sites. Map of existing and proposed monitoring wells, piezometers, production wells, seeps/springs and surface water monitoring locations relative to the proposed facilities. Scanned drawing; full figure on file. Its text is not reproduced here.]"
+  - out: appendix_J.md
+    title: Appendix J – Reclamation Cost Estimate
+    raw: [Appendix_J_Reclamation_Cost_Estimate.md]
+    source: "Data/Thacker Pass/Appendices/Appendix_J_Reclamation_Cost_Estimate.pdf"
+  - out: figures.md
+    handwritten: figures.md

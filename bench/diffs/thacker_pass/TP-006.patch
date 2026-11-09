@@ -1,0 +1,12 @@
+--- gold/appendix_I.md
++++ TP-006/appendix_I.md
+@@ -224,3 +224,3 @@
+ 
+-The NDEP/BMRR (2017b) guidance “Permit Limitations for Leak Detection Systems” will be followed for allowable flow rates in gallons per day. In the event that permit limitations are exceeded, a site-specific evaluation will be conducted by LNC to assess the need for additional process component or site monitoring. Depending on site-specific conditions, LNC may be required to institute mitigation procedures to bring the process component into compliance.
++The NDEP/BMRR (2017b) guidance “Permit Limitations for Leak Detection Systems” will be followed for allowable flow rates in gallons per day.
+ 
+@@ -544,3 +544,3 @@
+ 
+-Reports usually must be submitted even if mining or construction has not commenced, and must describe status of the operation. Agencies may require more frequent monitoring subsequent to non­ compliance. LNC shall report any adverse monitoring results or non-compliance orally to the appropriate agencies on the next regular work day. Follow-up monitoring will occur to confirm the results, followed by mitigation measures, if needed.
++Reports usually must be submitted even if mining or construction has not commenced, and must describe status of the operation. Agencies may require more frequent monitoring subsequent to non­ compliance.
+ 

@@ -1,0 +1,23 @@
+id: TP-020
+type: vague
+difficulty: subtle
+checklist_ids:
+- rec-topsoil
+description: The growth-media replacement thickness (six to 12 inches) is removed from §6.4.1, §6.4.4 and Appendix
+  C; facilities are covered with growth media 'as available'.
+expected_finding: The plan does not say how much growth media will be replaced on reclaimed facilities (only the
+  pit's six inches remains) (§6.4.1, §6.4.4).
+tells: Salvage depths and stockpile volumes are still given, so the gap is only the replacement thickness.
+edits:
+- file: body.md
+  find: The footprint of other mining facilities will be covered with approximately six to 12 inches of growth media.
+  replace: The footprint of other mining facilities will be covered with growth media as available.
+- file: body.md
+  find: placement and grading of growth media (approximately six to 12 inches) and seeding
+  replace: placement and grading of growth media and seeding
+- file: appendix_C.md
+  find: covered with six to 12 inches of growth media
+  replace: covered with growth media
+absent:
+- six to 12 inches of growth media
+- growth media (approximately six to 12 inches)

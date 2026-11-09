@@ -1,0 +1,56 @@
+--- gold/appendix_D.md
++++ TP-032/appendix_D.md
+@@ -212,3 +212,3 @@
+ 
+-The proposed reclamation seed mix for the Project (Table 4-1) was developed for the Project location through coordination with the University of Nevada, Reno. The seed mix is especially adapted for the Project site’s clay soils. The mix is based on known soil and climatic conditions and was selected to establish a plant community that will support the post-mining land use. The mix is designed to provide species that can exist in the environment of northwestern Nevada, are proven to be robust species for revegetation, or are native species found in the plant communities prior to disturbance. Broadcast seeding will be at a rate of approximately 12.10 pounds of pure live seed per acre. If approved by the BLM, LNC will use this proposed seed mix in conjunction with coated seed technology being developed by Brigham Young University and the Great Basin Sagebrush Restoration Fund at University of Nevada Reno. The coated seed technology improves seed germination and plant establishment efficacy. LNC will coordinate any changes or adjustments to the reclamation seed list or application rate in consultation with, and approval by, BLM and NDEP.
++The proposed reclamation seed mix for the Project (Table 4-1) was developed for the Project location through coordination with the University of Nevada, Reno. The seed mix is especially adapted for the Project site’s clay soils. The mix is based on known soil and climatic conditions and was selected to establish a plant community that will support the post-mining land use. The mix is designed to provide species that can exist in the environment of northwestern Nevada, are proven to be robust species for revegetation, or are native species found in the plant communities prior to disturbance. Broadcast seeding will be at a rate of approximately 0.12 pounds of pure live seed per acre. If approved by the BLM, LNC will use this proposed seed mix in conjunction with coated seed technology being developed by Brigham Young University and the Great Basin Sagebrush Restoration Fund at University of Nevada Reno. The coated seed technology improves seed germination and plant establishment efficacy. LNC will coordinate any changes or adjustments to the reclamation seed list or application rate in consultation with, and approval by, BLM and NDEP.
+ 
+@@ -218,11 +218,11 @@
+ |---|---|---|
+-| Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 1.00 |
+-| Fourwing Saltbush | Atriplex canescens | 0.50 |
+-| Squirreltail | Elymus elymoides | 2.75 |
+-| Sandberg's Bluegrass | Poa secunda | 1.00 |
+-| Crested Wheatgrass | Agropyron cristatum | 6.00 |
+-| Blue Flax | Linum lewisii | 0.50 |
+-| Scarlet globemallow | Sphaeralcea coccinea | 0.25 |
+-| Western Yarrow | Achillia millifolium | 0.10 |
+-|  | Total | 12.10 |
++| Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 0.010 |
++| Fourwing Saltbush | Atriplex canescens | 0.005 |
++| Squirreltail | Elymus elymoides | 0.028 |
++| Sandberg's Bluegrass | Poa secunda | 0.010 |
++| Crested Wheatgrass | Agropyron cristatum | 0.060 |
++| Blue Flax | Linum lewisii | 0.005 |
++| Scarlet globemallow | Sphaeralcea coccinea | 0.003 |
++| Western Yarrow | Achillia millifolium | 0.001 |
++|  | Total | 0.12 |
+ 
+--- gold/body.md
++++ TP-032/body.md
+@@ -1986,3 +1986,3 @@
+ 
+-The proposed reclamation seed mix for the Project (Table 6-2) was developed for the Project location through coordination with the University of Nevada, Reno. The seed mix is especially adapted for the Project site’s clay soils. The mix is based on known soil and climatic conditions and was selected to <!-- page 109 | printed 91 --> establish a plant community that will support the post-mining land use. The mix is designed to provide species that can exist in the environment of northwestern Nevada, are proven to be robust species for revegetation, or are native species found in the plant communities prior to disturbance. Broadcast seeding will be at a rate of approximately 12.10 pounds of pure live seed per acre. If approved by the BLM, LNC will use this proposed seed mix in conjunction with coated seed technology being developed by Brigham Young University and the Great Basin Sagebrush Restoration Fund at University of Nevada Reno. The coated seed technology improves seed germination and plant establishment efficacy. LNC will coordinate any changes or adjustments to the reclamation seed list or application rate in consultation with, and approval by, BLM and NDEP.
++The proposed reclamation seed mix for the Project (Table 6-2) was developed for the Project location through coordination with the University of Nevada, Reno. The seed mix is especially adapted for the Project site’s clay soils. The mix is based on known soil and climatic conditions and was selected to <!-- page 109 | printed 91 --> establish a plant community that will support the post-mining land use. The mix is designed to provide species that can exist in the environment of northwestern Nevada, are proven to be robust species for revegetation, or are native species found in the plant communities prior to disturbance. Broadcast seeding will be at a rate of approximately 0.12 pounds of pure live seed per acre. If approved by the BLM, LNC will use this proposed seed mix in conjunction with coated seed technology being developed by Brigham Young University and the Great Basin Sagebrush Restoration Fund at University of Nevada Reno. The coated seed technology improves seed germination and plant establishment efficacy. LNC will coordinate any changes or adjustments to the reclamation seed list or application rate in consultation with, and approval by, BLM and NDEP.
+ 
+@@ -1992,11 +1992,11 @@
+ |---|---|---|
+-| Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 1.00 |
+-| Fourwing Saltbush | Atriplex canescens | 0.50 |
+-| Squirreltail | Elymus elymoides | 2.75 |
+-| Sandberg's Bluegrass | Poa secunda | 1.00 |
+-| Crested Wheatgrass | Agropyron cristatum | 6.00 |
+-| Blue Flax | Linum lewisii | 0.50 |
+-| Scarlet globemallow | Sphaeralcea coccinea | 0.25 |
+-| Western Yarrow | Achillia millifolium | 0.10 |
+-|  | Total | 12.10 |
++| Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 0.010 |
++| Fourwing Saltbush | Atriplex canescens | 0.005 |
++| Squirreltail | Elymus elymoides | 0.028 |
++| Sandberg's Bluegrass | Poa secunda | 0.010 |
++| Crested Wheatgrass | Agropyron cristatum | 0.060 |
++| Blue Flax | Linum lewisii | 0.005 |
++| Scarlet globemallow | Sphaeralcea coccinea | 0.003 |
++| Western Yarrow | Achillia millifolium | 0.001 |
++|  | Total | 0.12 |
+ 

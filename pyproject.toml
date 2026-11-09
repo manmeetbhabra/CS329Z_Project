@@ -1,0 +1,15 @@
+[project]
+name = "mine-permit-agent"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "dspy>=3.4.1",
+    "ipykernel>=7.4.0",
+    "jsonschema>=4.26.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "pymupdf>=1.28.2",
+    "pytest>=9.2.0",
+    "python-dotenv>=1.2.4",
+    "pyyaml>=6.0.3",
+]

@@ -1,0 +1,21 @@
+id: TP-040
+type: implausible
+difficulty: subtle
+checklist_ids:
+- ops-designs
+description: Overall bedrock pit-wall slopes are 72° (<295 ft deep) and 64° (295–394 ft) instead of 47° and 39°
+  (§3.4).
+expected_finding: Overall pit slopes of 64–72° are not credible in the weak, clay-rich lacustrine and volcaniclastic
+  rock of a claystone deposit; the pit design is unstable (§3.4).
+tells: Only the two angles changed; the 25° soil slope is unchanged.
+rationale: The published plan designs 47° and 39° for this rock. Overall slopes of 64–72° need strong, massive rock;
+  this deposit is soft claystone and volcanic ash mined largely without blasting (only occasional basalt needs it,
+  §3.4), and the deeper wall is still shown flatter than the shallow one.
+edits:
+- file: body.md
+  find: overall slopes of approximately 47 degrees for portions less than 295 feet deep and approximately 39 degrees
+  replace: overall slopes of approximately 72 degrees for portions less than 295 feet deep and approximately 64
+    degrees
+absent:
+- 47 degrees
+- 39 degrees

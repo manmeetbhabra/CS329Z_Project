@@ -1,0 +1,20 @@
+id: TP-025
+type: inconsistent
+difficulty: medium
+checklist_ids:
+- ops-schedule
+description: §3.4 describes a 45-year mine life; the Summary, §3.3, §3.17, §6.3 and §6.5.2 all say 41 years.
+expected_finding: 'Mine life conflicts: 45 years in §3.4 vs 41 years elsewhere in the Plan (e.g. §6.5.2, §6.3 Year
+  1–41).'
+tells: One number in one sentence.
+edits:
+- file: body.md
+  find: throughout the 41-year mine life. LNC proposes
+  replace: throughout the 45-year mine life. LNC proposes
+related:
+- file: body.md
+  find: Ore production is slated to last 41 years
+  note: §6.5.2
+- file: body.md
+  find: Year 1 through Year 41;
+  note: §6.3

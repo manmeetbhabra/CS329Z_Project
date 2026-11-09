@@ -1,0 +1,21 @@
+id: TP-029
+type: inconsistent
+difficulty: subtle
+checklist_ids:
+- ops-description
+description: 'Table 3-1: the CTFS row is 1,616.1 acres (was 1,166.1), but the table total is still 5,545.0, so the
+  rows now sum to about 5,995 acres. Appendix C''s copy of the table still has 1,166.1.'
+expected_finding: 'Table 3-1 does not add up: the CTFS row (1,616.1 ac) makes the rows sum to ~5,995 ac against
+  the stated 5,545.0 total; Appendix C Table 1-3 gives the CTFS as 1,166.1 ac.'
+tells: Only visible by summing the table or comparing it with Appendix C.
+edits:
+- file: body.md
+  find: '| Clay Tailings Filter Stack | 0 | 0 | 1,166.1 |'
+  replace: '| Clay Tailings Filter Stack | 0 | 0 | 1,616.1 |'
+related:
+- file: body.md
+  find: '| Total | 194 | 56.8 | 5,545.0 |'
+  note: table total
+- file: appendix_C.md
+  find: '| Clay Tailings Filter Stack | 0 | 0 | 1,166.1 |'
+  note: Appendix C copy

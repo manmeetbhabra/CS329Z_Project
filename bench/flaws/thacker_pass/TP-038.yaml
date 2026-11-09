@@ -1,0 +1,18 @@
+id: TP-038
+type: implausible
+difficulty: medium
+checklist_ids:
+- pf-wildlife-tes
+description: The avian breeding season used to time clearing is November 1 to January 15 (was May 1 to July 15)
+  (§4.7).
+expected_finding: The nesting-season restriction covers winter, when birds in northern Nevada are not nesting, so
+  clearing in the real breeding season (spring–summer) is unrestricted (§4.7).
+tells: '''In accordance with BLM policies'' next to a winter breeding season.'
+rationale: Migratory birds and sage-grouse in northern Nevada nest in spring and early summer; BLM Nevada uses roughly
+  March/April through July for nesting-season restrictions.
+edits:
+- file: body.md
+  find: (May 1 to July 15, annually in accordance with BLM policies)
+  replace: (November 1 to January 15, annually in accordance with BLM policies)
+absent:
+- May 1 to July 15

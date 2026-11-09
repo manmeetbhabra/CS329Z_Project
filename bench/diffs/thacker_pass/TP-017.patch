@@ -1,0 +1,22 @@
+--- gold/appendix_I.md
++++ TP-017/appendix_I.md
+@@ -276,3 +276,3 @@
+ 
+-Monitoring will consist of measuring water levels and collecting samples for field analysis (pH, specific conductance, temperature, and turbidity) and laboratory analysis (Table 2). The parameters to be measured and analyzed from the groundwater samples are from the NDEP Profile I and/or Profile II lists as shown in Table 2, or as otherwise prescribed by the WPCP. Also included in Table 2 are NDEP Reference Values that are used as water quality guideline values. Monitoring occurs and is reported on a quarterly basis using NDEP Form 1090 (NDEP Profile I Reporting Form) and/or NDEP Form 0090 (NDEP Profile II Reporting Form).
++Monitoring will consist of measuring water levels and collecting samples for field analysis (pH, specific conductance, temperature, and turbidity) and laboratory analysis (Table 2). The parameters to be measured and analyzed from the groundwater samples are from the NDEP Profile I and/or Profile II lists as shown in Table 2, or as otherwise prescribed by the WPCP. Also included in Table 2 are NDEP Reference Values that are used as water quality guideline values. Monitoring occurs on a quarterly basis, and results will be reported to NDEP as required.
+ 
+@@ -532,13 +532,3 @@
+ 
+-The information referenced above will be summarized and provided to the appropriate agencies as directed. Reporting will be completed in compliance with all applicable permits. The actual data forms and logs will be maintained on file with LNC. Annual and quarterly reports, if required, are typically due to the agencies by the following dates:
+-
+-- February 28, Annual Report (from prior year);
+-
+-- April 28, First Quarter Report;
+-
+-- July 27, Second Quarter Report;
+-
+-- October 28, Third Quarter Report; and,
+-
+-- January 28, Fourth Quarter Report (from prior year).
++The information referenced above will be summarized and provided to the appropriate agencies as directed. Reporting will be completed in compliance with all applicable permits. The actual data forms and logs will be maintained on file with LNC.
+ 

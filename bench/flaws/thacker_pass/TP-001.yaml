@@ -1,0 +1,15 @@
+id: TP-001
+type: missing
+difficulty: easy
+checklist_ids:
+- ops-spill-contingency
+description: Appendix E (Spill Contingency Plan) is left out of the submission.
+expected_finding: The Spill Contingency Plan that §4.12 and §5.3 rely on (Appendix E) is not included. The Emergency
+  Response Plan (Appendix F) covers spill prevention and reporting only in part, so the plan has no complete spill
+  response, containment and cleanup procedure.
+tells: Body §4.12 and §5.3 still cite Appendix E.
+edits:
+- file: appendix_E.md
+  delete_file: true
+absent:
+- Appendix E – Spill Contingency Plan

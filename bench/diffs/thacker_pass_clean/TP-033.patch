@@ -1,0 +1,19 @@
+--- gold/appendix_C.md
++++ TP-033/appendix_C.md
+@@ -396,3 +396,3 @@
+ 
+-The CTFS reclaim pond and drainage channels will be designed to manage runoff from the 100-year 24­ hour design storm.
++The CTFS drainage channels will be designed to manage runoff from the 100-year 24­ hour design storm, and the CTFS reclaim pond to manage runoff from the 1-year, 1-hour design storm.
+ 
+@@ -432,3 +432,3 @@
+ 
+-Diversion channels sized to convey the 25-year; 24-hour storm will be constructed to manage stormwater in the CTFS area. Stormwater runoff will be directed to the east side of the CTFS where it will be directed to the reclaim ponds. Location of the proposed reclaim ponds are shown on Figure 2. The reclaim ponds will be double lined with an HDPE geomembrane separated by a layer of geonet. Water collected in the pond will not be discharged as part of the stormwater management. Water in the reclaim ponds will be pumped to the processing plant to be used as make-up water for processing operations or will evaporate. The reclaim ponds will be designed to hold runoff from the 100-year, 24­ hour design storm. Approximately 80 million gallons of storage capacity will be required for the CTFS reclaim ponds. LNC will fence the area surrounding the reclaim ponds to restrict wildlife access.
++Diversion channels sized to convey the 25-year; 24-hour storm will be constructed to manage stormwater in the CTFS area. Stormwater runoff will be directed to the east side of the CTFS where it will be directed to the reclaim ponds. Location of the proposed reclaim ponds are shown on Figure 2. The reclaim ponds will be double lined with an HDPE geomembrane separated by a layer of geonet. Water collected in the pond will not be discharged as part of the stormwater management. Water in the reclaim ponds will be pumped to the processing plant to be used as make-up water for processing operations or will evaporate. The reclaim ponds will be designed to hold runoff from the 1-year, 1-hour design storm. Approximately 80 million gallons of storage capacity will be required for the CTFS reclaim ponds. LNC will fence the area surrounding the reclaim ponds to restrict wildlife access.
+ 
+--- gold/body.md
++++ TP-033/body.md
+@@ -1272,3 +1272,3 @@
+ 
+-Stormwater runoff will be directed to the perimeter of the CTFS where it will be directed to the reclaim ponds. Location of the proposed reclaim ponds are shown on Figure 15. The reclaim ponds will be double lined with an HDPE geomembrane separated by a layer of geonet. Water collected in the pond will not be discharged as part of the stormwater management. Water in the reclaim ponds will be pumped to the processing plant to be used as make-up water for processing operations or will evaporate. The reclaim ponds will be designed to sustain the 100-year, 24-hour storm event. Approximately 80 million gallons of storage capacity will be required for the CTFS reclaim ponds. LNC will fence (chain-link, 6-8 feet in height) the area surrounding the reclaim ponds to restrict wildlife access.
++Stormwater runoff will be directed to the perimeter of the CTFS where it will be directed to the reclaim ponds. Location of the proposed reclaim ponds are shown on Figure 15. The reclaim ponds will be double lined with an HDPE geomembrane separated by a layer of geonet. Water collected in the pond will not be discharged as part of the stormwater management. Water in the reclaim ponds will be pumped to the processing plant to be used as make-up water for processing operations or will evaporate. The reclaim ponds will be designed to sustain the 1-year, 1-hour storm event. Approximately 80 million gallons of storage capacity will be required for the CTFS reclaim ponds. LNC will fence (chain-link, 6-8 feet in height) the area surrounding the reclaim ponds to restrict wildlife access.
+ 

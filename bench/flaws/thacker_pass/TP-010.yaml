@@ -1,0 +1,21 @@
+id: TP-010
+type: missing
+difficulty: medium
+checklist_ids:
+- rec-wildlife-habitat
+description: Section 6.4.8 Wildlife Habitat Restoration is deleted.
+expected_finding: The reclamation plan has no wildlife habitat rehabilitation measures, although the project disturbs
+  sage-grouse and other wildlife habitat.
+tells: Section 6.4.8 is missing from the §6.4 numbering. §6.1 still lists wildlife habitat as a post-mining land
+  use.
+edits:
+- file: body.md
+  find: |+
+    #### 6.4.8 Wildlife Habitat Restoration
+
+    Project reclamation is designed to restore wildlife habitat in the area. Areas will be regraded and seeded with a specialized reclamation seed mix to promote a diverse plant community that is beneficial to wildlife.
+
+  replace: ''
+absent:
+- beneficial to wildlife
+- Wildlife Habitat Restoration

@@ -1,0 +1,23 @@
+# Labels for the DEVELOPMENT-ONLY repaired variant of Thacker Pass (corpus/thacker_pass/gold_clean/,
+# built by prep.build_clean from gold/ + corpus/thacker_pass/repairs.yaml).
+#
+# Every known gap of the published plan is repaired, so this variant has no known gaps: on the
+# clean control (TP-000) every flag is a false alarm, and each flawed case contains exactly one
+# deficiency. Only the gaps we know of are repaired, so treat a confident false alarm here as a
+# possible new gap and check it against the unrepaired plan.
+#
+# Everything not listed here is inherited from thacker_pass.yaml (`extends`). Official scores use
+# the unrepaired bench (plan id thacker_pass), never this one.
+
+plan: thacker_pass_clean
+extends: thacker_pass
+gold: corpus/thacker_pass/gold_clean
+flaws: thacker_pass
+
+items:
+  rec-riparian:     {status: present, evidence: "body.md §6.4.9 (repair R-01): spring buffers, BMPs, restoration or offsite riparian enhancement"}
+  pf-cultural:      {status: present, evidence: "body.md §4.11 p96–97 (repair R-12): stop work within 100 ft, notify BLM immediately, NAGPRA, paleontology"}
+  imp-stabilize:    {status: present, evidence: "appendix_H.md §2.2 p5 (repair R-09): pit berms, scaling, sump drainage, slope inspections"}
+  rec-pit-backfill: {status: present, evidence: "body.md §3.4.2 p49–50 (repair R-13 adds economic and safety factors); §6.5.2 p112"}
+
+known_gaps: []

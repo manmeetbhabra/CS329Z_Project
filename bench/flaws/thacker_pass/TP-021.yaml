@@ -1,0 +1,20 @@
+id: TP-021
+type: inconsistent
+difficulty: easy
+checklist_ids:
+- ops-designs
+description: Table 3-3 gives the West WRSF capacity as 37.2 M CY; the paragraph just above still says 32.7 M CY.
+expected_finding: 'West WRSF capacity conflicts within §3.5: 32.7 M CY in the text vs 37.2 M CY in Table 3-3 (and
+  37.2 + 13.2 no longer equals the 45.9 M CY total).'
+tells: Same page; digits transposed.
+edits:
+- file: body.md
+  find: '| West WRSF | 32.7 | 5,252 |'
+  replace: '| West WRSF | 37.2 | 5,252 |'
+related:
+- file: body.md
+  find: The West WRSF is designed with a storage capacity of approximately 32.7 M CY
+  note: text value
+- file: body.md
+  find: Up to 45.9 M CY of waste rock material
+  note: WRSF total

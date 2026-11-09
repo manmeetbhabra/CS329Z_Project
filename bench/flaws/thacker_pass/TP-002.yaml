@@ -1,0 +1,23 @@
+id: TP-002
+type: missing
+difficulty: easy
+checklist_ids:
+- rec-structures-removal
+description: Section 6.5.16 Disposition of Buildings is deleted.
+expected_finding: §6.5.6, §6.5.8 and §6.5.13 refer to a Section 6.5.16 (Disposition of Buildings) that does not
+  exist; nothing says building footprints will be inspected for soil contamination or how building parts will be
+  disposed of (§6.5.8 covers contamination only for hard surfaces at the process plant).
+tells: Three 'as described in Section 6.5.16' cross-references remain, and numbering jumps from 6.5.15 to 6.5.17.
+edits:
+- file: body.md
+  find: |+
+    #### 6.5.16 Disposition of Buildings
+
+    LNC will demolish buildings associated with the Project and properly dispose of parts offsite. Foundations will be broken and hauled to the Class III debris disposal area located in the West WRSF (Figure 10). LNC will regrade, rip, and seed the building footprint areas with the proposed seed mix (Table 6-2).
+
+    Ground surfaces will be inspected for evidence of possible soil contamination prior to removal of the buildings and concrete. Any affected soils as determined by visual inspection, lab analysis, or other method will be excavated and properly treated and disposed of in the appropriate onsite or offsite location.
+
+  replace: ''
+absent:
+- Disposition of Buildings
+- soil contamination

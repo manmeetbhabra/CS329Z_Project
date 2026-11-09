@@ -1,0 +1,45 @@
+id: TP-008
+type: missing
+difficulty: subtle
+checklist_ids:
+- pf-exclusion
+description: Every statement that the reclaim ponds and the emergency pond are fenced to exclude wildlife is removed
+  (five sentences across §3.10, §3.17, §3.24.6 and §4.6, one in Appendix C §4.5), and Appendix I §3.3 no longer
+  monitors 'wildlife exclusion features'.
+expected_finding: The CTFS reclaim ponds and emergency pond hold process solutions, but no measure excludes wildlife,
+  livestock or the public from them (3809.420(b)(12)(v)).
+tells: General fencing remains (§3.24.6 perimeter fence for cattle, wildlife and the public; Appendix I §3.3 fences
+  for larger wildlife and livestock; §6.5.18 removal of fences around the CTFS and process facilities), but none
+  is tied to the ponds or to keeping wildlife out of them. Appendix I still mentions an NDOW Industrial Artificial
+  Pond Permit.
+edits:
+- file: body.md
+  find: ' The emergency pond area will be fenced to restrict wildlife access.'
+  replace: ''
+- file: body.md
+  find: ' LNC will fence (chain-link, 6-8 feet in height) the area surrounding the reclaim ponds to restrict wildlife
+    access.'
+  replace: ''
+- file: body.md
+  find: ' LNC will fence (chain-link, six to eight feet in height) the area surrounding the reclaim ponds to restrict
+    wildlife access.'
+  replace: ''
+- file: body.md
+  find: ' Larger security fences (six to eight foot chain link or similar) will be constructed around ponds and
+    hazardous equipment to further deter wildlife from hazards.'
+  replace: ''
+- file: body.md
+  find: ' Areas surrounding the plant emergency pond and the CTFS reclaim will be fenced to prohibit wildlife access.'
+  replace: ''
+- file: appendix_C.md
+  find: ' LNC will fence the area surrounding the reclaim ponds to restrict wildlife access.'
+  replace: ''
+- file: appendix_I.md
+  find: The reclaim ponds will be monitored for the condition of wildlife exclusion features and the presence of
+    mortalities
+  replace: The reclaim ponds will be monitored for the presence of mortalities
+absent:
+- restrict wildlife access
+- wildlife exclusion features
+- deter wildlife
+- prohibit wildlife

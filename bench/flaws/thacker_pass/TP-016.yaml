@@ -1,0 +1,41 @@
+id: TP-016
+type: vague
+difficulty: medium
+checklist_ids:
+- mon-other-programs
+description: 'Slope stability monitoring of reclaimed facilities loses its frequency and method in §6.10.3 and Appendix
+  I §4.3: ''annual'' inspections, the visual inspection of the WRSF, coarse gangue stockpile and CTFS slopes, the
+  list of failure signs to look for, and the final-stabilization criterion are replaced by ''as appropriate''.'
+expected_finding: Slope stability monitoring is named but has no frequency, method or success criterion (§6.10.3,
+  Appendix I §4.3).
+tells: The duration (at least three years) remains; only how and how often are gone. Appendix I §2.2 still lists
+  pit-wall monitoring devices, but for the operating pit, not the reclaimed facilities.
+edits:
+- file: body.md
+  find: Annual monitoring and maintenance of these reclaimed features will continue for at least three years following
+    closure or until vegetation has established. Slope stability monitoring will include visual inspections of the
+    WRSF, coarse gangue stockpile, and CTFS reclaimed slopes. Final stabilization consists of achieving slopes with
+    the absence of substantial and progressive rilling or other signs of erosion and the establishment of a plant
+    community with the absence of noxious weeds. Specifically, LNC will inspect the facilities for any crest deformations,
+    signs of slope failure movement (such as slope bulging), evidence of seepage, and formation of surface cracks.
+    LNC will identify and document erosional features (i.e., vegetation loss, rills, gullies, etc.).
+  replace: Monitoring and maintenance of these reclaimed features will continue for at least three years following
+    closure or until vegetation has established. Slope stability will be monitored as appropriate, and any issues
+    identified will be addressed as necessary.
+- file: appendix_I.md
+  find: Annual monitoring and maintenance of these reclaimed features will continue following mine closure until
+    vegetation has established. Slope stability monitoring will include visual inspections of the WRSF, coarse gangue
+    stockpile, and CTFS reclaimed slopes. Final stabilization consists of achieving slopes with the absence of substantial
+    and progressive development of rills or other signs of erosion, and establishment of a plant community with
+    the absence of noxious weeds. Specifically, LNC will inspect the facilities for any crest deformations and signs
+    of slope failure movement (such as slope bulging), evidence of seepage, formation of surface cracks, and identification
+    and documentation of erosional features (e.g., vegetation loss, rills, gullies, etc.).
+  replace: Monitoring and maintenance of these reclaimed features will continue following mine closure until vegetation
+    has established. Slope stability will be monitored as appropriate, and any issues identified will be addressed
+    as necessary.
+absent:
+- crest deformation
+- slope bulging
+- visual inspections of the WRSF
+- Annual monitoring and maintenance
+- Final stabilization consists

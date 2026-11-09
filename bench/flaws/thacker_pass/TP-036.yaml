@@ -1,0 +1,30 @@
+id: TP-036
+type: implausible
+difficulty: medium
+checklist_ids:
+- rec-topsoil
+- rec-revegetation
+description: Growth media cover on reclaimed facilities is one-half to one inch (was six to 12 inches); on the pit,
+  one-half inch (was six) (§6.4.1, §6.4.4, §6.5.2; Appendix C §4.2).
+expected_finding: A growth media cover of 0.5–1 inch is too thin to support revegetation or resist erosion, even
+  though the plan says salvageable soil is 12–18 inches deep (§6.4.1, §6.4.4, §6.5.2).
+tells: §6.4.1 still says salvageable growth media is mostly 12 to 18 inches deep and that volumes are sufficient.
+rationale: Reclamation covers in the Great Basin are typically 6–18 inches of growth media; less than about 4 inches
+  does not provide a root zone or water-holding capacity and erodes quickly.
+edits:
+- file: body.md
+  find: covered with approximately six to 12 inches of growth media
+  replace: covered with approximately one-half to one inch of growth media
+- file: body.md
+  find: growth media (approximately six to 12 inches) and seeding
+  replace: growth media (approximately one-half to one inch) and seeding
+- file: body.md
+  find: to approximately six inches thickness
+  replace: to a thickness of approximately one-half inch
+- file: appendix_C.md
+  find: covered with six to 12 inches of growth media
+  replace: covered with one-half to one inch of growth media
+absent:
+- six to 12 inches of growth media
+- growth media (approximately six to 12 inches)
+- six inches thickness

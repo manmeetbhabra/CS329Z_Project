@@ -1,0 +1,275 @@
+# Repairs that turn the gold set into gold_clean/: a DEVELOPMENT-ONLY variant of Thacker Pass in which
+# the published plan's known gaps (bench/labels/thacker_pass.yaml, known_gaps) are fixed with plausible
+# plan text written for this project. It is not LNC's text. Official scores use the unrepaired gold set.
+# Each repair: id, gap (KG id), note, file, find (exact, must match once), replace.
+# Rules: reuse values already in the plan; add no value that a flaw spec edits; add no monitoring
+# frequency (TP-012, TP-018). Apply with: uv run python -m prep.build_clean corpus/thacker_pass
+
+- id: R-01
+  gap: KG-01
+  note: Adds riparian mitigation (new §6.4.9) for the five seasonal springs and wetlands.
+  file: body.md
+  find: |
+    ### 6.5 Facility Reclamation Practices
+  replace: |
+    #### 6.4.9 Riparian Areas and Springs
+
+    Five seasonal springs (SP-001, SP-002, SP-058, SP-059 and SP-061) and associated wet meadow vegetation occur within the Project area (Section 2.2.8), along with the small non-jurisdictional wetlands identified during baseline surveys (Section 2.3.4). Project facilities have been sited to avoid these features where practicable. Before construction, LNC will mark a buffer of at least 100 feet around each spring outside the disturbance footprint, and BMPs described in the SWPPP (Appendix C) will protect them from sediment and runoff. Flow and water quality at selected springs are monitored under the surface water monitoring program (Appendix I), and the condition of riparian vegetation at those springs will be documented during the same visits.
+
+    Where a spring or its riparian vegetation is disturbed by the Project, LNC will mitigate the loss at closure by regrading to restore drainage to the spring area, planting and seeding with native wetland and wet meadow species approved by the BLM, and installing temporary fencing to keep livestock out until vegetation is established. Where on-site restoration is not feasible, LNC will, in coordination with the BLM, enhance riparian habitat at springs elsewhere in the Kings River or Quinn River watersheds, for example by fencing spring sources with exclosures and restoring degraded spring outflow channels.
+
+    ### 6.5 Facility Reclamation Practices
+- id: R-02a
+  gap: KG-02
+  note: The cost estimate is not yet prepared (Appendix J, §6.14); say it will be, not that it is.
+  file: body.md
+  find: will be submitted for review and are included in the Reclamation Cost Estimate (Appendix J).
+  replace: will be presented in the Reclamation Cost Estimate (Appendix J), which will be submitted under separate
+    cover (Section 6.14).
+- id: R-02b
+  gap: KG-02
+  note: 'Same: ''contains'' becomes ''will include''.'
+  file: body.md
+  find: The Reclamation Cost Estimate (Appendix J) contains costs for at least five years
+  replace: The Reclamation Cost Estimate (Appendix J) will include costs for at least five years
+- id: R-03
+  gap: KG-03
+  note: Replaces objectives copied from the Emergency Response Plan with SWPPP objectives (Appendix C §1).
+  file: body.md
+  find: |+
+    - Provide for an effective response to emergency situations;
+
+    - Minimize the effect on personnel and surrounding communities;
+
+    - Minimize property and equipment losses;
+
+    - Coordinate interdepartmental responses;
+
+    - Assure the cooperation of outside agencies; and,
+
+    - Provide for the release of accurate information to the public.
+
+  replace: |+
+    - Identify potential sources of pollutants that may affect the quality of stormwater runoff from Project facilities;
+
+    - Describe the BMPs that will be used to manage stormwater run-on and runoff and to reduce erosion and sediment transport;
+
+    - Establish inspection and maintenance procedures to ensure BMPs function as designed; and,
+
+    - Guide stormwater management in accordance with the 2013 General Permit NVR300000, although a permit is not required for the Project.
+
+- id: R-04
+  gap: KG-04
+  note: 'Cross-reference: CTFS reclamation is §6.5.9.'
+  file: body.md
+  find: (described in Section 6.5.8)
+  replace: (described in Section 6.5.9)
+- id: R-05
+  gap: KG-05
+  note: 'Cross-reference: WRSF is §3.5 and the coarse gangue stockpile §3.9.'
+  file: body.md
+  find: as described in Sections 3.4 and 3.8
+  replace: as described in Sections 3.5 and 3.9
+- id: R-06a
+  gap: KG-06
+  note: Sample counts made consistent with §3.4.2 and Table 3-4 (ABA 9; HCT 2 submitted, ongoing).
+  file: body.md
+  find: Static test and kinetic test results are available for seven (7) samples of gangue from bulk ore samples
+    collected from the oxidized portion of the mineral deposit.
+  replace: Static test results are available for nine (9) samples of gangue from bulk ore samples collected from
+    the oxidized portion of the mineral deposit, and two (2) of these samples have been submitted for kinetic (humidity
+    cell) testing.
+- id: R-06b
+  gap: KG-06
+  note: 'Same: two humidity cells, as in Table 3-4.'
+  file: body.md
+  find: Humidity cell testing on one (1) sample of oxidized gangue material is ongoing
+  replace: Humidity cell testing on two (2) samples of oxidized gangue material is ongoing
+- id: R-07
+  gap: KG-07
+  note: Water balance and groundwater impact analysis summarized instead of deferred.
+  file: body.md
+  find: is currently being analyzed, and the report is anticipated to be submitted to the BLM in August 2019.
+  replace: was analyzed using the numerical groundwater flow model developed by Piteau Associates for the Project,
+    and the results were submitted to the BLM in August 2019. Consumptive use of approximately 2,600 AF per year
+    in Phase 1 and 5,200 AF per year in Phase 2 consists primarily of steam and sulfuric acid production, moisture
+    retained in the clay tailings placed in the CTFS, evaporation from the reclaim ponds, and dust suppression;
+    process water is recycled to the extent practicable. The model predicts that drawdown from pumping at the Quinn
+    Production Well, about seven miles from the Project area, will not extend to the seasonal springs within the
+    Project area, and that pit dewatering will be minor and limited to late in the mine life.
+- id: R-07b
+  gap: KG-07
+  note: The SWPPP agrees that the groundwater model exists.
+  file: appendix_C.md
+  find: A numerical groundwater flow model will be developed to assess
+  replace: A numerical groundwater flow model has been developed to assess
+- id: R-08
+  gap: KG-08
+  note: Phase 2 water rights identified and Phase 2 made conditional on them.
+  file: body.md
+  find: Prior to the implementation of Phase 2, LNC plans to acquire and transfer additional water rights to the
+    Quinn Production Well for use in the mine and process operation.
+  replace: LNC will exercise its options before mining begins, giving it approximately 3,697 AF of water rights
+    that can be transferred to the Quinn Production Well, which exceeds the Phase 1 requirement. Because NDWR may
+    limit a transfer from irrigation to the consumptive portion of the right, LNC will confirm the transferable
+    amount of each right with NDWR and acquire additional rights if needed. Prior to the implementation of Phase
+    2, LNC will acquire and transfer at least 1,600 AF of additional water rights within the Quinn River Valley,
+    Orovada Subarea, and is negotiating purchase agreements with existing agricultural water right holders in the
+    subarea. Phase 2 will not be implemented until these rights have been approved by NDWR for mining and milling
+    use at the Quinn Production Well.
+- id: R-09
+  gap: KG-09
+  note: Stabilization measures for excavations during temporary closure (no frequency, see TP-018).
+  file: appendix_H.md
+  find: No additional measures would be necessary to stabilize excavations and workings during an unplanned temporary
+    closure.
+  replace: During an unplanned temporary closure, LNC would maintain the safety berms along the pit perimeter and
+    at the top of access ramps, scale loose material from active faces before the closure begins, and keep pit sumps
+    and drainage channels clear so that water does not pond against the toe of the pit walls. Pit walls, benches
+    and ramps would be inspected periodically for tension cracks, raveling or other signs of instability, and any
+    unstable area would be barricaded and repaired before work resumes.
+- id: R-11
+  gap: KG-11
+  note: SWPPP CTFS geometry aligned with the body (§3.17, Table 3-6).
+  file: appendix_C.md
+  find: LNC will construct a buttress at the southern end of the facility. The CTFS will be constructed with 40-foot
+    lifts. LNC will grade the exterior slopes of the perimeter berms to an overall slope of 3H:1V; whereas, interior
+    slopes will be graded to 2H:1V. Waste rock material will be used for construction of the CTFS buttress.
+  replace: The CTFS will be constructed in lifts, with lift thickness determined from test pads during operations.
+    LNC will grade the exterior slopes of the CTFS to an overall slope of 5H:1V.
+- id: R-12
+  gap: KG-12
+  note: 'Chance-find procedure: stop work, protect, notify BLM; human remains; paleontology.'
+  file: body.md
+  find: Project employees and contractors will be informed on how to proceed with chance finds.
+  replace: If previously unidentified cultural or paleontological resources are discovered during Project activities,
+    all work within 100 feet of the discovery will stop immediately and the area will be protected from further
+    disturbance. LNC will notify the BLM authorized officer immediately by telephone, with written confirmation,
+    and work in the area will not resume until the BLM authorizes it. If human remains or funerary objects are found,
+    LNC will also notify the Humboldt County Sheriff and will follow the Native American Graves Protection and Repatriation
+    Act (43 CFR 10) and NRS 383. Fossil localities identified during baseline surveys or during construction will
+    be avoided where feasible; significant fossils that cannot be avoided will be recovered by a BLM-permitted paleontologist.
+- id: R-13
+  gap: KG-13
+  note: Economic and safety factors of pit backfill.
+  file: body.md
+  find: The backfill plan was optimized by contouring the remaining highwall at closure to blend with surrounding
+    topography, promote proper drainage, and avoid ponding.
+  replace: The backfill plan was optimized by contouring the remaining highwall at closure to blend with surrounding
+    topography, promote proper drainage, and avoid ponding. Backfilling is also favored on economic and safety grounds.
+    Placing waste rock and coarse gangue in mined-out portions of the pit shortens haul distances compared with
+    hauling all material to the WRSFs, reduces the footprint and height of the WRSFs and the associated reclamation
+    cost, and is incorporated in the mine plan's cost basis. Backfill buttresses the lower pit walls and leaves
+    only a portion of the highwall exposed at closure, reducing long-term slope stability and public safety risks;
+    backfill placement will follow MSHA requirements for dump-edge berms and equipment operation.
+- id: R-14
+  gap: KG-14
+  note: Peak dewatering rate aligned with the body (§3.4.1, §5.8).
+  file: appendix_C.md
+  find: The peak dewatering rate is expected to be approximately 195 gpm
+  replace: The peak dewatering rate is expected to be approximately 90 gpm
+- id: R-15
+  gap: KG-15
+  note: The 3H:1V commitment now excepts the remaining pit highwall.
+  file: body.md
+  find: Reclaimed slope surfaces associated with the Project will have slopes of 3H:1V or less.
+  replace: With the exception of the remaining portion of the pit highwall, which will be contoured at closure as
+    described in Section 6.5.2, reclaimed slope surfaces associated with the Project will have slopes of 3H:1V or
+    less. The remaining highwall will be left at the bedrock overall slopes described in Section 3.4. Geotechnical
+    analysis of the final pit walls, based on rock mass characterization from core drilling, laboratory strength
+    testing of the claystone, ash and basalt units, and limit-equilibrium stability modeling, indicates that the
+    remaining highwall will be stable in the long term under static and seismic loading. Because backfill buttresses
+    the lower pit walls, the exposed portion is limited to the upper benches, which are bedrock and will not be
+    revegetated.
+- id: R-16
+  gap: KG-16
+  note: 'Figure number: the Block Flow Diagram is Figure 14.'
+  file: body.md
+  find: shown on Figure 13 Block Flow Diagram
+  replace: shown on Figure 14 Block Flow Diagram
+- id: R-17
+  gap: KG-17
+  note: Start dates aligned with §3.3.3.
+  file: body.md
+  find: with mining production and ore processing estimated to commence in late 2022
+  replace: with mining activities estimated to commence in late 2021 and ore processing in 2022
+- id: R-18a
+  gap: KG-18
+  note: End of mining aligned with the 41-year mine life from late 2021 (2062), Summary.
+  file: body.md
+  find: concurrent reclamation activities in 2065
+  replace: concurrent reclamation activities in 2062
+- id: R-18b
+  gap: KG-18
+  note: Same, §3.3.3.
+  file: body.md
+  find: LNC will complete mining and processing activities in 2065
+  replace: LNC will complete mining and processing activities in 2062
+- id: R-18c
+  gap: KG-18
+  note: Same, year of mining in the southeast pit (§3.4.1).
+  file: body.md
+  find: projected to be in 2065. LNC will use sump pumps
+  replace: projected to be in 2062. LNC will use sump pumps
+- id: R-18d
+  gap: KG-18
+  note: Same, §5.8.
+  file: body.md
+  find: projected to be in 2065. Pit dewatering
+  replace: projected to be in 2062. Pit dewatering
+- id: R-18e
+  gap: KG-18
+  note: Same, Appendix C §3.1.
+  file: appendix_C.md
+  find: projected to be in 2065. LNC will use sump pumps
+  replace: projected to be in 2062. LNC will use sump pumps
+- id: R-19a
+  gap: KG-19
+  note: Reclaim pond capacity basis includes process inventory, snowmelt and draindown (§3.17). No storm size or volume, so TP-033 and TP-039 are untouched.
+  file: body.md
+  find: |-
+    The construction of an erosion control berm will be required at the CTFS facility crest
+  replace: |-
+    In addition to design-storm runoff, the reclaim pond capacity includes the maximum operating volume of process water, an allowance for snowmelt, and the CTFS draindown volume during a pumping interruption.
+
+    The construction of an erosion control berm will be required at the CTFS facility crest
+- id: R-19b
+  gap: KG-19
+  note: Same, Appendix C §4.5.
+  file: appendix_C.md
+  find: |-
+    The construction of an erosion control berm will be required at the CTFS facility crest
+  replace: |-
+    In addition to design-storm runoff, the reclaim pond capacity includes the maximum operating volume of process water, an allowance for snowmelt, and the CTFS draindown volume during a pumping interruption.
+
+    The construction of an erosion control berm will be required at the CTFS facility crest
+- id: R-18f
+  gap: KG-18
+  note: Same, Appendix C §1.4 (published as 2063).
+  file: appendix_C.md
+  find: complete mining and processing activities in 2063
+  replace: complete mining and processing activities in 2062
+- id: R-20a
+  gap: KG-20
+  note: 2013 annual precipitation aligned with Table 2-1 (monthly values sum to 8.8), §2.3.1.
+  file: body.md
+  find: ranged from 8.6 inches in 2013
+  replace: ranged from 8.8 inches in 2013
+- id: R-20b
+  gap: KG-20
+  note: Same, Appendix C §1.5.
+  file: appendix_C.md
+  find: ranged from 8.6 inches in 2013
+  replace: ranged from 8.8 inches in 2013
+- id: R-21
+  gap: KG-21
+  note: Tailings moisture in Appendix C §3.5 aligned with body §3.17.
+  file: appendix_C.md
+  find: wet-basis moisture content of approximately 33 percent,
+  replace: wet-basis moisture content of approximately 19-27 percent
+- id: R-22
+  gap: KG-22
+  note: Winter monthly minimum aligned with Table 2-1 (0.0 in December 2011), §2.3.1.
+  file: body.md
+  find: during that period ranged from 0.3 to 3.7 inches
+  replace: during that period ranged from 0.0 to 3.7 inches

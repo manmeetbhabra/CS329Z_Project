@@ -1,0 +1,14 @@
+--- gold/appendix_I.md
++++ TP-016/appendix_I.md
+@@ -516,3 +516,3 @@
+ 
+-Based on analyses and similar experiences at Nevada mines, LNC will use erosion control BMPs during reclamation activities in order to reduce sediment migration from facilities until vegetation can be re-established. Annual monitoring and maintenance of these reclaimed features will continue following mine closure until vegetation has established. Slope stability monitoring will include visual inspections of the WRSF, coarse gangue stockpile, and CTFS reclaimed slopes. Final stabilization consists of achieving slopes with the absence of substantial and progressive development of rills or other signs of erosion, and establishment of a plant community with the absence of noxious weeds. Specifically, LNC will inspect the facilities for any crest deformations and signs of slope failure movement (such as slope bulging), evidence of seepage, formation of surface cracks, and identification and documentation of erosional features (e.g., vegetation loss, rills, gullies, etc.).
++Based on analyses and similar experiences at Nevada mines, LNC will use erosion control BMPs during reclamation activities in order to reduce sediment migration from facilities until vegetation can be re-established. Monitoring and maintenance of these reclaimed features will continue following mine closure until vegetation has established. Slope stability will be monitored as appropriate, and any issues identified will be addressed as necessary.
+ 
+--- gold/body.md
++++ TP-016/body.md
+@@ -2256,3 +2256,3 @@
+ 
+-LNC will use erosion control BMPs during reclamation activities in order to reduce sediment migration from facilities until vegetation can be re-established. Annual monitoring and maintenance of these reclaimed features will continue for at least three years following closure or until vegetation has established. Slope stability monitoring will include visual inspections of the WRSF, coarse gangue stockpile, and CTFS reclaimed slopes. Final stabilization consists of achieving slopes with the absence of substantial and progressive rilling or other signs of erosion and the establishment of a plant community with the absence of noxious weeds. Specifically, LNC will inspect the facilities for any crest deformations, signs of slope failure movement (such as slope bulging), evidence of seepage, and formation of surface cracks. LNC will identify and document erosional features (i.e., vegetation loss, rills, gullies, etc.).
++LNC will use erosion control BMPs during reclamation activities in order to reduce sediment migration from facilities until vegetation can be re-established. Monitoring and maintenance of these reclaimed features will continue for at least three years following closure or until vegetation has established. Slope stability will be monitored as appropriate, and any issues identified will be addressed as necessary.
+ 

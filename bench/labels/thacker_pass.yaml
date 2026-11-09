@@ -1,0 +1,250 @@
+# Labels for the CLEAN Thacker Pass gold set (corpus/thacker_pass/gold/), before any flaws.
+#
+# Three parts:
+#   items       status of every checklist item (knowledge/checklist.yaml) in the clean plan
+#   known_gaps  real weaknesses already in the published plan. An agent flag that matches one
+#               of these is a "known gap" hit, not a false alarm, on every test case.
+#   facts       trigger facts (which checklist items apply) and key values with citations,
+#               used to design inconsistent / implausible flaws.
+#
+# status: present | vague | missing | not_applicable
+# Pages are PDF page numbers, as in the gold page markers (<!-- page N | printed P -->).
+# Missing/vague flaws may only target items labeled `present`.
+#
+# DRAFT by Claude, 2026-11-04. Revised 2026-11-06 after an independent review: statuses of
+# pf-cultural, imp-stabilize and rec-pit-backfill changed to vague; stale evidence fixed;
+# KG-06 relocated; KG-08 retyped; KG-10 retired; KG-12 to KG-17 added.
+
+plan: thacker_pass
+checklist_version: 1
+
+items:
+  # --- operator
+  op-identity:     {status: present, evidence: "body.md §1.1–1.2, p19 (Lithium Nevada Corp., 3685 Lakeside Drive, Reno; (775) 827-3318)"}
+  op-tin:          {status: present, evidence: "body.md §1.5, p20 — 'LNC will provide the Federal Tax Identification Number in a separate document' (a commitment to provide it separately; acceptable per vague_if)"}
+  op-claims:       {status: present, evidence: "body.md §1.6, p20 (492 unpatented lode claims); appendix_A.md claim table with BLM/NMC serial numbers"}
+  op-poc:          {status: present, evidence: "body.md cover p5 and §1.1 p19 — Edward (Ted) Grandy, VP Legal and Regulatory Affairs"}
+  # --- operations
+  ops-description: {status: present, evidence: "body.md §3.3–3.23, p40–80 (mining method, equipment Table 3-8, production rates §3.3.2 p44)"}
+  ops-maps:        {status: present, evidence: "figures.md (19 figures); in-text references, e.g. body.md §3.3.1 p44 (Figure 7), §3.4 (Figure 8), §3.11 p64 (Figure 14)"}
+  ops-designs:     {status: present, evidence: "body.md §3.4 pit benches/slopes p48; Table 3-3 WRSF p51; §3.9 CGS p62; Table 3-6 CTFS p71; Figures 8–15"}
+  ops-water-management: {status: present, note: "Water balance deferred ('anticipated to be submitted to the BLM in August 2019'); see KG-07", evidence: "body.md §5.8 p102–103; §3.20 p74–76; §3.21 p77–78; appendix_C.md"}
+  ops-rock-characterization: {status: present, evidence: "body.md §3.5.1 p52–57 (Table 3-4), §5.2 p100; appendix_B_summary.md"}
+  ops-quality-assurance: {status: present, evidence: "body.md §5.5 p101; appendix_G.md"}
+  ops-spill-contingency: {status: present, evidence: "body.md §5.3 p100–101; appendix_E.md"}
+  ops-schedule:    {status: present, evidence: "body.md Summary p6–7; §3.3.3 p45 (41-year life, 2021 start, 2065 end, ≥5 years post-closure); §6.3 p105"}
+  ops-access-utilities: {status: present, evidence: "body.md §3.3.1 p44 (three entrances from SR 293); §3.21 p77 (7-mile water pipeline); §3.24.1 p80–81 (7-mile 25-kV distribution line); Figure 7"}
+  # --- reclamation
+  rec-plan:        {status: present, evidence: "body.md §6 p104–124; facility-by-facility §6.5.1–6.5.18 p112–120"}
+  rec-concurrent:  {status: present, evidence: "body.md §6.4.5 p110 (concurrent reclamation from Year 5)"}
+  rec-drill-holes: {status: present, evidence: "body.md §6.8 p120–121 (NAC 534.425–534.428, bentonite/cement, 20-ft surface plug)"}
+  rec-regrading:   {status: present, evidence: "body.md §6.4.2 p108; §6.5.3 WRSF ≤3H:1V p113; §6.5.7 CGS 4H:1V p114; §6.10.3 p122"}
+  rec-pit-backfill: {status: vague, note: "Environmental factors (no pit lake) and backfill geochemistry are discussed; safety and economic factors are essentially absent (only 'more conducive to mining', §3.4.2 p50). See KG-13", evidence: "body.md §3.4.2 p49–50; §6.5.2 p112"}
+  rec-riparian:    {status: missing, note: "Five seasonal springs lie in the Project area (§2.2.8 p23) but no riparian mitigation is described anywhere; see KG-01"}
+  rec-wildlife-habitat: {status: present, note: "Brief", evidence: "body.md §6.4.8 p111; §4.7–4.8 p93–94"}
+  rec-topsoil:     {status: present, evidence: "body.md §6.4.1 p107 (6–12 in. replacement); §4.4 p92; §3.19 Table 3-7 p74"}
+  rec-revegetation: {status: present, evidence: "body.md §6.4.4 p108–110; Table 6-2 seed mix p109 (12.10 lb PLS/acre); §6.10.2 p122; success standard appendix_I.md §4 p18 ('as close to 100 percent of the perennial plant cover of selected comparison areas')"}
+  rec-acid-toxic-control: {status: present, evidence: "body.md §6.7 p120; §3.4.2 p49–50; §3.17 CTFS liner p71; appendix_B_summary.md"}
+  rec-structures-removal: {status: present, evidence: "body.md §6.5.1, 6.5.4, 6.5.8, 6.5.16 p112–119"}
+  rec-post-closure: {status: present, evidence: "body.md §6.10 p121–123 (≥5 years water monitoring; ≥3 years revegetation)"}
+  rec-erosion-runoff: {status: present, evidence: "body.md §6.4.3 p108 (500-year, 24-hour closure diversions); §6.6 p120; §4.3 p91"}
+  # --- monitoring
+  mon-plan:        {status: present, evidence: "body.md §5.7 p102; appendix_I.md §1.1"}
+  mon-details:     {status: present, evidence: "appendix_I.md Tables 1–2 (wells, Profile I/II parameters, methods), quarterly reporting §6"}
+  mon-adverse-response: {status: present, note: "Brief: oral report next work day, follow-up monitoring, mitigation 'if needed'", evidence: "appendix_I.md §6 p20; §2.4 p9 (permit-limit exceedance: site-specific evaluation)"}
+  mon-water:       {status: present, evidence: "appendix_I.md §3.1 (groundwater, surface water); body.md §6.10.1 p122"}
+  mon-other-programs: {status: present, evidence: "appendix_I.md §3.2 air, §3.3 wildlife (quarterly mortality reports), §3.4 weeds, §4.2–4.3 revegetation and slope stability"}
+  # --- interim management
+  imp-stabilize:   {status: vague, note: "Appendix H §2.2 says 'No additional measures would be necessary to stabilize excavations'; body §6.11 pit berms/fences control access, not stability. See KG-09", evidence: "appendix_H.md §2.2 p5; body.md §6.11 p123"}
+  imp-toxic-control: {status: present, evidence: "appendix_H.md §2.3–2.5 p5–6, §3.2 p7–8 (pond monitoring, purge piping, explosives secured)"}
+  imp-equipment:   {status: present, evidence: "appendix_H.md §2.4 p5–6; body.md §6.11 p123"}
+  imp-safe-clean:  {status: present, evidence: "appendix_H.md §2.1 security procedures p4; body.md §6.11 security, buildings p123"}
+  imp-monitoring:  {status: present, evidence: "appendix_H.md §2.5 p6; §3.2 weekly pond monitoring p7"}
+  imp-schedule-notify: {status: present, evidence: "appendix_H.md §2.1 p4 (no planned closures; NDEP within 30 days, BLM concurrently); body.md §6.11 p123 (90-day notice if >120 days)"}
+  # --- baseline
+  baseline-environment: {status: present, evidence: "body.md §2.3.1–2.3.11 p22–39"}
+  baseline-acid-testing: {status: present, evidence: "body.md §3.5.1 Table 3-4 p56 (ABA, MWMP, HCT); appendix_B_summary.md"}
+  # --- bond
+  cost-estimate:   {status: present, note: "Deferred, as 401(d) allows: 'will be submitted under separate cover' (body §6.14 p124; appendix_J.md). No dollar amount exists, so bond-amount flaws cannot be planted. See KG-02.", evidence: "body.md §6.14 p124; appendix_J.md"}
+  # --- performance standards
+  pf-impoundment-design: {status: present, evidence: "body.md §3.17 p71–72 (HDPE geomembrane, underdrain, double-lined reclaim ponds with geonet); emergency pond lined p64"}
+  pf-storm-capacity: {status: present, evidence: "body.md §3.17 p72 (reclaim ponds sized for 100-year, 24-hour storm; ~80 million gallons); reagent containment p70"}
+  pf-secondary-containment: {status: present, evidence: "body.md §3.16 p70 (110% of largest tank + 100-year, 24-hour storm); §6.7 p120"}
+  pf-exclusion:    {status: present, evidence: "body.md §3.17 p72 (6–8 ft chain-link around reclaim ponds); §4.6 p92–93; emergency pond fenced p64"}
+  pf-closure-detox: {status: present, evidence: "body.md §6.5.8 p115 (emergency pond emptied, liner removal); §6.5.9 p115–116 (CTFS clay cap, E-Cells)"}
+  pf-wildlife-tes: {status: present, evidence: "body.md §2.3.6 sage-grouse; §4.7 p93 (siting away from sage-grouse habitat, anti-perch devices, BBCS); §4.8 raven controls p94"}
+  pf-cultural:     {status: vague, note: "Only 'employees and contractors will be informed on how to proceed with chance finds'; no stop-work or notify-BLM procedure; nothing on paleontology despite the heading. See KG-12", evidence: "body.md §4.11 p96–97"}
+  pf-air-quality:  {status: present, evidence: "body.md §4.1 p90–91"}
+  pf-solid-waste:  {status: present, evidence: "body.md §3.26 p85–86 (landfill, hazardous waste); §4.12 p97–98; Class III landfill §6.5.3 p113"}
+  pf-fire:         {status: present, evidence: "body.md §3.25 p85 (fire water, 30 CFR 56.4330); §4.10 p96"}
+  pf-public-safety: {status: present, evidence: "body.md §3.24.6 p83–84 (fencing); §4.14 p99; §4.6 fencing p92; §6.5.2 pit barriers p112"}
+
+# Real weaknesses in the published plan. Scoring: a flag matching one of these (same
+# checklist_id, or same location and type) is counted as a known-gap hit, not a false alarm.
+known_gaps:
+  - id: KG-01
+    type: missing
+    checklist_ids: [rec-riparian]
+    description: No riparian mitigation, although five seasonal springs (SP-001, SP-002, SP-058, SP-059, SP-061) lie in the Project area.
+    locations: [{file: body.md, section: "2.2.8", pages: [23]}]
+  - id: KG-02
+    type: inconsistent
+    checklist_ids: [cost-estimate]
+    description: §6.1 and §6.10.1 say costs "are included in" / "contains costs for" the Reclamation Cost Estimate (Appendix J), but Appendix J and §6.14 say the estimate will be prepared later.
+    locations: [{file: body.md, section: "6.1", pages: [104]}, {file: body.md, section: "6.10.1", pages: [122]}, {file: appendix_J.md, pages: [1]}]
+  - id: KG-03
+    type: inconsistent
+    checklist_ids: [ops-water-management, rec-erosion-runoff]
+    description: §5.1 Stormwater Management Plan lists objectives copied from the Emergency Response Plan ("Provide for an effective response to emergency situations", "Minimize property and equipment losses", ...).
+    locations: [{file: body.md, section: "5.1", pages: [100]}]
+  - id: KG-04
+    type: inconsistent
+    checklist_ids: [rec-acid-toxic-control]
+    description: §6.7 says the CTFS cover is "described in Section 6.5.8"; CTFS reclamation is §6.5.9 (6.5.8 is Process Plant Facilities).
+    locations: [{file: body.md, section: "6.7", pages: [120]}]
+  - id: KG-05
+    type: inconsistent
+    checklist_ids: [rec-pit-backfill, ops-designs]
+    description: §3.4.2 refers to "Sections 3.4 and 3.8" for the WRSF and coarse gangue stockpile; the correct sections are 3.5 and 3.9 (as §5.2 states).
+    locations: [{file: body.md, section: "3.4.2", pages: [49]}]
+  - id: KG-06
+    type: inconsistent
+    checklist_ids: [ops-rock-characterization, baseline-acid-testing]
+    description: §3.4.2 says test results are available for nine oxidized gangue samples (consistent with Table 3-4, 9 gangue ABA tests), but §3.5.1 says "static test and kinetic test results are available for seven (7) samples of gangue" — which also conflicts with Table 3-4's two HCT (kinetic) tests.
+    locations: [{file: body.md, section: "3.4.2", pages: [50]}, {file: body.md, section: "3.5.1", pages: [58]}]
+  - id: KG-07
+    type: vague
+    checklist_ids: [ops-water-management]
+    description: Project water balance and groundwater impact analysis is deferred ("anticipated to be submitted to the BLM in August 2019").
+    locations: [{file: body.md, section: "5.8", pages: [103]}]
+  - id: KG-08
+    type: vague
+    checklist_ids: [ops-water-management]
+    description: Water rights for Phase 2 (~5,200 AF/yr) are not identified. The plan holds ~995 AF and options ~2,717 AF, and says only that LNC "plans to acquire and transfer additional water rights" before Phase 2.
+    locations: [{file: body.md, section: "3.21", pages: [77, 78]}]
+  - id: KG-09
+    type: vague
+    checklist_ids: [imp-stabilize]
+    description: Appendix H §2.2 states no additional measures are needed to stabilize excavations during temporary closure.
+    locations: [{file: appendix_H.md, section: "2.2", pages: [5]}]
+  # KG-10 retired 2026-11-06: 18,686 vs 18,618 acres (0.4%) between the survey area and the
+  # soils table is likely legitimate, not a deficiency.
+  - id: KG-11
+    type: inconsistent
+    checklist_ids: [ops-designs]
+    description: CTFS design differs between the body and the SWPPP. Body §3.17 and Table 3-6 give 5H:1V exterior slopes; Appendix C §3.5 gives 3H:1V exterior (2H:1V interior) perimeter-berm slopes, 40-foot lifts and a southern buttress.
+    locations: [{file: body.md, section: "3.17", pages: [71]}, {file: appendix_C.md, section: "3.5", pages: [15]}]
+  - id: KG-12
+    type: vague
+    checklist_ids: [pf-cultural]
+    description: §4.11 says only that employees and contractors "will be informed on how to proceed with chance finds" — no stop-work, protect-in-place or notify-BLM procedure, and no paleontological measures despite the section title.
+    locations: [{file: body.md, section: "4.11", pages: [96, 97]}]
+  - id: KG-13
+    type: vague
+    checklist_ids: [rec-pit-backfill]
+    description: The pit backfill discussion covers environmental factors (no pit lake, gangue geochemistry) but gives no safety or economic analysis of backfilling.
+    locations: [{file: body.md, section: "3.4.2", pages: [49, 50]}, {file: body.md, section: "6.5.2", pages: [112]}]
+  - id: KG-14
+    type: inconsistent
+    checklist_ids: [ops-water-management]
+    description: Peak pit dewatering rate is ~90 gpm in the body (§3.4.1, §5.8) but ~195 gpm in the SWPPP (Appendix C §3.1).
+    locations: [{file: body.md, section: "3.4.1", pages: [48]}, {file: body.md, section: "5.8", pages: [102]}, {file: appendix_C.md, section: "3.1", pages: [13]}]
+  - id: KG-15
+    type: inconsistent
+    checklist_ids: [rec-regrading]
+    description: §6.10.3 says all reclaimed slopes will be 3H:1V or less, but §3.4.2 and §6.5.2 say a portion of the pit highwall (bedrock walls at 39–47°) will remain exposed.
+    locations: [{file: body.md, section: "6.10.3", pages: [123]}, {file: body.md, section: "3.4.2", pages: [49]}, {file: body.md, section: "6.5.2", pages: [112]}]
+  - id: KG-16
+    type: inconsistent
+    checklist_ids: [ops-maps]
+    description: §5.8 says process water management "is shown on Figure 13 Block Flow Diagram"; the Block Flow Diagram is Figure 14 (§3.11).
+    locations: [{file: body.md, section: "5.8", pages: [103]}]
+  - id: KG-17
+    type: inconsistent
+    checklist_ids: [ops-schedule]
+    description: The Summary says mining production and ore processing commence in late 2022; §3.3.3 says mining activities commence in late 2021.
+    locations: [{file: body.md, pages: [6]}, {file: body.md, section: "3.3.3", pages: [45]}]
+
+  # KG-18 and KG-19 were found by reviewing the V1 agent's flags on the clean control (2026-11-08,
+  # Notes/Planning/Agent_Plan_V1.md §7.4); confirmed against the plan text by a person.
+  - id: KG-18
+    type: inconsistent
+    checklist_ids: [ops-schedule]
+    description: A 41-year mine life with mining from late 2021 ends around 2062, but the plan gives 2065 as the end of mining and processing (Summary, §3.3.3) and as the year of mining in the southeast pit (§3.4.1, §5.8, Appendix C §3.1); Appendix C §1.4 gives 2063.
+    locations: [{file: body.md, pages: [6]}, {file: body.md, section: "3.3.3", pages: [45]}, {file: body.md, section: "3.4.1", pages: [48]}, {file: body.md, section: "5.8", pages: [103]}, {file: appendix_C.md, section: "3.1", pages: [13]}, {file: appendix_C.md, section: "1.4", pages: [8]}]
+
+  - id: KG-19
+    type: vague
+    checklist_ids: [pf-storm-capacity]
+    description: The CTFS reclaim ponds are sized for the 100-year, 24-hour storm only; the capacity basis does not include the maximum process-solution inventory or an allowance for snowmelt and draindown (43 CFR 3809.420(b)(12)(iii)).
+    locations: [{file: body.md, section: "3.17", pages: [72]}, {file: appendix_C.md, section: "4.5", pages: [21]}]
+
+  # KG-20 and KG-21 (and KG-18's Appendix C §1.4 location) were found by reviewing the V2 agent's flags
+  # on the clean control (2026-11-08, Notes/Planning/Agent_Plan_V2.md §8); confirmed against the plan text.
+  - id: KG-20
+    type: inconsistent
+    checklist_ids: [baseline-environment]
+    description: 2013 annual precipitation is 8.6 inches in the §2.3.1 text and Appendix C §1.5, but 8.8 in Table 2-1 (whose 2013 monthly values sum to 8.8).
+    locations: [{file: body.md, section: "2.3.1", pages: [23]}, {file: appendix_C.md, section: "1.5", pages: [9]}]
+  - id: KG-21
+    type: inconsistent
+    checklist_ids: [pf-impoundment-design, ops-designs]
+    description: Clay tailings are dewatered to a wet-basis moisture content of approximately 19–27 percent before disposal in §3.17, but approximately 33 percent in Appendix C §3.5.
+    locations: [{file: body.md, section: "3.17", pages: [71]}, {file: appendix_C.md, section: "3.5", pages: [14]}]
+  - id: KG-22
+    type: inconsistent
+    checklist_ids: [baseline-environment]
+    description: §2.3.1 says winter (December–February) precipitation in 2011–2017 ranged from 0.3 to 3.7 inches, but Table 2-1 has winter months of 0.0 (Dec 2011), 0.1 (Dec 2017) and 0.2 (Feb 2013, Feb 2016) inches.
+    locations: [{file: body.md, section: "2.3.1", pages: [23]}]
+
+facts:
+  trigger_facts:
+    operator_is_corporation: true       # Lithium Nevada Corp., §1
+    has_open_pit: true                  # §3.4
+    has_processing_facility: true       # §3.8–3.16
+    has_waste_rock_facility: true       # West and East WRSFs, §3.5
+    has_tailings_facility: true         # CTFS, §3.17
+    has_process_ponds: true             # CTFS reclaim ponds, emergency pond
+    has_process_tanks: true             # leach/neutralization tanks, reagent tanks §3.11, §3.16
+    has_leach_facility: false           # tank leaching only; no heap leach pads
+    has_engineered_containment: true    # HDPE liners
+    stores_hazardous_materials: true    # Table 3-5, fuel Table 3-9
+    has_drill_holes_or_wells: true      # exploration holes, PH-1, monitoring wells
+    has_pag_or_leachable_material: true # minor PAG (~0.25% of waste rock); Sb/As leaching; tailings leach metals
+    affects_riparian_or_springs: true   # five seasonal springs in Project area
+    has_special_status_species: true    # greater sage-grouse, §2.3.6
+    uses_water: true
+    uses_groundwater: true              # Quinn production wells
+    alters_drainage: true               # diversions, sediment ponds
+  key_values:
+    # value, where it appears (PDF pages). Values that appear in more than one place are good
+    # targets for inconsistent flaws; edit one place only.
+    project_area_acres:      {value: "10,468", where: ["body.md Summary p6", "§2.1 p21", "§3.3.4 p45", "appendix_C.md §1"]}
+    total_disturbance_acres: {value: "5,545 (Table 3-1 total 5,545.0)", where: ["body.md Summary p6", "§2.1 p21", "Table 3-1 p46"]}
+    pit_disturbance_acres:   {value: "1,099.8", where: ["Table 3-1 p46"]}
+    ctfs_disturbance_acres:  {value: "1,166.1", where: ["Table 3-1 p46"]}
+    mine_life_years:         {value: "41", where: ["Summary p6", "§3.3.3 p45", "§3.4 p47", "§6.5.2 p112", "§3.17 p71"]}
+    end_of_mining:           {value: "2065", where: ["Summary p6", "§3.3.3 p45"]}
+    post_closure_monitoring: {value: "minimum of five years", where: ["Summary p7", "§3.3.3 p45", "§6.10 p122", "§6.10.1 p122", "§6.5.12 p117"]}
+    revegetation_monitoring: {value: "at least three years", where: ["§6.10 p122", "§6.10.2 p122", "Table 6-1 p106"]}
+    ore_mined_mcy:           {value: "230.0", where: ["Summary p7", "§3.4 p48"]}
+    waste_rock_mcy:          {value: "190.2 total = 144.3 backfill + 45.9 WRSF", where: ["§3.4 p48 (190.2 total)", "Summary p7 (144.3 and 45.9 only)", "§3.4.2 p49", "§3.5 p51"]}
+    wrsf_capacities_mcy:     {value: "West 32.7, East 13.2", where: ["§3.5 p51", "Table 3-3 p51", "appendix_C.md"]}
+    wrsf_slopes:             {value: "operations West 3H:1V, East 4H:1V; closure ≤3H:1V", where: ["§3.5 p51", "Table 3-3 p51", "§6.5.3 p113"]}
+    cgs_capacity_mcy:        {value: "48.4; max ~200 ft tall; 4H:1V", where: ["Summary p7", "§3.9 p62", "§6.5.7 p114"]}
+    ctfs:                    {value: "353.6 M CY; 5H:1V; 250 ft; HDPE geomembrane on 6-in bedding; FoS >1.4 vs min 1.3", where: ["Summary p7", "§3.17 p71", "Table 3-6 p71"]}
+    reclaim_ponds:           {value: "double-lined HDPE with geonet; 100-year, 24-hour storm; ~80 million gallons; 6–8 ft chain-link fence", where: ["§3.17 p72"]}
+    operational_diversions:  {value: "25-year, 24-hour design storm (plant site 100-year)", where: ["§3.5 p52", "§3.9 p60", "§3.20 p75"]}
+    closure_diversions:      {value: "500-year, 24-hour design storm", where: ["§6.4.3 p108", "§6.5.12 p117"]}
+    pit_slopes:              {value: "soil inter-ramp ~25°; bedrock 47° (<295 ft) and 39° (295–394 ft)", where: ["§3.4 p48"]}
+    dewatering:              {value: "not needed until 2055; peak ~90 gpm in 2065 (Appendix C says ~195 gpm; KG-14)", where: ["Summary p7", "§3.4.1 p48", "§5.8 p102–103", "appendix_C.md §3.1 p13"]}
+    water_supply:            {value: "Quinn Production Well ~1,600 gpm Phase 1, ~3,200 gpm Phase 2; 7-mile pipeline", where: ["§3.21 p77–78"]}
+    production:              {value: "Phase 1 33,000 tpy LCE; Phase 2 66,000 tpy LCE", where: ["§3.3.2 p44", "§3.22 p78"]}
+    workforce:               {value: "~1,000 construction peak; ~300 operations; Table 3-2 183 (Phase 1) / 313 (Phase 2)", where: ["Summary p7", "§3.3.5 p46", "Table 3-2 p47"]}
+    seed_rate:               {value: "12.10 lb PLS/acre (Table 6-2 total)", where: ["§6.4.4 p109", "Table 6-2 p109"]}
+    growth_media_cover:      {value: "6–12 inches", where: ["§6.4.1 p107", "§6.4.4 p108", "pit 6 in. §6.5.2 p112"]}
+    concurrent_reclamation_start: {value: "Year 5", where: ["§6.4.5 p110", "§3.19 p74"]}
+    claims:                  {value: "492 unpatented lode claims", where: ["§1.6 p20", "appendix_A.md"]}
+    pag_fraction:            {value: "0.25% of waste rock; ~1% of final pit wall", where: ["§3.5.1 p57", "appendix_B_summary.md"]}
+    drill_hole_surface_plug: {value: "top 20 feet, Portland cement", where: ["§6.8 p121"]}
+    bird_breeding_season:    {value: "May 1 to July 15", where: ["§4.7 p93"]}

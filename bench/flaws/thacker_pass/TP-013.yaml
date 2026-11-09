@@ -1,0 +1,56 @@
+id: TP-013
+type: vague
+difficulty: easy
+checklist_ids:
+- pf-air-quality
+description: §4.1 Air Emissions (dust control measures, crusher/conveyor controls, BACT for the acid plant, scrubbers)
+  is reduced to one hedged sentence about permits and controls 'as appropriate'.
+expected_finding: 'Air quality protection is not described in §4.1: no emission controls are given for the crusher,
+  the sulfuric acid plant or the process plant, and dust control is deferred to ''reasonable industry practices''
+  (§4.1). (Appendix C still lists road dust suppressants.)'
+tells: A one-sentence section in a plan that otherwise has a sulfuric acid plant and large haul fleet.
+edits:
+- file: body.md
+  find: |+
+    ### 4.1 Air Emissions
+
+    LNC will obtain and adhere to air quality permits for the Project from NDEP Bureau of Air Pollution Control (BAPC). As per BAPC regulations, the Project air quality operating permit must be authorized by the BAPC prior to Project commissioning.
+
+    Air quality practices will include dust control for mine unit operations that will be described in the Fugitive Dust Control Plan that LNC will develop for the Project. In general, the Fugitive Dust Control Plan will provide for water application on haul roads and other disturbed areas, chemical dust suppressant application (such as magnesium chloride) where appropriate, and other dust control measures as per accepted and reasonable industry practices. LNC will seed disturbed areas to minimize fugitive dust emissions from surfaces, where appropriate.
+
+    LNC will control fugitive emissions at the crusher and conveyor drop points using water sprays or baghouses, as necessary, and will install and operate appropriate emission control equipment in accordance with the construction and operating air permits. Where required, pollution control devices installed by equipment manufacturers will control combustion emissions. LNC will install, operate, and maintain in good working order pollution control equipment such as baghouse dust collectors to minimize emissions.
+
+    LNC will develop and implement other control measures, if necessary, including:
+
+    - Applying surface treatments (chemical stabilization), additional watering and traffic control regulations (such as reduction in speed and traffic volume restrictions on unpaved roads);
+
+    - Stabilizing the surface of areas adjoining roads which are fugitive dust sources by vegetating or mulching;
+
+    - Restricting travel of unauthorized vehicles on unestablished roads;
+
+    - Minimizing the area of disturbed land during ongoing surface mining activities as much as possible and practical;
+
+    - Compacting unpaved roads to stabilize the road surface and prompt removal of ore, rock, soil, and other debris from road;
+
+    - Minimizing loss of material to wind and spill by watering or treating loaded haul trucks;
+
+    - Ensuring prompt revegetation of disturbed lands; and,
+
+    - Restricting activities causing fugitive dust during periods of air stagnation whenever possible.
+
+    <!-- page 91 | printed 73 -->
+
+    LNC will voluntarily use the Best Available Control Technology (BACT) standard (NAC 445B.028) for the operation of the sulfuric acid plant and the battery production facility. These measures will provide a degree of reduction in the emission of criteria and hazardous air pollutants, minimizing impacts to the ambient air quality. Criteria air pollutants that will be released as tail gas from the sulfuric acid plant will be scrubbed with a soda ash or similar solution, reducing SO 2 and acid mist emissions. Excess sodium from the scrubbing medium will be purged to the lithium process plant.
+
+    One hundred percent of chlorine created from lithium metal production will be used to create sodium hypochlorite, resulting in zero chlorine emissions during lithium metal production. While the sodium hypochlorite production facility has no chlorine emissions, the storage tank for sodium hypochlorite solution will vent the vapor phase while the tank is being filled. A caustic soda or similar scrubber may be used to reduce any chlorine emissions released during chemical transfer. Emissions from the battery production facility will be reduced with a catalytic oxidizer and a carbon scrubber, effectively reducing total volatile organic compound emissions.
+
+  replace: |+
+    ### 4.1 Air Emissions
+
+    LNC will obtain air quality permits for the Project as required. Dust and other emissions from Project activities will be controlled as appropriate, using reasonable industry practices where necessary.
+
+    <!-- page 91 | printed 73 -->
+
+absent:
+- baghouse
+- water sprays

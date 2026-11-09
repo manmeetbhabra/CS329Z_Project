@@ -1,0 +1,8 @@
+id: TP-000
+type: none
+difficulty: none
+checklist_ids: []
+description: 'Clean control: the gold plan with no changes. Any flag that is not a known gap is a false
+  alarm.'
+expected_finding: ''
+edits: []

@@ -1,0 +1,52 @@
+id: TP-003
+type: missing
+difficulty: medium
+checklist_ids:
+- rec-drill-holes
+description: Section 6.8 Drill Hole Plugging and Water Well Abandonment and the §6.4 bullet on abandoning drill
+  holes are deleted, and the three other mentions (§3.21 PH-1, §3.27 exploration, §6.5.13 wells) lose their NAC
+  534 standard and timing.
+expected_finding: 'No drill-hole and well plugging plan: no method, plug design, governing standard (NAC 534) or
+  timing, although the project has extensive exploration drilling and wells (§6.8 absent; §3.21, §3.27, §6.5.13
+  only say holes and wells ''will be abandoned'').'
+tells: Section numbering jumps from 6.7 to 6.9. Three sections still say holes or wells will be plugged, with no
+  detail.
+edits:
+- file: body.md
+  find: |+
+    - Properly abandon mineral exploration and development drill holes, monitoring and observation wells, and production wells pursuant to NAC 534 to prevent potential contamination of water resources;
+
+  replace: ''
+- file: body.md
+  find: |+
+    ### 6.8 Drill Hole Plugging and Water Well Abandonment
+
+    In accordance with applicable rules and regulations (NAC 534.425 through 534.428), reclamation of mineral drill holes (i.e., exploration and development) and wells (i.e., monitoring and production)
+
+    <!-- page 121 | printed 103 -->
+
+    subject to NDWR standards will require proper abandonment methodology. Abandonment of each exploration drill hole will occur upon completion of drilling operations and prior to the removal of the drill rig from the drill site.
+
+    Abandonment techniques will include mixing a bentonite and freshwater slurry or cement grout, specifically formulated for well or drill hole abandonment. The mixture will be circulated through the drill pipe and distributed from the bottom of the drill hole in a manner that will assure against the vertical movement of groundwater. The mixture will also be placed in the annular space surrounding any casing left down the hole.
+
+    If circulation from the bottom is not possible, drill hole abandonment will entail mixing the slurry or grout at the surface, circulating the mixture through the drill pipe from the bottom of the drill hole under pressure and placed in stages as the drill pipe is retrieved from the drill hole. A cement surface plug, comprised of Portland cement mixed with clean water and aggregates or bagged cement mixed with clean water, will be placed within the top 20 feet of each drill hole. The top of the surface plug will be placed below the ground surface to eliminate physical hazards, to prevent ponding of water directly over the drill hole, allow for placement of growth media, and allow for passage of earthmoving equipment required for reclamation operations. Remaining surface casing will also be removed below the ground surface and the annulus of any casing left down hole is sealed in a manner that assures against the movement of surface water down the drill hole.
+
+    Maintenance of monitoring wells around process facilities will continue until LNC is released of this requirement by NDEP. These wells will then be plugged and abandoned according to the requirements stated in NAC 534.425 through 534.428.
+
+  replace: |+
+    <!-- page 121 | printed 103 -->
+
+- file: body.md
+  find: LNC will plug and abandon the well according to the requirements stated in NAC 534.425 through 534.428.
+  replace: LNC will plug and abandon the well.
+- file: body.md
+  find: If drill holes are not repurposed, they will be abandoned per NAC 534.425 through 534.428 prior to the drill
+    rig moving to the next site.
+  replace: Drill holes that are not repurposed will be abandoned.
+- file: body.md
+  find: Wells will be plugged according to NAC 534.425 through 534.428 abandonment statues and procedures.
+  replace: Wells will be plugged and abandoned.
+absent:
+- NAC 534
+- bentonite
+- prior to the drill rig moving

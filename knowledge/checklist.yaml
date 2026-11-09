@@ -1,0 +1,510 @@
+# Requirements checklist for a BLM Plan of Operations (hardrock mining, Nevada).
+# Source: 43 CFR 3809.401 (contents of a plan) and 3809.420 (performance standards the plan must
+# meet), eCFR text as of 2026-11-02 (Regulations/). Nevada state-only items (NAC 519A) are out
+# of scope.
+#
+# Fields
+#   id            stable identifier; the answer key and agent reports refer to items by id
+#   cite          exact CFR paragraph(s)
+#   section       which part of the plan the item belongs to
+#   text          plain-language requirement
+#   kind          always      - required in every plan
+#                 conditional - "where applicable", or only when BLM requests/specifies it
+#                 triggered   - required because of a fact about this project (see trigger_facts)
+#   applies_when  plain-language condition
+#   trigger_facts fact-sheet keys; the item applies if ANY is true (triggered items only)
+#   vague_if      what makes otherwise-present content too vague to pass
+#   catches       deficiency types this item can expose:
+#                 missing | vague | inconsistent | implausible | missed_trigger
+#
+# Note: 3809.401(b)(5)(ii) cross-references "3809.420(c)(12)(vii)", which does not exist. The
+# intended paragraph is 3809.420(b)(12)(vii); the checklist cites that. A plan that quotes the
+# regulation's wrong reference is not deficient for doing so.
+
+version: 1
+items:
+
+# ------------------------------------------------------------ 401(b)(1) Operator information
+- id: op-identity
+  cite: 43 CFR 3809.401(b)(1)
+  section: operator
+  text: Name, mailing address and phone number of the operator(s).
+  kind: always
+  applies_when: always
+  vague_if: Any of name, mailing address or phone number is absent or given only as "to be provided".
+  catches: [missing, vague, inconsistent]
+
+- id: op-tin
+  cite: 43 CFR 3809.401(b)(1)
+  section: operator
+  text: Taxpayer identification number of the operator(s).
+  kind: always
+  applies_when: always
+  vague_if: Number is absent or redacted with no statement that it is, or will be, provided to BLM separately (e.g. a bare "TBD"). A commitment to provide it in a separate document is acceptable, since TINs are often withheld from public copies.
+  catches: [missing]
+
+- id: op-claims
+  cite: 43 CFR 3809.401(b)(1)
+  section: operator
+  text: BLM serial numbers of the unpatented mining claims where disturbance would occur.
+  kind: always
+  applies_when: always (unpatented claims are involved)
+  vague_if: Claims are mentioned but no serial numbers or claim list is given or referenced.
+  catches: [missing, vague]
+
+- id: op-poc
+  cite: 43 CFR 3809.401(b)(1)
+  section: operator
+  text: If the operator is a corporation, one named individual as the point of contact.
+  kind: triggered
+  applies_when: the operator is a corporation
+  trigger_facts: [operator_is_corporation]
+  vague_if: Only a department, title or generic office is given, with no named individual.
+  catches: [missing, vague, missed_trigger]
+
+# ------------------------------------------------------------ 401(b)(2) Description of operations
+- id: ops-description
+  cite: 43 CFR 3809.401(b)(2)
+  section: operations
+  text: Description of the equipment, devices and practices proposed for operations, at a level of detail sufficient for BLM to determine the plan prevents unnecessary or undue degradation.
+  kind: always
+  applies_when: always
+  vague_if: Operations are described only in general terms (e.g. "standard mining methods") without the mining method, main equipment or production rates.
+  catches: [missing, vague, inconsistent, implausible]
+
+- id: ops-maps
+  cite: 43 CFR 3809.401(b)(2)(i)
+  section: operations
+  text: Maps of the project area at an appropriate scale showing exploration, drill sites, mining, processing facilities, waste rock and tailing disposal areas, support facilities, structures, buildings and access routes.
+  kind: always
+  applies_when: always for a mine with surface facilities
+  vague_if: Facilities described in the text do not appear on (or are not referenced to) any map or figure.
+  catches: [missing, inconsistent]
+
+- id: ops-designs
+  cite: 43 CFR 3809.401(b)(2)(ii)
+  section: operations
+  text: Preliminary or conceptual designs, cross sections and operating plans for mining areas, processing facilities, and waste rock and tailing disposal facilities.
+  kind: triggered
+  applies_when: the project has a pit/mining area, processing facility, waste rock facility or tailings facility
+  trigger_facts: [has_open_pit, has_processing_facility, has_waste_rock_facility, has_tailings_facility]
+  vague_if: A facility is named but has no design parameters (capacity, footprint, height, slopes) or cross-section reference.
+  catches: [missing, vague, inconsistent, implausible]
+
+- id: ops-water-management
+  cite: 43 CFR 3809.401(b)(2)(iii)
+  section: operations
+  text: Water management plans (water supply and use, stormwater, dewatering, water balance as applicable).
+  kind: conditional
+  applies_when: where applicable — any project that uses water or alters drainage (effectively all mines)
+  trigger_facts: [uses_water, alters_drainage]
+  vague_if: Water source, quantity used, or stormwater control approach is not stated.
+  catches: [missing, vague, inconsistent, implausible]
+
+- id: ops-rock-characterization
+  cite: 43 CFR 3809.401(b)(2)(iv)
+  section: operations
+  text: Rock characterization and handling plans for waste rock, ore and process residues.
+  kind: triggered
+  applies_when: the project excavates rock or generates waste rock, tailings or other process residues
+  trigger_facts: [has_waste_rock_facility, has_tailings_facility, has_open_pit]
+  vague_if: Characterization is asserted without test methods or results, or handling of problem material is not described.
+  catches: [missing, vague, inconsistent, missed_trigger]
+
+- id: ops-quality-assurance
+  cite: 43 CFR 3809.401(b)(2)(v)
+  section: operations
+  text: Quality assurance plans for construction of engineered facilities.
+  kind: conditional
+  applies_when: where applicable — the project constructs engineered facilities (liners, embankments, ponds)
+  trigger_facts: [has_engineered_containment]
+  vague_if: QA is promised without saying what is inspected/tested, by whom, or how it is documented.
+  catches: [missing, vague]
+
+- id: ops-spill-contingency
+  cite: 43 CFR 3809.401(b)(2)(vi)
+  section: operations
+  text: Spill contingency plans for fuels, reagents and other hazardous materials.
+  kind: conditional
+  applies_when: where applicable — the project stores or transports fuel, reagents or hazardous materials
+  trigger_facts: [stores_hazardous_materials]
+  vague_if: No response procedures, notification steps or responsible parties are given.
+  catches: [missing, vague, missed_trigger]
+
+- id: ops-schedule
+  cite: 43 CFR 3809.401(b)(2)(vii)
+  section: operations
+  text: A general schedule of operations from start through closure.
+  kind: always
+  applies_when: always
+  vague_if: No start date, mine life or closure timing is given.
+  catches: [missing, vague, inconsistent, implausible]
+
+- id: ops-access-utilities
+  cite: 43 CFR 3809.401(b)(2)(viii); 43 CFR 3809.420(b)(1)
+  section: operations
+  text: Plans for all access roads, water supply pipelines, and power or utility services, including the location of access routes.
+  kind: always
+  applies_when: always
+  vague_if: Access, water supply or power source is mentioned without location or route.
+  catches: [missing, vague, inconsistent]
+
+# ------------------------------------------------------------ 401(b)(3) Reclamation plan
+- id: rec-plan
+  cite: 43 CFR 3809.401(b)(3); 43 CFR 3809.420(b)(3)
+  section: reclamation
+  text: A reclamation plan to meet the 3809.420 standards, describing the equipment, devices or practices to be used, covering every disturbed area and facility.
+  kind: always
+  applies_when: always
+  vague_if: A facility described in the operations section has no reclamation treatment.
+  catches: [missing, vague, inconsistent]
+
+- id: rec-concurrent
+  cite: 43 CFR 3809.420(a)(5)
+  section: reclamation
+  text: Concurrent reclamation of areas that will not be disturbed further, at the earliest economically and technically feasible time.
+  kind: always
+  applies_when: always
+  vague_if: Concurrent reclamation is mentioned with no indication of which areas or when.
+  catches: [missing, vague]
+
+- id: rec-drill-holes
+  cite: 43 CFR 3809.401(b)(3)(i)
+  section: reclamation
+  text: Drill-hole plugging (exploration holes, monitoring and production wells).
+  kind: triggered
+  applies_when: the project has or will create drill holes or wells
+  trigger_facts: [has_drill_holes_or_wells]
+  vague_if: Plugging is mentioned without the method or governing standard (e.g. NAC 534).
+  catches: [missing, vague, missed_trigger]
+
+- id: rec-regrading
+  cite: 43 CFR 3809.401(b)(3)(ii); 43 CFR 3809.420(b)(3)(ii)(D)
+  section: reclamation
+  text: Regrading and reshaping of disturbed areas, including final slopes.
+  kind: always
+  applies_when: always
+  vague_if: No final slope angles or target landform for the regraded facilities.
+  catches: [missing, vague, inconsistent, implausible]
+
+- id: rec-pit-backfill
+  cite: 43 CFR 3809.401(b)(3)(iii)
+  section: reclamation
+  text: Mine reclamation, including information on the feasibility of pit backfilling that details economic, environmental and safety factors.
+  kind: triggered
+  applies_when: the project has an open pit
+  trigger_facts: [has_open_pit]
+  vague_if: Backfill is stated or rejected without discussing economic, environmental and safety factors.
+  catches: [missing, vague, inconsistent, missed_trigger]
+
+- id: rec-riparian
+  cite: 43 CFR 3809.401(b)(3)(iv)
+  section: reclamation
+  text: Riparian mitigation.
+  kind: triggered
+  applies_when: operations may affect riparian areas, springs, wetlands or streams
+  trigger_facts: [affects_riparian_or_springs]
+  vague_if: Affected riparian areas/springs are identified but no mitigation is described.
+  catches: [missing, vague, missed_trigger]
+
+- id: rec-wildlife-habitat
+  cite: 43 CFR 3809.401(b)(3)(v); 43 CFR 3809.420(b)(3)(ii)(E)
+  section: reclamation
+  text: Wildlife habitat rehabilitation.
+  kind: always
+  applies_when: always (wildlife habitat is disturbed)
+  vague_if: Only revegetation is described, with no link to the habitat being rehabilitated.
+  catches: [missing, vague]
+
+- id: rec-topsoil
+  cite: 43 CFR 3809.401(b)(3)(vi); 43 CFR 3809.420(b)(3)(ii)(A)
+  section: reclamation
+  text: Topsoil (growth media) handling — salvage, stockpiling, protection and replacement.
+  kind: always
+  applies_when: always
+  vague_if: No salvage depth/volume, stockpile location or replacement thickness is given.
+  catches: [missing, vague, inconsistent, implausible]
+
+- id: rec-revegetation
+  cite: 43 CFR 3809.401(b)(3)(vii); 43 CFR 3809.420(b)(3)(ii)(D)
+  section: reclamation
+  text: Revegetation, including seed mix, application method and timing, and success criteria.
+  kind: always
+  applies_when: always
+  vague_if: No seed mix or rates, or no measure of revegetation success.
+  catches: [missing, vague, inconsistent, implausible]
+
+- id: rec-acid-toxic-control
+  cite: 43 CFR 3809.401(b)(3)(viii); 43 CFR 3809.420(b)(3)(ii)(C); 43 CFR 3809.420(b)(11)
+  section: reclamation
+  text: Isolation and control of acid-forming, toxic or deleterious materials (source control, migration control, and capture/treatment if needed).
+  kind: triggered
+  applies_when: rock characterization or process residues show potentially acid-forming, toxic or metal-leaching material
+  trigger_facts: [has_pag_or_leachable_material, has_tailings_facility]
+  vague_if: Problem material is identified but no placement, cover or containment measure is given.
+  catches: [missing, vague, inconsistent, missed_trigger]
+
+- id: rec-structures-removal
+  cite: 43 CFR 3809.401(b)(3)(ix)
+  section: reclamation
+  text: Removal or stabilization of buildings, structures and support facilities.
+  kind: always
+  applies_when: always (the project builds structures)
+  vague_if: Facilities are listed without saying whether they are removed or left, and how.
+  catches: [missing, vague, inconsistent]
+
+- id: rec-post-closure
+  cite: 43 CFR 3809.401(b)(3)(x)
+  section: reclamation
+  text: Post-closure management (monitoring and maintenance after reclamation, duration).
+  kind: always
+  applies_when: always
+  vague_if: No duration or activities for post-closure monitoring/maintenance.
+  catches: [missing, vague, inconsistent, implausible]
+
+- id: rec-erosion-runoff
+  cite: 43 CFR 3809.420(b)(3)(ii)(B)
+  section: reclamation
+  text: Measures to control erosion, landslides and water runoff during and after reclamation.
+  kind: always
+  applies_when: always
+  vague_if: Erosion control is promised without the measures (diversions, BMPs, design storm).
+  catches: [missing, vague, implausible]
+
+# ------------------------------------------------------------ 401(b)(4) Monitoring plan
+- id: mon-plan
+  cite: 43 CFR 3809.401(b)(4)
+  section: monitoring
+  text: A monitoring plan designed to demonstrate compliance, give early detection of problems, and inform corrective action.
+  kind: always
+  applies_when: always
+  vague_if: Monitoring is promised without saying what will be monitored.
+  catches: [missing, vague]
+
+- id: mon-details
+  cite: 43 CFR 3809.401(b)(4)
+  section: monitoring
+  text: Monitoring details — type and location of monitoring devices, sampling parameters and frequency, analytical methods, and reporting procedures.
+  kind: conditional
+  applies_when: where applicable (any monitoring program in the plan)
+  vague_if: Any of locations, parameters, frequency, methods or reporting is missing for a program.
+  catches: [missing, vague, inconsistent, implausible]
+
+- id: mon-adverse-response
+  cite: 43 CFR 3809.401(b)(4)
+  section: monitoring
+  text: Procedures to respond to adverse monitoring results.
+  kind: conditional
+  applies_when: where applicable (any monitoring program in the plan)
+  vague_if: Only "corrective action will be taken" with no trigger levels, notifications or steps.
+  catches: [missing, vague]
+
+- id: mon-water
+  cite: 43 CFR 3809.401(b)(4); 43 CFR 3809.420(b)(5)
+  section: monitoring
+  text: Surface- and groundwater quality and quantity monitoring.
+  kind: triggered
+  applies_when: operations could affect surface water or groundwater (pit, dewatering, water supply wells, tailings, process ponds)
+  trigger_facts: [has_open_pit, has_tailings_facility, has_process_ponds, uses_groundwater]
+  vague_if: Water monitoring is mentioned without wells/sites, parameters or frequency.
+  catches: [missing, vague, inconsistent, missed_trigger]
+
+- id: mon-other-programs
+  cite: 43 CFR 3809.401(b)(4)
+  section: monitoring
+  text: Other monitoring programs as needed — e.g. air quality, revegetation, stability, noise, wildlife mortality.
+  kind: conditional
+  applies_when: where applicable (e.g. revegetation and stability monitoring for reclaimed facilities; wildlife mortality where solutions or ponds are present)
+  vague_if: A program is named without frequency or method.
+  catches: [missing, vague]
+
+# ------------------------------------------------------------ 401(b)(5) Interim management plan
+- id: imp-stabilize
+  cite: 43 CFR 3809.401(b)(5)(i)
+  section: interim
+  text: Measures to stabilize excavations and workings during temporary closure.
+  kind: always
+  applies_when: always
+  vague_if: No measure for pit walls/excavations during non-operation.
+  catches: [missing, vague]
+
+- id: imp-toxic-control
+  cite: 43 CFR 3809.401(b)(5)(ii); 43 CFR 3809.420(b)(12)(vii)
+  section: interim
+  text: Measures to isolate or control toxic or deleterious materials during temporary closure, including maintenance, monitoring and security of process and solution facilities.
+  kind: always
+  applies_when: always; stronger where process solutions, ponds or tailings facilities exist
+  vague_if: Process facilities/solutions are present but their care during closure is not addressed.
+  catches: [missing, vague, missed_trigger]
+
+- id: imp-equipment
+  cite: 43 CFR 3809.401(b)(5)(iii)
+  section: interim
+  text: Provisions for storage or removal of equipment, supplies and structures during temporary closure.
+  kind: always
+  applies_when: always
+  vague_if: No statement of what happens to equipment, fuel and reagents.
+  catches: [missing, vague]
+
+- id: imp-safe-clean
+  cite: 43 CFR 3809.401(b)(5)(iv)
+  section: interim
+  text: Measures to keep the project area safe and clean during temporary closure.
+  kind: always
+  applies_when: always
+  vague_if: No security, signage, fencing or housekeeping measure.
+  catches: [missing, vague]
+
+- id: imp-monitoring
+  cite: 43 CFR 3809.401(b)(5)(v)
+  section: interim
+  text: Plans for monitoring site conditions during periods of non-operation.
+  kind: always
+  applies_when: always
+  vague_if: No inspection or monitoring frequency during closure.
+  catches: [missing, vague, inconsistent]
+
+- id: imp-schedule-notify
+  cite: 43 CFR 3809.401(b)(5)(vi)
+  section: interim
+  text: Schedule of anticipated periods of temporary closure, and provisions for notifying BLM of unplanned or extended temporary closures.
+  kind: always
+  applies_when: always
+  vague_if: No anticipated closure periods, or no BLM notification provision.
+  catches: [missing, vague]
+
+# ------------------------------------------------------------ 401(c) Baseline information (if BLM requests)
+- id: baseline-environment
+  cite: 43 CFR 3809.401(c)(1)
+  section: baseline
+  text: Operational and baseline environmental information as BLM requests — geology, paleontology, caves, hydrology, soils, vegetation, wildlife, air quality, cultural resources, socioeconomics.
+  kind: conditional
+  applies_when: BLM requires it (in practice expected for EIS-level projects)
+  vague_if: A resource is listed without the study, source or summary of conditions.
+  catches: [missing, vague, inconsistent]
+
+- id: baseline-acid-testing
+  cite: 43 CFR 3809.401(c)(1)
+  section: baseline
+  text: Static and kinetic testing to characterize the potential to produce acid drainage or other leachate.
+  kind: triggered
+  applies_when: rock or process residues could produce acid drainage or leachate (sulfides, metals, process residues)
+  trigger_facts: [has_pag_or_leachable_material, has_tailings_facility]
+  vague_if: Testing is referenced without test types or results.
+  catches: [missing, vague, inconsistent, missed_trigger]
+
+# ------------------------------------------------------------ 401(d) Reclamation cost estimate
+- id: cost-estimate
+  cite: 43 CFR 3809.401(d); 43 CFR 3809.552; 43 CFR 3809.554
+  section: bond
+  text: Reclamation cost estimate (as if BLM hired a third-party contractor, including treatment facilities and interim stabilization), submitted at the time BLM specifies.
+  kind: conditional
+  applies_when: at a time specified by BLM; deferring it with a commitment to submit is acceptable
+  vague_if: An estimate is given that omits major facilities or treatment costs, or the amount is implausible for the disturbance.
+  catches: [missing, inconsistent, implausible]
+
+# ------------------------------------------------------------ 420 performance standards that the plan must show it meets
+- id: pf-impoundment-design
+  cite: 43 CFR 3809.420(b)(12)(i)-(ii)
+  section: operations
+  text: Tailings impoundments, ponds and solution-holding facilities designed for stability, with a low-permeability liner or containment system and monitoring to detect releases.
+  kind: triggered
+  applies_when: the project has tailings facilities, process ponds or solution-holding facilities
+  trigger_facts: [has_tailings_facility, has_process_ponds]
+  vague_if: Liner type/permeability or leak detection is not described.
+  catches: [missing, vague, inconsistent, implausible, missed_trigger]
+
+- id: pf-storm-capacity
+  cite: 43 CFR 3809.420(b)(12)(iii)
+  section: operations
+  text: Leaching facilities and impoundments sized to contain the local 100-year, 24-hour storm in addition to the maximum process solution inventory, with allowance for snowmelt and draindown.
+  kind: triggered
+  applies_when: the project has leaching facilities, process ponds or solution impoundments
+  trigger_facts: [has_process_ponds, has_leach_facility]
+  vague_if: Design storm is not stated, or the capacity basis does not include the maximum process solution inventory and an allowance for snowmelt and draindown.
+  catches: [missing, vague, implausible, missed_trigger]
+
+- id: pf-secondary-containment
+  cite: 43 CFR 3809.420(b)(12)(iv)
+  section: operations
+  text: Secondary containment around vats, tanks or recovery circuits.
+  kind: triggered
+  applies_when: the project has process tanks, vats or recovery circuits holding toxic solutions
+  trigger_facts: [has_process_tanks]
+  vague_if: Tanks are described without any containment provision.
+  catches: [missing, vague, missed_trigger]
+
+- id: pf-exclusion
+  cite: 43 CFR 3809.420(b)(12)(v)
+  section: operations
+  text: Exclusion of the public, wildlife and livestock from solution containment structures holding lethal solutions (fencing, netting, etc.).
+  kind: triggered
+  applies_when: the project has ponds or containment structures with lethal solutions
+  trigger_facts: [has_process_ponds, has_leach_facility]
+  vague_if: Ponds are described without fencing or wildlife exclusion.
+  catches: [missing, vague, missed_trigger]
+
+- id: pf-closure-detox
+  cite: 43 CFR 3809.420(b)(12)(vi)
+  section: reclamation
+  text: Detoxification of solutions and management of tailings/process waste at closure so materials and discharges meet standards.
+  kind: triggered
+  applies_when: the project has leaching solutions, tailings or process wastes
+  trigger_facts: [has_tailings_facility, has_process_ponds, has_leach_facility]
+  vague_if: Closure of process facilities is mentioned without how solutions/tailings are neutralized, drained or covered.
+  catches: [missing, vague, missed_trigger]
+
+- id: pf-wildlife-tes
+  cite: 43 CFR 3809.420(b)(7)
+  section: environmental_protection
+  text: Measures to prevent adverse impacts to threatened or endangered species and their habitat (and special status species identified in baseline).
+  kind: triggered
+  applies_when: baseline identifies threatened, endangered or special status species or their habitat (e.g. greater sage-grouse)
+  trigger_facts: [has_special_status_species]
+  vague_if: Species are identified but no protective measure is given.
+  catches: [missing, vague, missed_trigger]
+
+- id: pf-cultural
+  cite: 43 CFR 3809.420(b)(8)
+  section: environmental_protection
+  text: Protection of cultural and paleontological resources, including stopping work and notifying BLM on discovery.
+  kind: always
+  applies_when: always
+  vague_if: No discovery/notification procedure.
+  catches: [missing, vague]
+
+- id: pf-air-quality
+  cite: 43 CFR 3809.420(b)(4)
+  section: environmental_protection
+  text: Compliance with air quality standards — dust and emission controls, and the air permits required.
+  kind: always
+  applies_when: always
+  vague_if: Dust/emissions are not addressed, or controls are named without sources.
+  catches: [missing, vague]
+
+- id: pf-solid-waste
+  cite: 43 CFR 3809.420(b)(6)
+  section: environmental_protection
+  text: Disposal or removal of solid waste, garbage and refuse, and management of hazardous wastes.
+  kind: always
+  applies_when: always
+  vague_if: No disposal method or destination for solid/hazardous waste.
+  catches: [missing, vague]
+
+- id: pf-fire
+  cite: 43 CFR 3809.420(b)(10)
+  section: environmental_protection
+  text: Fire prevention and suppression measures.
+  kind: always
+  applies_when: always
+  vague_if: No fire prevention or suppression measure.
+  catches: [missing, vague]
+
+- id: pf-public-safety
+  cite: 43 CFR 3809.420(b)(13)
+  section: environmental_protection
+  text: Maintenance and public safety — hazardous sites marked, signed or fenced.
+  kind: always
+  applies_when: always
+  vague_if: No fencing, signage or access control for hazardous areas (pit, ponds).
+  catches: [missing, vague]

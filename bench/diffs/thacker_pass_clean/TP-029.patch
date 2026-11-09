@@ -1,0 +1,7 @@
+--- gold/body.md
++++ TP-029/body.md
+@@ -806,3 +806,3 @@
+ | Processing Facility (Lithium and Sulfuric Acid Plant) | 0 | 0 | 555.3 |
+-| Clay Tailings Filter Stack | 0 | 0 | 1,166.1 |
++| Clay Tailings Filter Stack | 0 | 0 | 1,616.1 |
+ | Mine Facilities Power Line, Quinn Power Line, and Water Supply | 0 | 0 | 267.7 |

@@ -1,0 +1,20 @@
+id: TP-023
+type: inconsistent
+difficulty: easy
+checklist_ids:
+- rec-revegetation
+description: §6.4.4 text gives the seeding rate as 21.10 lb PLS/acre; Table 6-2 (same page) and Appendix D total
+  12.10.
+expected_finding: 'Seeding rate conflicts: 21.10 lb PLS/acre in §6.4.4 text vs 12.10 in Table 6-2 and Appendix D.'
+tells: Text and table on the same page; digits swapped.
+edits:
+- file: body.md
+  find: Broadcast seeding will be at a rate of approximately 12.10 pounds
+  replace: Broadcast seeding will be at a rate of approximately 21.10 pounds
+related:
+- file: body.md
+  find: '|  | Total | 12.10 |'
+  note: Table 6-2 total
+- file: appendix_D.md
+  find: Broadcast seeding will be at a rate of approximately 12.10 pounds
+  note: Appendix D

@@ -1,0 +1,16 @@
+id: TP-030
+type: inconsistent
+difficulty: subtle
+checklist_ids:
+- op-claims
+description: §1.6 says LNC owns 429 unpatented lode claims; Appendix A lists 492.
+expected_finding: 'Claim count conflicts: 429 claims in §1.6 vs 492 claims listed in Appendix A.'
+tells: Requires counting the Appendix A claim table.
+edits:
+- file: body.md
+  find: LNC owns 492 unpatented lode mining claims
+  replace: LNC owns 429 unpatented lode mining claims
+related:
+- file: appendix_A.md
+  find: '# Appendix A – Mining Claim Information'
+  note: claim list

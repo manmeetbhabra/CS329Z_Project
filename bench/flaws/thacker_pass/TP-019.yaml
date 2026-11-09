@@ -1,0 +1,22 @@
+id: TP-019
+type: vague
+difficulty: subtle
+checklist_ids:
+- pf-wildlife-tes
+description: '§4.7: two commitments become optional: the pre-disturbance nest survey (''will have'' → ''may have'')
+  and the anti-perch devices on power poles in sage-grouse habitat (''will install'' → ''may install ..., where
+  practicable'').'
+expected_finding: 'Protective measures for sage-grouse and nesting birds are optional rather than committed: the
+  nest survey and raptor anti-perch devices are ''may'' (§4.7).'
+tells: 'Two words changed in one section. Note: siting, raven controls and other measures remain, so this does not
+  meet the item''s formal vague_if; it is kept as a weakened-commitment case.'
+edits:
+- file: body.md
+  find: LNC will have a qualified biologist survey area proposed for disturbance
+  replace: LNC may have a qualified biologist survey area proposed for disturbance
+- file: body.md
+  find: LNC will install raptor anti-perch devices on the proposed 25-kV power poles
+  replace: LNC may install raptor anti-perch devices, where practicable, on the proposed 25-kV power poles
+absent:
+- will have a qualified biologist survey
+- will install raptor anti-perch

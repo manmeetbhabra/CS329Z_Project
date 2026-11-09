@@ -1,0 +1,480 @@
+# Search words per checklist item, written by agent/queries.py (WriteQueries, from the checklist
+# text only, never from a plan) and reviewed by a person. Query 1 is always the item's own text.
+# A phrase in double quotes is matched exactly (grep); anything else goes to BM25.
+op-identity:
+- Name, mailing address and phone number of the operator(s).
+- Operator Information
+- Company Contact Information
+- Operator mailing address
+- Operator phone number
+- Applicant contact details
+- Project proponent contact
+op-tin:
+- Taxpayer identification number of the operator(s).
+- operator taxpayer identification number
+- operator tax identification number
+- operator TIN
+- operator EIN
+- taxpayer identification information
+- confidential operator tax ID
+op-claims:
+- BLM serial numbers of the unpatented mining claims where disturbance would occur.
+- BLM serial number
+- unpatented claim list
+- mining claim numbers
+- claim name and number
+- claim identification table
+- BLM claim serials
+op-poc:
+- If the operator is a corporation, one named individual as the point of contact. the operator is a corporation
+- Operator contact
+- Project contact
+- Primary contact
+- Contact information
+- Responsible individual
+- Company representative
+ops-description:
+- Description of the equipment, devices and practices proposed for operations, at a level of detail sufficient for BLM to
+  determine the plan prevents unnecessary or undue degradation.
+- mining methods and equipment
+- equipment list and specifications
+- mining operation description
+- production rate estimates
+- operating practices and procedures
+- ore processing equipment
+ops-maps:
+- Maps of the project area at an appropriate scale showing exploration, drill sites, mining, processing facilities, waste
+  rock and tailing disposal areas, support facilities, structures, buildings and access routes.
+- project location map
+- mine site layout
+- surface facilities map
+- exploration drill locations
+- processing plant layout
+- waste rock disposal areas
+- tailings storage facility
+- site access roads
+ops-designs:
+- Preliminary or conceptual designs, cross sections and operating plans for mining areas, processing facilities, and waste
+  rock and tailing disposal facilities. the project has a pit/mining area, processing facility, waste rock facility or tailings
+  facility
+- mine design cross sections
+- pit design parameters
+- processing facility design
+- waste rock facility design
+- tailings facility design
+- facility operating plans
+- waste dump cross section
+- tailings storage capacity
+ops-water-management:
+- Water management plans (water supply and use, stormwater, dewatering, water balance as applicable). where applicable — any
+  project that uses water or alters drainage (effectively all mines)
+- water management plan
+- water supply and use
+- water balance
+- stormwater management
+- surface water control
+- mine dewatering
+- water source and demand
+ops-rock-characterization:
+- Rock characterization and handling plans for waste rock, ore and process residues. the project excavates rock or generates
+  waste rock, tailings or other process residues
+- waste rock characterization
+- geochemical testing methods
+- acid rock drainage prediction
+- acid base accounting results
+- potentially acid generating rock
+- waste rock handling plan
+- tailings geochemical characterization
+- process residue management
+ops-quality-assurance:
+- Quality assurance plans for construction of engineered facilities. where applicable — the project constructs engineered
+  facilities (liners, embankments, ponds)
+- construction quality assurance plan
+- CQA inspection testing
+- liner installation quality control
+- embankment construction testing
+- pond liner documentation
+- engineered facility inspections
+ops-spill-contingency:
+- Spill contingency plans for fuels, reagents and other hazardous materials. where applicable — the project stores or transports
+  fuel, reagents or hazardous materials
+- spill response procedures
+- fuel spill contingency
+- hazardous materials response
+- spill notification contacts
+- emergency spill plan
+- reagent spill response
+ops-schedule:
+- A general schedule of operations from start through closure.
+- operations schedule
+- project schedule
+- mine life
+- estimated mine life
+- construction schedule
+- operating life
+- reclamation schedule
+- closure timeline
+ops-access-utilities:
+- Plans for all access roads, water supply pipelines, and power or utility services, including the location of access routes.
+- access road layout
+- road alignment map
+- water supply pipeline route
+- pipeline alignment
+- power line route
+- utility corridor map
+- site access routes
+- electrical service location
+rec-plan:
+- A reclamation plan to meet the 3809.420 standards, describing the equipment, devices or practices to be used, covering every
+  disturbed area and facility.
+- reclamation plan
+- reclamation methods
+- reclamation equipment
+- disturbed area reclamation
+- facility reclamation
+- reclamation practices
+- site reclamation procedures
+rec-concurrent:
+- Concurrent reclamation of areas that will not be disturbed further, at the earliest economically and technically feasible
+  time.
+- concurrent reclamation
+- progressive reclamation
+- reclamation schedule
+- phased reclamation
+- reclamation of completed areas
+- inactive disturbance reclamation
+- reclamation timing
+rec-drill-holes:
+- Drill-hole plugging (exploration holes, monitoring and production wells). the project has or will create drill holes or
+  wells
+- drill hole abandonment
+- borehole closure procedures
+- exploration hole plugging
+- well abandonment procedures
+- NAC 534 plugging
+- cement bentonite grout
+rec-regrading:
+- Regrading and reshaping of disturbed areas, including final slopes.
+- reclamation grading plan
+- final slope angles
+- post-mining landform
+- slope recontouring
+- regraded facility slopes
+- final grading contours
+- reclamation slope design
+rec-pit-backfill:
+- Mine reclamation, including information on the feasibility of pit backfilling that details economic, environmental and safety
+  factors. the project has an open pit
+- open pit backfill feasibility
+- pit backfill alternatives analysis
+- backfill economic analysis
+- backfilling environmental impacts
+- pit backfill safety assessment
+- backfill stability analysis
+- reclamation backfill evaluation
+rec-riparian:
+- Riparian mitigation. operations may affect riparian areas, springs, wetlands or streams
+- riparian area protection
+- spring protection measures
+- wetland mitigation measures
+- stream channel stabilization
+- riparian buffer restoration
+- aquatic habitat mitigation
+- stream crossing reclamation
+rec-wildlife-habitat:
+- Wildlife habitat rehabilitation.
+- wildlife habitat rehabilitation
+- wildlife habitat restoration
+- wildlife habitat reclamation
+- wildlife habitat mitigation
+- post-mining habitat
+- habitat enhancement measures
+rec-topsoil:
+- Topsoil (growth media) handling — salvage, stockpiling, protection and replacement.
+- topsoil salvage depth
+- growth media stockpile locations
+- topsoil stockpile protection
+- salvaged soil volume
+- topsoil replacement thickness
+- growth media respreading
+rec-revegetation:
+- Revegetation, including seed mix, application method and timing, and success criteria.
+- revegetation plan
+- seed mix and rates
+- seeding methods
+- seeding schedule
+- reclamation seed application
+- vegetative success criteria
+- revegetation monitoring
+rec-acid-toxic-control:
+- Isolation and control of acid-forming, toxic or deleterious materials (source control, migration control, and capture/treatment
+  if needed). rock characterization or process residues show potentially acid-forming, toxic or metal-leaching material
+- potentially acid generating
+- acid rock drainage
+- waste rock segregation
+- waste rock encapsulation
+- low permeability cover
+- contact water collection
+- metal leaching
+rec-structures-removal:
+- Removal or stabilization of buildings, structures and support facilities.
+- structure removal
+- facility demolition
+- building decommissioning
+- infrastructure removal
+- structure stabilization
+- facilities retained post-closure
+rec-post-closure:
+- Post-closure management (monitoring and maintenance after reclamation, duration).
+- post-closure monitoring
+- long-term monitoring
+- post-reclamation monitoring
+- post-closure maintenance
+- closure monitoring period
+- site inspection schedule
+- long-term site maintenance
+rec-erosion-runoff:
+- Measures to control erosion, landslides and water runoff during and after reclamation.
+- erosion control measures
+- stormwater management plan
+- runoff diversion channels
+- slope stabilization measures
+- sediment control BMPs
+- design storm criteria
+- reclamation drainage design
+- landslide hazard mitigation
+mon-plan:
+- A monitoring plan designed to demonstrate compliance, give early detection of problems, and inform corrective action.
+- environmental monitoring plan
+- water quality monitoring
+- groundwater monitoring wells
+- stormwater inspection monitoring
+- monitoring locations and frequency
+- action levels and response
+- corrective action procedures
+- geotechnical instrumentation monitoring
+mon-details:
+- Monitoring details — type and location of monitoring devices, sampling parameters and frequency, analytical methods, and
+  reporting procedures. where applicable (any monitoring program in the plan)
+- monitoring plan
+- monitoring locations
+- sampling parameters
+- sampling frequency
+- analytical methods
+- monitoring equipment
+- monitoring data reporting
+mon-adverse-response:
+- Procedures to respond to adverse monitoring results. where applicable (any monitoring program in the plan)
+- monitoring exceedance response
+- trigger levels and actions
+- contingency response procedures
+- corrective action thresholds
+- notification procedures exceedance
+- adaptive management response
+mon-water:
+- Surface- and groundwater quality and quantity monitoring. operations could affect surface water or groundwater (pit, dewatering,
+  water supply wells, tailings, process ponds)
+- groundwater monitoring wells
+- surface water sampling
+- water quality parameters
+- water level monitoring
+- monitoring locations and frequency
+- groundwater elevations
+- flow rate measurements
+- water sampling schedule
+mon-other-programs:
+- Other monitoring programs as needed — e.g. air quality, revegetation, stability, noise, wildlife mortality. where applicable
+  (e.g. revegetation and stability monitoring for reclaimed facilities; wildlife mortality where solutions or ponds are present)
+- vegetation monitoring frequency
+- reclamation success monitoring
+- slope stability inspections
+- air quality monitoring
+- noise monitoring program
+- wildlife mortality surveys
+- monitoring methods and frequency
+imp-stabilize:
+- Measures to stabilize excavations and workings during temporary closure.
+- temporary closure
+- pit wall stability
+- highwall stabilization
+- excavation stabilization
+- slope stability measures
+- ground control
+- open pit slopes
+imp-toxic-control:
+- Measures to isolate or control toxic or deleterious materials during temporary closure, including maintenance, monitoring
+  and security of process and solution facilities.
+- temporary closure plan
+- care and maintenance
+- process solution management
+- pond inspection and monitoring
+- toxic materials containment
+- facility security measures
+imp-equipment:
+- Provisions for storage or removal of equipment, supplies and structures during temporary closure.
+- temporary closure equipment
+- equipment storage or removal
+- equipment demobilization
+- fuel storage during closure
+- reagent storage during closure
+- supplies and structures removal
+imp-safe-clean:
+- Measures to keep the project area safe and clean during temporary closure.
+- temporary closure measures
+- site security
+- warning signs
+- access control
+- perimeter fencing
+- site housekeeping
+- equipment secured
+- hazardous materials storage
+imp-monitoring:
+- Plans for monitoring site conditions during periods of non-operation.
+- temporary closure monitoring
+- non-operating site inspections
+- closure inspection schedule
+- care and maintenance monitoring
+- reclamation site monitoring
+- seasonal inspection frequency
+imp-schedule-notify:
+- Schedule of anticipated periods of temporary closure, and provisions for notifying BLM of unplanned or extended temporary
+  closures.
+- temporary closure schedule
+- seasonal shutdown schedule
+- planned closure periods
+- temporary cessation of operations
+- unplanned closure notification
+- BLM closure notification
+- extended closure notice
+baseline-environment:
+- Operational and baseline environmental information as BLM requests — geology, paleontology, caves, hydrology, soils, vegetation,
+  wildlife, air quality, cultural resources, socioeconomics. BLM requires it (in practice expected for EIS-level projects)
+- Environmental baseline
+- Existing environmental conditions
+- Geology paleontology cave resources
+- Hydrology soils vegetation
+- Wildlife biological resources
+- Air quality monitoring
+- Cultural resources inventory
+- Socioeconomic conditions
+baseline-acid-testing:
+- Static and kinetic testing to characterize the potential to produce acid drainage or other leachate. rock or process residues
+  could produce acid drainage or leachate (sulfides, metals, process residues)
+- acid base accounting
+- static acid generation testing
+- kinetic humidity cell tests
+- net acid generation testing
+- metal leachability testing
+- geochemical characterization of waste rock
+cost-estimate:
+- Reclamation cost estimate (as if BLM hired a third-party contractor, including treatment facilities and interim stabilization),
+  submitted at the time BLM specifies. at a time specified by BLM; deferring it with a commitment to submit is acceptable
+- reclamation cost estimate
+- reclamation bond estimate
+- third-party reclamation costs
+- water treatment facility costs
+- interim stabilization costs
+- closure and reclamation costs
+pf-impoundment-design:
+- Tailings impoundments, ponds and solution-holding facilities designed for stability, with a low-permeability liner or containment
+  system and monitoring to detect releases. the project has tailings facilities, process ponds or solution-holding facilities
+- tailings impoundment design
+- process pond liner system
+- low permeability liner
+- composite liner system
+- solution pond leak detection
+- underliner leak detection
+- embankment stability analysis
+- seepage monitoring system
+pf-storm-capacity:
+- Leaching facilities and impoundments sized to contain the local 100-year, 24-hour storm in addition to the maximum process
+  solution inventory, with allowance for snowmelt and draindown. the project has leaching facilities, process ponds or solution
+  impoundments
+- 100-year 24-hour storm
+- design storm capacity
+- maximum solution inventory
+- process pond storage capacity
+- snowmelt allowance
+- solution draindown volume
+pf-secondary-containment:
+- Secondary containment around vats, tanks or recovery circuits. the project has process tanks, vats or recovery circuits
+  holding toxic solutions
+- secondary containment
+- tank containment berm
+- lined containment area
+- process solution containment
+- leak collection sump
+- vats and tanks containment
+pf-exclusion:
+- Exclusion of the public, wildlife and livestock from solution containment structures holding lethal solutions (fencing,
+  netting, etc.). the project has ponds or containment structures with lethal solutions
+- solution pond fencing
+- wildlife exclusion measures
+- livestock exclusion fencing
+- cyanide pond netting
+- pond perimeter fence
+- wildlife protection fencing
+- public access restriction
+- bird deterrent netting
+pf-closure-detox:
+- Detoxification of solutions and management of tailings/process waste at closure so materials and discharges meet standards.
+  the project has leaching solutions, tailings or process wastes
+- cyanide detoxification
+- heap leach rinsing
+- solution neutralization
+- tailings closure cover
+- process waste detoxification
+- residual solution management
+- tailings seepage control
+pf-wildlife-tes:
+- Measures to prevent adverse impacts to threatened or endangered species and their habitat (and special status species identified
+  in baseline). baseline identifies threatened, endangered or special status species or their habitat (e.g. greater sage-grouse)
+- wildlife protection measures
+- special status species mitigation
+- threatened endangered species
+- sage grouse protective measures
+- seasonal wildlife restrictions
+- wildlife habitat avoidance
+pf-cultural:
+- Protection of cultural and paleontological resources, including stopping work and notifying BLM on discovery.
+- Cultural resources protection
+- Paleontological resources
+- Inadvertent discovery procedure
+- Stop work discovery
+- Notify BLM discovery
+- Cultural resources monitoring
+- Chance finds procedure
+pf-air-quality:
+- Compliance with air quality standards — dust and emission controls, and the air permits required.
+- air quality management
+- fugitive dust control
+- particulate emissions
+- air emission sources
+- dust suppression measures
+- air quality permits
+- equipment exhaust emissions
+pf-solid-waste:
+- Disposal or removal of solid waste, garbage and refuse, and management of hazardous wastes.
+- solid waste management
+- waste disposal methods
+- garbage and refuse
+- hazardous waste management
+- waste storage and handling
+- off-site disposal facility
+- waste removal contractor
+pf-fire:
+- Fire prevention and suppression measures.
+- fire prevention plan
+- fire suppression equipment
+- wildfire mitigation measures
+- fire extinguishers
+- hot work procedures
+- fuel storage fire safety
+pf-public-safety:
+- Maintenance and public safety — hazardous sites marked, signed or fenced.
+- hazardous areas
+- warning signs
+- perimeter fencing
+- restricted access
+- open pit safety
+- pond access control

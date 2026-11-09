@@ -1,0 +1,44 @@
+[
+ {
+  "page": 1,
+  "printed": "1",
+  "md_chars": 5177,
+  "plain_chars": 4621
+ },
+ {
+  "page": 2,
+  "printed": "2",
+  "md_chars": 5318,
+  "plain_chars": 4744
+ },
+ {
+  "page": 3,
+  "printed": "3",
+  "md_chars": 5350,
+  "plain_chars": 4794
+ },
+ {
+  "page": 4,
+  "printed": "4",
+  "md_chars": 5372,
+  "plain_chars": 4816
+ },
+ {
+  "page": 5,
+  "printed": "5",
+  "md_chars": 5418,
+  "plain_chars": 4862
+ },
+ {
+  "page": 6,
+  "printed": "6",
+  "md_chars": 5420,
+  "plain_chars": 4864
+ },
+ {
+  "page": 7,
+  "printed": "7",
+  "md_chars": 5192,
+  "plain_chars": 4681
+ }
+]

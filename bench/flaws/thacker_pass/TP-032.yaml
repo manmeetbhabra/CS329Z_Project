@@ -1,0 +1,63 @@
+id: TP-032
+type: implausible
+difficulty: easy
+checklist_ids:
+- rec-revegetation
+description: The seeding rate is 0.12 lb PLS/acre (one hundredth of the original 12.10), in the §6.4.4 text, Table
+  6-2 and Appendix D Table 4-1; every species rate is scaled to match.
+expected_finding: A seeding rate of 0.12 lb PLS/acre is far too low to establish vegetation; the seed mix cannot
+  meet the revegetation goals (§6.4.4, Table 6-2, Appendix D).
+tells: Species rates of 0.001–0.06 lb/acre.
+rationale: Broadcast seeding of Great Basin reclamation mixes is typically 8–20 lb PLS/acre (drill seeding about
+  half that); 0.12 lb/acre is roughly one seed per square foot or less.
+edits:
+- file: body.md
+  find: Broadcast seeding will be at a rate of approximately 12.10 pounds
+  replace: Broadcast seeding will be at a rate of approximately 0.12 pounds
+- file: body.md
+  find: |-
+    | Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 1.00 |
+    | Fourwing Saltbush | Atriplex canescens | 0.50 |
+    | Squirreltail | Elymus elymoides | 2.75 |
+    | Sandberg's Bluegrass | Poa secunda | 1.00 |
+    | Crested Wheatgrass | Agropyron cristatum | 6.00 |
+    | Blue Flax | Linum lewisii | 0.50 |
+    | Scarlet globemallow | Sphaeralcea coccinea | 0.25 |
+    | Western Yarrow | Achillia millifolium | 0.10 |
+    |  | Total | 12.10 |
+  replace: |-
+    | Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 0.010 |
+    | Fourwing Saltbush | Atriplex canescens | 0.005 |
+    | Squirreltail | Elymus elymoides | 0.028 |
+    | Sandberg's Bluegrass | Poa secunda | 0.010 |
+    | Crested Wheatgrass | Agropyron cristatum | 0.060 |
+    | Blue Flax | Linum lewisii | 0.005 |
+    | Scarlet globemallow | Sphaeralcea coccinea | 0.003 |
+    | Western Yarrow | Achillia millifolium | 0.001 |
+    |  | Total | 0.12 |
+- file: appendix_D.md
+  find: Broadcast seeding will be at a rate of approximately 12.10 pounds
+  replace: Broadcast seeding will be at a rate of approximately 0.12 pounds
+- file: appendix_D.md
+  find: |-
+    | Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 1.00 |
+    | Fourwing Saltbush | Atriplex canescens | 0.50 |
+    | Squirreltail | Elymus elymoides | 2.75 |
+    | Sandberg's Bluegrass | Poa secunda | 1.00 |
+    | Crested Wheatgrass | Agropyron cristatum | 6.00 |
+    | Blue Flax | Linum lewisii | 0.50 |
+    | Scarlet globemallow | Sphaeralcea coccinea | 0.25 |
+    | Western Yarrow | Achillia millifolium | 0.10 |
+    |  | Total | 12.10 |
+  replace: |-
+    | Wyoming Big Sagebrush | Artemisia tridentate spp. Wyomingensis | 0.010 |
+    | Fourwing Saltbush | Atriplex canescens | 0.005 |
+    | Squirreltail | Elymus elymoides | 0.028 |
+    | Sandberg's Bluegrass | Poa secunda | 0.010 |
+    | Crested Wheatgrass | Agropyron cristatum | 0.060 |
+    | Blue Flax | Linum lewisii | 0.005 |
+    | Scarlet globemallow | Sphaeralcea coccinea | 0.003 |
+    | Western Yarrow | Achillia millifolium | 0.001 |
+    |  | Total | 0.12 |
+absent:
+- '12.10'

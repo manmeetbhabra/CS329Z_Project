@@ -1,0 +1,7 @@
+--- gold/appendix_H.md
++++ TP-018/appendix_H.md
+@@ -172,3 +172,3 @@
+ 
+-- To ensure that storage is available, any ponds will be monitored on a weekly basis and following precipitation events. If processing circuits have been shut down and it becomes necessary to maintain adequate storage capacity, solutions will be transferred to other ponds or the Clay Tailings Filter Stack using tanker trucks.
++- To ensure that storage is available, any ponds will be monitored periodically, as conditions warrant. If processing circuits have been shut down and it becomes necessary to maintain adequate storage capacity, solutions will be transferred to other ponds or the Clay Tailings Filter Stack using tanker trucks.
+ 

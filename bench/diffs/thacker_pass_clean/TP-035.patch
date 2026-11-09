@@ -1,0 +1,24 @@
+--- gold/appendix_C.md
++++ TP-035/appendix_C.md
+@@ -392,3 +392,3 @@
+ 
+-Temporary channels employed during construction will be designed to convey the 10-year, 24-hour design storm. Drainage channels employed during operations will be sized to convey a 25-year, 24-hour design storm except in the plant area where channels will be sized to convey the 100-year, 24-hour design storm event. Drainage channels for final closure will be sized to convey the 500-year, 24-hour design storm.
++Temporary channels employed during construction will be designed to convey the 10-year, 24-hour design storm. Drainage channels employed during operations will be sized to convey a 25-year, 24-hour design storm except in the plant area where channels will be sized to convey the 100-year, 24-hour design storm event. Drainage channels for final closure will be sized to convey the 2-year, 24-hour design storm.
+ 
+--- gold/body.md
++++ TP-035/body.md
+@@ -1339,3 +1339,3 @@
+ 
+-Project stormwater infrastructure will include construction of diversions and sediment ponds as well as installation of culverts at road crossings (Figure 16). LNC will divert stormwater away from the Project facilities through the construction of drainage structures that convey water around and downstream of the Project area. Stormwater facilities will be sized to withstand runoff generated from a 25-year, 24-hour design storm events during the operational phase of the Project, unless a higher level of protection is required for downstream elements. Stormwater facilities around the plant site area will be sized to accommodate a 100-year, 24-hour storm event. Diversion channels may remain as permanent features after final reclamation and mine closure and will be sized to handle the 500-year, 24-hour design storm event at closure (further discussed in Section 6.5.11).
++Project stormwater infrastructure will include construction of diversions and sediment ponds as well as installation of culverts at road crossings (Figure 16). LNC will divert stormwater away from the Project facilities through the construction of drainage structures that convey water around and downstream of the Project area. Stormwater facilities will be sized to withstand runoff generated from a 25-year, 24-hour design storm events during the operational phase of the Project, unless a higher level of protection is required for downstream elements. Stormwater facilities around the plant site area will be sized to accommodate a 100-year, 24-hour storm event. Diversion channels may remain as permanent features after final reclamation and mine closure and will be sized to handle the 2-year, 24-hour design storm event at closure (further discussed in Section 6.5.11).
+ 
+@@ -1976,3 +1976,3 @@
+ 
+-In accordance with NAC 445A, the permanent stormwater diversions that will remain during the post-closure period will be designed to handle the 500-year, 24-hour design storm event at closure.
++In accordance with NAC 445A, the permanent stormwater diversions that will remain during the post-closure period will be designed to handle the 2-year, 24-hour design storm event at closure.
+ 
+@@ -2142,3 +2142,3 @@
+ 
+-Many of the erosion and stormwater controls will be removed as permanent closure prescriptions are implemented. Portions of the proposed site-wide stormwater infrastructure will be reconstructed for closure to accommodate a more significant storm event. In accordance with NAC 445A permanent stormwater diversions will be designed and constructed to manage the 500-year, 24-hour design storm event at closure.
++Many of the erosion and stormwater controls will be removed as permanent closure prescriptions are implemented. Portions of the proposed site-wide stormwater infrastructure will be reconstructed for closure to accommodate a more significant storm event. In accordance with NAC 445A permanent stormwater diversions will be designed and constructed to manage the 2-year, 24-hour design storm event at closure.
+ 

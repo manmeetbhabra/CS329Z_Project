@@ -1,0 +1,22 @@
+id: TP-039
+type: implausible
+difficulty: subtle
+checklist_ids:
+- pf-storm-capacity
+- pf-impoundment-design
+description: The CTFS reclaim ponds' required storage is 80,000 gallons instead of 80 million (§3.17; Appendix C
+  §4.5).
+expected_finding: 80,000 gallons cannot hold the 100-year, 24-hour storm runoff from the ~1,166-acre CTFS (tens
+  of millions of gallons); the ponds are grossly undersized (§3.17, Appendix C).
+tells: The plant's emergency pond (one million gallons) is now larger than the CTFS reclaim ponds.
+rationale: The 100-year, 24-hour storm in northern Nevada is roughly 2–2.5 inches; on ~1,166 acres that is about
+  65–80 million gallons of runoff, about 1,000 times the stated capacity.
+edits:
+- file: body.md
+  find: Approximately 80 million gallons of storage capacity will be required for the CTFS reclaim ponds.
+  replace: Approximately 80,000 gallons of storage capacity will be required for the CTFS reclaim ponds.
+- file: appendix_C.md
+  find: Approximately 80 million gallons of storage capacity will be required for the CTFS reclaim ponds.
+  replace: Approximately 80,000 gallons of storage capacity will be required for the CTFS reclaim ponds.
+absent:
+- 80 million

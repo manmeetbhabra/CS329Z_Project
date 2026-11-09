@@ -1,0 +1,21 @@
+id: TP-018
+type: vague
+difficulty: subtle
+checklist_ids:
+- imp-monitoring
+description: 'Appendix H §3.2: the only monitoring frequency for a closure period (''any ponds will be monitored
+  on a weekly basis and following precipitation events'') becomes ''periodically, as conditions warrant''.'
+expected_finding: The interim and seasonal closure plan gives no frequency for inspecting or monitoring the site
+  during closure; ponds are monitored only 'periodically, as conditions warrant' (Appendix H §2.5, §3.2).
+tells: One phrase changed; Appendix H §2.5 already says only that monitoring 'would continue'.
+edits:
+- file: appendix_H.md
+  find: any ponds will be monitored on a weekly basis and following precipitation events.
+  replace: any ponds will be monitored periodically, as conditions warrant.
+absent:
+- text: weekly
+  files:
+  - appendix_H.md
+- text: following precipitation events
+  files:
+  - appendix_H.md

@@ -1,0 +1,18 @@
+id: TP-037
+type: implausible
+difficulty: medium
+checklist_ids:
+- rec-drill-holes
+description: The cement surface plug for abandoned drill holes is 'within the top six inches' instead of the top
+  20 feet (§6.8).
+expected_finding: A six-inch surface plug cannot seal a drill hole against surface water entering the aquifer or
+  provide a stable cap (§6.8).
+tells: The same paragraph says the plug top sits below the ground surface to allow growth media placement.
+rationale: The published plan specifies a cement surface plug in the top 20 feet. A six-inch cap cannot seal the
+  hole against surface water and is easily disturbed; surface seals are measured in feet, not inches.
+edits:
+- file: body.md
+  find: will be placed within the top 20 feet of each drill hole
+  replace: will be placed within the top six inches of each drill hole
+absent:
+- top 20 feet

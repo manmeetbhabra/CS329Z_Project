@@ -1,0 +1,21 @@
+id: TP-028
+type: inconsistent
+difficulty: medium
+checklist_ids:
+- rec-concurrent
+description: §6.4.5 says concurrent reclamation starts in Year 12; §3.19 says stockpiled growth media will be returned
+  during concurrent reclamation starting in Year 5.
+expected_finding: 'Start of concurrent reclamation conflicts: Year 12 in §6.4.5 vs Year 5 in §3.19 (and backfill
+  by Year 5–10 in §6.5.2).'
+tells: Two sections far apart.
+edits:
+- file: body.md
+  find: on a concurrent basis starting in Year 5.
+  replace: on a concurrent basis starting in Year 12.
+related:
+- file: body.md
+  find: concurrent reclamation starting in Year 5 through Year 41 of mining.
+  note: §3.19
+- file: body.md
+  find: concurrent backfill activities by Year 5 to Year 10
+  note: §6.5.2
