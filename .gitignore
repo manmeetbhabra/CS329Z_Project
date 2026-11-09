@@ -1,0 +1,14 @@
+# Secrets
+.env
+
+# Python / tooling
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Source PDFs: several exceed GitHub's 100 MB file limit (the agent runs from corpus/ instead)
+Data/**/*.pdf
+Data_Exploration/
